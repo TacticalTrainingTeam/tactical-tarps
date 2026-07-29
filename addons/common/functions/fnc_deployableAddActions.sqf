@@ -12,7 +12,7 @@
  * purely by whether the caller carries one of the configured tarp items.
  *
  * Arguments:
- * 0: Config <HASHMAP> - see EFUNC(tarps,deployableConstruct) header for the
+ * 0: Config <HASHMAP> - see EFUNC(common,deployableConstruct) header for the
  *    full list of supported keys.
  *
  * Return Value:
