@@ -1,9 +1,9 @@
 name            = "Tactical Tarps";                    // Name of your mod
-author            = "Andx";                // Affects Arma 3 Launcher, when the mod are loaded as local
+author            = "Tactical Tarps Team";                // Affects Arma 3 Launcher, when the mod are loaded as local
 logo            = "img\tt_logo.paa";            // Logo displayed in the main menu
 logoOver        = "img\tt_logo.paa";    // When the mouse is over, in the main menu
 tooltip            = "Tactical Tarps";
-tooltipOwned    = "by Andx";                // Tool tip displayed when the mouse is left over, in the main menu
+tooltipOwned    = "by Tactical Tarps Team";                // Tool tip displayed when the mouse is left over, in the main menu
 picture            = "img\tt_logo.paa";        // Picture displayed from the expansions menu. Optimal size is 2048x1024
 actionName        = "GitHub";
 action            = "https://github.com/TacticalTrainingTeam/tactical-tarps";            // Website URL, that can be accessed from the expansions menu
