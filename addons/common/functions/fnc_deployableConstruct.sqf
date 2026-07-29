@@ -4,7 +4,7 @@
  *
  * Spawns the deployed object matching whichever tarp item the caller is
  * carrying, consumes that item, and flips the relevant state variables. Part
- * of the TTT "deployable tarp" framework.
+ * of the TT "deployable tarp" framework.
  *
  * Arguments:
  * 0: Player <OBJECT>

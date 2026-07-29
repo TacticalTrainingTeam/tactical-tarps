@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="tt">
     <Package name="Main">
-        <Key ID="STR_tt_Main_TacticalTrainingTeam">
-            <English>Tactical Training Team</English>
-            <German>Tactical Training Team</German>
+        <Key ID="STR_tt_Main_Author">
+            <English>Andx</English>
+            <German>Andx</German>
         </Key>
         <Key ID="STR_tt_Main_URL">
             <English>https://tacticalteam.de</English>

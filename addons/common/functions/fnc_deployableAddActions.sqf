@@ -2,7 +2,7 @@
 /*
  * Author: Andx
  *
- * Generic add-actions handler for the TTT "deployable tarp" framework.
+ * Generic add-actions handler for the TT "deployable tarp" framework.
  * Registers a parent ACE self-interaction "construct" action on the player (shown
  * when any matching tarp is carried) with one child action per tarp colour
  * (shown only when that specific item is carried, labelled with its displayName).

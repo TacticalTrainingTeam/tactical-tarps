@@ -2,7 +2,7 @@
 /*
 * Author: EinStein, Andx
 *
-* Builds the config for, and registers with, the shared TTT "deployable
+* Builds the config for, and registers with, the shared TT "deployable
 * tarp" framework (see ttt_common's deployable* functions).
 *
 * Arguments:

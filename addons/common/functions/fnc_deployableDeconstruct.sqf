@@ -3,7 +3,7 @@
  * Author: Andx
  *
  * Removes the deployed object and gives the matching tarp item back to the
- * caller. Part of the TTT "deployable tarp" framework.
+ * caller. Part of the TT "deployable tarp" framework.
  *
  * Arguments:
  * 0: Facility <OBJECT>

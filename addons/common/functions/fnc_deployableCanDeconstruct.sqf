@@ -3,7 +3,7 @@
  * Author: Andx
  *
  * Generic ACE interaction condition: can the caller deconstruct/stow the given
- * deployed facility object. Part of the TTT "deployable tarp" framework.
+ * deployed facility object. Part of the TT "deployable tarp" framework.
  *
  * Arguments:
  * 0: Args passed in by ACE's interaction menu <ARRAY> - [target, caller, config]

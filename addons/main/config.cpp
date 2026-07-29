@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON    {
         // Meta information for editor
         name = COMPONENT_NAME;
-        author = CSTRING(TacticalTrainingTeam);
+        author = CSTRING(Author);
         url = CSTRING(url);
 
         // Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game. Note: was disabled on purpose some time late into Arma 2: OA.
@@ -25,8 +25,8 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@ttt";
-        name = CSTRING(TacticalTrainingTeam);
+        dir = "@tactical-tarps";
+        name = CSTRING(Author);
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca.paa";
         hidePicture = "true";
         hideName = "true";
