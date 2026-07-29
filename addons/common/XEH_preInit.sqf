@@ -15,13 +15,12 @@ if (GVAR(addArsenalCategory)) then {
     private _items = [];
 
     {
-        private _weapons = [_x] call FUNC(getAllitems);
+        private _weapons = [_x] call FUNC(getAllItems);
         _items append _weapons;
-    } forEach ["tt_medical_tarp", "tt_drone_tarp", "tt_signal_tarp"];
+    } forEach ["tt_medic", "tt_drone", "tt_signal"];
 
     GVAR(arsenalButton) = [
         _items,
-       "Tarps",
-        "a3\modules_f\data\iconstrategicmapinit_ca.paa"
+       "Tarps"
     ] call ace_arsenal_fnc_addRightPanelButton;
 };

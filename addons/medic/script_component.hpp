@@ -1,4 +1,4 @@
-#define COMPONENT medic_tarp
+#define COMPONENT medic
 #define COMPONENT_BEAUTIFIED Medical Tarp
 
 #include "\z\tt\addons\main\script_mod.hpp"
