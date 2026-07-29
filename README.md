@@ -103,7 +103,7 @@ Wird ausgelöst, nachdem der Tarp erfolgreich aufgebaut wurde.
     params ["_object", "_caller", "_itemClassname", "_config", ];
     // _object  - das aufgebaute Tarp-Objekt
     // _caller  - der Spieler
-    // _itemClassname - Klassenname des zurückgegebenen Inventar-Items
+    // _itemClassname - Klassenname des benutzten Inventar-Items
     // _config  - die Konfigurations-HashMap
 }] call CBA_fnc_addEventHandler;
 ```
