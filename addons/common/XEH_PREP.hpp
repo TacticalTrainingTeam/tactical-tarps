@@ -6,3 +6,4 @@ PREP(deployableConstruct);
 PREP(deployableDeconstruct);
 PREP(deployableProgressConstruct);
 PREP(deployableProgressDeconstruct);
+PREP(getAllItems);
