@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ttt_common", "ace_interaction", "A3_Props_F_Enoch_Military_Decontamination"};
+        requiredAddons[] = {"tt_main", "ace_interaction", "A3_Props_F_Enoch_Military_Decontamination"};
         author = ECSTRING(main,TacticalTrainingTeam);
         authors[] = {""};
         url = ECSTRING(main,URL);

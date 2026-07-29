@@ -1,4 +1,4 @@
-# TTT Main
+# Main
 
 Enthält Macros für andere Addons.
 

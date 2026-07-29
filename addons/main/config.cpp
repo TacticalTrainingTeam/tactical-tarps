@@ -37,4 +37,3 @@ class CfgMods {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgEditorSubCategories.hpp"
