@@ -5,6 +5,10 @@
             <English>Andx</English>
             <German>Andx</German>
         </Key>
+        <Key ID="STR_tt_Main_Name">
+            <English>Tactical Tarps</English>
+            <German>Tactial Tarps</German>
+        </Key>
         <Key ID="STR_tt_Main_URL">
             <English>https://tacticalteam.de</English>
             <German>https://tacticalteam.de</German>

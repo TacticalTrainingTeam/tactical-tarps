@@ -818,17 +818,17 @@ enum
 #define IDD_STAMINA_BAR           305
 
 //Custom Info
-#define IDD_CUSTOMINFO          			310
-#define IDD_CUSTOMINFO_MINIMAP         		311
-#define IDD_CUSTOMINFO_SLA          		312
-#define IDD_CUSTOMINFO_CREW        			313
-#define IDD_CUSTOMINFO_SENS         		314
-#define IDD_CUSTOMINFO_FEEDUAV      		315
-#define IDD_CUSTOMINFO_FEEDDRIVER   		316
+#define IDD_CUSTOMINFO                      310
+#define IDD_CUSTOMINFO_MINIMAP                 311
+#define IDD_CUSTOMINFO_SLA                  312
+#define IDD_CUSTOMINFO_CREW                    313
+#define IDD_CUSTOMINFO_SENS                 314
+#define IDD_CUSTOMINFO_FEEDUAV              315
+#define IDD_CUSTOMINFO_FEEDDRIVER           316
 #define IDD_CUSTOMINFO_FEEDPRIMARYGUNNER    317
 #define IDD_CUSTOMINFO_FEEDCOMMANDER        318
-#define IDD_CUSTOMINFO_FEEDMISSILE	        319
-#define IDD_CUSTOMINFO_MINEDETECT	        320
+#define IDD_CUSTOMINFO_FEEDMISSILE            319
+#define IDD_CUSTOMINFO_MINEDETECT            320
 
 
 // Futura ui
@@ -1028,8 +1028,8 @@ enum
 #define IDC_MAIN_QUICKPLAY          154
 #define IDC_MAIN_UNIT               155
 
-#define IDC_MAIN_INFO_BRANCH		156
-#define IDC_MAIN_BRANCH_NAME		160
+#define IDC_MAIN_INFO_BRANCH        156
+#define IDC_MAIN_BRANCH_NAME        160
 
 #define IDC_MAIN_CARDAS_CUDL        199 // muj vlastni cudl
 
@@ -1423,7 +1423,7 @@ enum
 #define IDC_OPTIONS_WIND_INFLUENCE_DYN_RTD  149
 #define IDC_OPTIONS_AUTO_TRIM_RTD           150
 #define IDC_OPTIONS_STRESS_DAMAGE_RTD       151
-#define IDC_OPTIONS_WEBBROWSER				152
+#define IDC_OPTIONS_WEBBROWSER                152
 
 #define IDC_PARTICLES_EFFECTS         143
 #define IDC_OPTIONS_DYNAMIC_LIGHTS    144
@@ -1504,7 +1504,7 @@ enum
 #define IDC_DIFF_TACTICAL_PING        1542
 #define IDC_DIFF_EXTENDED_MAP_ENEMY   1543
 #define IDC_DIFF_EXTENDED_MAP_MINES   1544
-#define IDC_DIFF_MINIMAP_ALLOWED	  1545
+#define IDC_DIFF_MINIMAP_ALLOWED      1545
 #define IDC_DIFF_EXTENDED_MAP_PING    1546
 
 // Configure display controls
@@ -2651,9 +2651,9 @@ enum
 #define IDC_IGUI_AVC_PIP_DRIVER         100
 #define IDC_IGUI_AVC_PIP_GUNNER         101
 #define IDC_IGUI_AVC_PIP_SINGLE_VIEW    102
-#define IDC_IGUI_AVC_PIP_SOURCE			103
-#define IDC_IGUI_AVC_PIP_HEADING		104
-#define IDC_IGUI_AVC_PIP_MODE			105
+#define IDC_IGUI_AVC_PIP_SOURCE            103
+#define IDC_IGUI_AVC_PIP_HEADING        104
+#define IDC_IGUI_AVC_PIP_MODE            105
 
 //Sling Load Assistant
 #define IDC_SLA_MAP                     100
@@ -2670,13 +2670,13 @@ enum
 #define IDC_SENS_CIRCLES                102
 #define IDC_SENS_VEHICLE                103
 #define IDC_SENS_RANGE                  104
-#define IDC_SENS_RADARON           		105
-#define IDC_SENS_RADAROFF           	106
+#define IDC_SENS_RADARON                   105
+#define IDC_SENS_RADAROFF               106
 #define IDC_SENS_TARGET                 107
 #define IDC_SENS_TARGETRANGE            108
 #define IDC_SENS_TARGETSPEED            109
-#define IDC_SENS_TARGETALT				110
-#define IDC_SENS_HEADING				111
+#define IDC_SENS_TARGETALT                110
+#define IDC_SENS_HEADING                111
 
 //Mine detector Display
 #define IDC_MINEDETECT_VIEWPORT               101
@@ -2686,7 +2686,7 @@ enum
 
 //Crew list
 #define IDC_CREW_VEHICLE                101
-#define IDC_CREW_LIST					102
+#define IDC_CREW_LIST                    102
 
 //MP Score Table
 #define IDC_MP_SCORE_TABLE_TITLE          101
@@ -2823,23 +2823,23 @@ enum
 #define IDC_IGUI_WEAPON_ALT             189
 #define IDC_IGUI_WEAPON_TIME            190
 
-#define IDC_IGUI_WEAPON_CAM_TRACK_AREA        	194
-#define IDC_IGUI_WEAPON_CAM_TRACK_TARGET      	195
+#define IDC_IGUI_WEAPON_CAM_TRACK_AREA            194
+#define IDC_IGUI_WEAPON_CAM_TRACK_TARGET          195
 
 #define IDC_IGUI_WEAPON_JAVELIN_ATTACK_FROM_TOP 196
-#define IDC_IGUI_WEAPON_JAVELIN_ATTACK_DIRECT  	197
+#define IDC_IGUI_WEAPON_JAVELIN_ATTACK_DIRECT      197
 
 #define IDC_IGUI_WEAPON_LASED_DISTANCE          198
 #define IDC_IGUI_WEAPON_LASED_SPEED             199
 #define IDC_IGUI_WEAPON_LASED_VALID             200
-#define IDC_IGUI_WEAPON_LASED_ERR_LEAD 			201
-#define IDC_IGUI_WEAPON_LASED_ERR_ELEV 			202
-#define IDC_IGUI_WEAPON_LASED_ERR_OBJECT 		203
+#define IDC_IGUI_WEAPON_LASED_ERR_LEAD             201
+#define IDC_IGUI_WEAPON_LASED_ERR_ELEV             202
+#define IDC_IGUI_WEAPON_LASED_ERR_OBJECT         203
 #define IDC_IGUI_WEAPON_LASER_ZEROING_DELAY     204
 
-#define IDC_IGUI_THROTTLE						205
-#define IDC_IGUI_VEHICLE_DIRECTION 				206
-#define IDC_IGUI_VEHICLE_DIRECTION2				207
+#define IDC_IGUI_THROTTLE                        205
+#define IDC_IGUI_VEHICLE_DIRECTION                 206
+#define IDC_IGUI_VEHICLE_DIRECTION2                207
 
 
 
@@ -3060,10 +3060,10 @@ enum
 // - miniMap display
 
 #define IDC_MINIMAP                   101
-#define IDC_MINIMAP_VIEWPORT    	  102
-#define IDC_MINIMAP_GRID	    	  197
-#define IDC_MINIMAP_HEADING	    	  198
-#define IDC_MINIMAP_TIME	    	  199
+#define IDC_MINIMAP_VIEWPORT          102
+#define IDC_MINIMAP_GRID              197
+#define IDC_MINIMAP_HEADING              198
+#define IDC_MINIMAP_TIME              199
 
 
 // - scripting help display
