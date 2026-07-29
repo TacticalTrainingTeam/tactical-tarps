@@ -29,6 +29,8 @@ private _tarpItems = _config get "tarpItems";
 
 _target removeItem _itemClassname;
 
+private _grassCutter = createVehicle ["Land_ClutterCutter_medium_F", _position, [], 0, "CAN_COLLIDE"];
+
 private _object = createVehicle [_classname, _position, [], 0, "CAN_COLLIDE"];
 _object setDir (getDir _target);
 

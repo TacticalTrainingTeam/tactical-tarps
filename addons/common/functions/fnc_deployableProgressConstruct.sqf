@@ -16,7 +16,7 @@
 
 (_this select 0) params ["_target", "_caller", "_config"];
 
-private _position = (_caller getPos [4, getDir _caller]) findEmptyPosition [1, 2];
+private _position = (_caller getPos [5, getDir _caller]) findEmptyPosition [1, 2];
 if (_position isEqualTo []) exitWith {
     [(_config get "hintErrorNoSpace"), true] call ace_common_fnc_displayText;
 };
