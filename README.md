@@ -1,5 +1,9 @@
 # Tactical Tarps
 
+Tactical Tarps ist eine ausgliederung aus der internen Mod des [Tactical Training Team](https://tacticalteam.de).
+
+## Framework
+
 Das `common`-Addon stellt die gemeinsame Infrastruktur für alle auflegbaren Tarps der Tactical-Tarps-Mod bereit.
 Es wird von folgenden Addons genutzt:
 
