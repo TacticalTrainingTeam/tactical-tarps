@@ -2,8 +2,8 @@
 <Project name="tt">
     <Package name="Main">
         <Key ID="STR_tt_Main_Author">
-            <English>Andx</English>
-            <German>Andx</German>
+            <English>Tactical Tarps Team</English>
+            <German>Tactical Tarps Team</German>
         </Key>
         <Key ID="STR_tt_Main_Name">
             <English>Tactical Tarps</English>
