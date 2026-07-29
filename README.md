@@ -1,5 +1,7 @@
 # Tactical Tarps
 
+[![CI](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml/badge.svg)](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml)
+
 Tactical Tarps ist eine ausgliederung aus der internen Mod des [Tactical Training Team](https://tacticalteam.de).
 
 ## Framework
