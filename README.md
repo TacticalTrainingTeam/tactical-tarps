@@ -9,7 +9,7 @@ Es wird von folgenden Addons genutzt:
 
 - Signal Tarp – Markierung einer Hubschrauber-Landezone
 - Drohnen Tarp – Markierung eines Drohnen-Landeplatzes
-- Medizinisches Tarp – mobiles medizinisches Einrichtungsobjekt
+- Medizinisches Tarp – mobile medizinische Einrichtung
 
 ## Ablauf
 
@@ -100,9 +100,10 @@ Wird ausgelöst, nachdem der Tarp erfolgreich aufgebaut wurde.
 
 ``` sqf
 ["tt_common_tarpConstructed", {
-    params ["_object", "_caller", "_config"];
+    params ["_object", "_caller", "_itemClassname", "_config", ];
     // _object  - das aufgebaute Tarp-Objekt
     // _caller  - der Spieler
+    // _itemClassname - Klassenname des zurückgegebenen Inventar-Items
     // _config  - die Konfigurations-HashMap
 }] call CBA_fnc_addEventHandler;
 ```
