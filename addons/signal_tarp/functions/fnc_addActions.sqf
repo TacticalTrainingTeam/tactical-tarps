@@ -27,7 +27,7 @@ private _tarpItems = [
 private _onConstruct = {
     params ["_object", "_caller"];
 
-    [_object, false] remoteExec ["allowDamage", (owner _object), false];
+    _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
 };
 
 private _config = createHashMapFromArray [

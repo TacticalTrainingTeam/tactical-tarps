@@ -28,7 +28,7 @@ private _tarpItems = [
 private _onConstruct = {
     params ["_object"];
     private _pad =  createVehicle ["Land_HelipadEmpty_F", getPos _object, [], 0, "CAN_COLLIDE"];
-    [_object, false] remoteExec ["allowDamage", (owner _object), false];
+    _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
     _object setVariable [QGVAR(helipad), _pad, true];
 };
 

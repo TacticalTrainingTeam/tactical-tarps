@@ -28,7 +28,7 @@ private _onConstruct = {
     params ["_object", "_caller"];
 
     _object setVariable ["ace_medical_isMedicalFacility", true, true];
-    [_object, false] remoteExec ["allowDamage", (owner _object), false];
+    _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
 
     private _position = getPos _object;
     {
