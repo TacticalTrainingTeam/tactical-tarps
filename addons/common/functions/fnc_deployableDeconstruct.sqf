@@ -32,4 +32,10 @@ deleteVehicle _target;
 [(_config get "hintLoaded")] call ace_common_fnc_displayText;
 
 _caller switchMove "";
-_caller addItemToBackpack _itemClassname;
+
+if (unitBackpack _caller isEqualTo objNull) then {
+    _caller addItem _itemClassname;
+} else {
+    _caller addItemToBackpack _itemClassname;
+};
+
