@@ -49,13 +49,21 @@
             <English>Play Animation</English>
             <German>Animation abspielen</German>
         </Key>
-        <Key ID="STR_tt_Hazmat_tarp_description">
+        <Key ID="STR_tt_Hazmat_tarp_empty_description">
+            <English>An empty hazmat containment tarp.</English>
+            <German>Ein leeres Gefahrgut-Containment-Tarp.</German>
+        </Key>
+        <Key ID="STR_tt_Hazmat_tarp_empty_displayName">
             <English>Hazmat Tarp</English>
             <German>Gefahrguttarp</German>
         </Key>
-        <Key ID="STR_tt_Hazmat_tarp_hazmat_displayName">
-            <English>Hazmat Tarp</English>
-            <German>Hazmattarp</German>
+        <Key ID="STR_tt_Hazmat_tarp_full_description">
+            <English>A hazmat containment tarp full of contaminated items.</English>
+            <German>Ein Gefahrgut-Containment-Tarp voller kontaminierter Gegenstände.</German>
+        </Key>
+        <Key ID="STR_tt_Hazmat_tarp_full_displayName">
+            <English>Hazmat Tarp (full)</English>
+            <German>Gefahrguttarp (voll)</German>
         </Key>
     </Package>
 </Project>

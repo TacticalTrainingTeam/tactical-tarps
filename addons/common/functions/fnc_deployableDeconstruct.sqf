@@ -10,7 +10,9 @@
  * 1: Player <OBJECT>
  * 2: Config <HASHMAP> - supported keys:
  *    "hintLoaded"      <STRING> - localized text shown once stowed
- *    "onDeconstruct"   <CODE> (optional) - called as [_target, _caller, _config] before deletion, for addon specific cleanup
+ *    "onDeconstruct"   <CODE> (optional) - called as [_target, _caller, _config] before deletion, for
+ *                      addon specific cleanup. May return a non-empty <STRING> classname to override
+ *                      which item is given back to the caller instead of the item that was consumed.
  *
  * Return Value:
  * None
@@ -21,9 +23,13 @@
 params ["_target", "_caller", "_config"];
 
 private _onDeconstruct = _config getOrDefault ["onDeconstruct", {}];
-[_target, _caller, _config] call _onDeconstruct;
+private _itemOverride = [_target, _caller, _config] call _onDeconstruct;
 
 private _itemClassname = _target getVariable [QGVAR(sourceItem), ""];
+
+if (_itemOverride != "") then {
+    _itemClassname = _itemOverride;
+};
 
 [QGVAR(tarpDeconstructed), [_target, _caller, _itemClassname, _config], _caller] call CBA_fnc_localEvent;
 
