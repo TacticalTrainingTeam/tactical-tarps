@@ -31,7 +31,7 @@ private _deconstructId = _config get "deconstructId";
 private _tarpItems = _config get "tarpItems";
 private _deconstructClasses = _tarpItems apply {_x select 1};
 
-[player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId]] call ace_interact_menu_fnc_removeActionFromObject;
+[ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId]] call ace_interact_menu_fnc_removeActionFromObject;
 {
     [_x, 0, ["ACE_MainActions", _deconstructId]] call ace_interact_menu_fnc_removeActionFromClass;
 } forEach _deconstructClasses;
@@ -47,7 +47,7 @@ private _parentConstructAction = [
     _config
 ] call ace_interact_menu_fnc_createAction;
 
-[player, 1, ["ACE_SelfActions", "ACE_Equipment"], _parentConstructAction] call ace_interact_menu_fnc_AddActionToObject;
+[ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment"], _parentConstructAction] call ace_interact_menu_fnc_AddActionToObject;
 
 // One child action per tarp colour — shown only when that specific item is in inventory
 {
@@ -69,7 +69,7 @@ private _parentConstructAction = [
         _itemConfig
     ] call ace_interact_menu_fnc_createAction;
 
-    [player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId], _childAction] call ace_interact_menu_fnc_AddActionToObject;
+    [ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId], _childAction] call ace_interact_menu_fnc_AddActionToObject;
 } forEach _tarpItems;
 
 private _deconstructAction = [
