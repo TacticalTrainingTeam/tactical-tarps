@@ -14,6 +14,9 @@ Es wird von folgenden Addons genutzt:
 - Signal Tarp – Markierung einer Hubschrauber-Landezone
 - Drohnen Tarp – Markierung eines Drohnen-Landeplatzes
 - Medizinisches Tarp – mobile medizinische Einrichtung
+- Gefahrgut Tarp - Ablagepunkt für kontaminierte Gegenstände - löscht diese beim Packen und gibt einen vollen Sack zurück statt des Tarp
+
+Diese Beispiele zeigen was mit dem Framework möglich ist.
 
 ## Ablauf
 
