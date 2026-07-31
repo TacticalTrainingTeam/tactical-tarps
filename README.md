@@ -90,7 +90,7 @@ private _config = createHashMapFromArray [
 | `useAnimation` | BOOLEAN | – | Soll der Spieler eine Animation abspielen? (default: `true`) |
 | `animation` | STRING | – | Name der Animations-Klasse (default: `"Acts_carFixingWheel"`) |
 | `onConstruct` | CODE | – | `[_object, _caller, _config]` – wird lokal nach dem Spawnen aufgerufen |
-| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – wird lokal vor dem Löschen aufgerufen |
+| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – wird lokal vor dem Löschen aufgerufen, Rückgabewert überschreibt den Gegenstand welcher ins Inventar gelegt wird |
 
 ## events
 
