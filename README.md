@@ -1,5 +1,7 @@
 # Tactical Tarps
 
+[![Tactical Tarps Logo](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/tt_logo.png?raw=true)](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/tt_logo.png?raw=true)
+
 [![CI](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml/badge.svg)](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml)
 
 Tactical Tarps ist eine ausgliederung aus der internen Mod des [Tactical Training Team](https://tacticalteam.de).
@@ -12,6 +14,9 @@ Es wird von folgenden Addons genutzt:
 - Signal Tarp – Markierung einer Hubschrauber-Landezone
 - Drohnen Tarp – Markierung eines Drohnen-Landeplatzes
 - Medizinisches Tarp – mobile medizinische Einrichtung
+- Gefahrgut Tarp - Ablagepunkt für kontaminierte Gegenstände - löscht diese beim Packen und gibt einen vollen Sack zurück statt des Tarp
+
+Diese Beispiele zeigen was mit dem Framework möglich ist.
 
 ## Ablauf
 
@@ -90,7 +95,7 @@ private _config = createHashMapFromArray [
 | `useAnimation` | BOOLEAN | – | Soll der Spieler eine Animation abspielen? (default: `true`) |
 | `animation` | STRING | – | Name der Animations-Klasse (default: `"Acts_carFixingWheel"`) |
 | `onConstruct` | CODE | – | `[_object, _caller, _config]` – wird lokal nach dem Spawnen aufgerufen |
-| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – wird lokal vor dem Löschen aufgerufen |
+| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – wird lokal vor dem Löschen aufgerufen, Rückgabewert überschreibt den Gegenstand welcher ins Inventar gelegt wird |
 
 ## events
 

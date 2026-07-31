@@ -4,17 +4,12 @@ prefix = "tt"
 mainprefix = "z"
 
 [files]
-exclude = [
-    "*.psd",
-    "*.tga",
-]
 include = [
     "meta.cpp",
     "mod.cpp",
     "authors.txt",
     "LICENSE",
     "/img/*.paa",
-    "/img/*.png",
     "*.bikey"
 ]
 
