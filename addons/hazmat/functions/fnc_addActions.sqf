@@ -35,8 +35,7 @@ private _onConstruct = {
 private _onDeconstruct = {
     params ["_target"];
 
-    private _droppedItems = _target nearObjects ITEM_PICKUP_RADIUS;
-    deleteVehicle _droppedItems;
+    deleteVehicle [_target nearObjects ITEM_PICKUP_RADIUS];
 
     // Give back the "full" item instead of the plain one if anything was dropped on the tarp
     [QGVAR(tarp_full), ""] select (_droppedItems isEqualTo [])
