@@ -15,7 +15,7 @@ jobs:
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
 
-      - name: Build TTT Mod
+      - name: Build Mod
         run: hemtt release
 
       - name: Upload full version to release
