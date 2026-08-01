@@ -24,7 +24,13 @@
  * Public: Yes
  */
 
-params ["_config"];
+params [
+    ["_config", createHashMap, [createHashMap]]
+    ];
+
+TRACE_1("deployableAddAction",_config);
+
+if (count _config < 10) exitWith {format ["Malformed config %1", _config]};
 
 private _constructId = _config get "constructId";
 private _deconstructId = _config get "deconstructId";

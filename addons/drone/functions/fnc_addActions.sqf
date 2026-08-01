@@ -27,9 +27,14 @@ private _tarpItems = [
 // The drone tarp also needs a helipad prop so drones can land on it
 private _onConstruct = {
     params ["_object"];
-    private _pad =  createVehicle ["Land_HelipadEmpty_F", getPos _object, [], 0, "CAN_COLLIDE"];
+
+    private _pad = createVehicle ["Land_HelipadEmpty_F", getPos _object, [], 0, "CAN_COLLIDE"];
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
     _object setVariable [QGVAR(helipad), _pad, true];
+
+    {
+        _x addCuratorEditableObjects [[_pad], false];
+    } forEach allCurators;
 };
 
 private _onDeconstruct = {
