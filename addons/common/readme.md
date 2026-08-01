@@ -1,6 +1,6 @@
 # Common
 
-Framework zum aufbauen und abbauen von verschiedenen Planen.
+Framework for constructing and deconstructing various tarps.
 
 ## Maintainer
 

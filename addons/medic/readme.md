@@ -1,6 +1,6 @@
 # Medical Tarp
 
-Fügt einem Spieler, der einen medizinischen Tarp-Gegenstand im Inventar trägt, die Möglichkeit hinzu ein Objekt über eine ACE-Eigeninteraktion aufzubauen.
+Adds the ability for a player carrying a medical tarp item in their inventory to construct an object via an ACE self interaction.
 
 ## Maintainer
 

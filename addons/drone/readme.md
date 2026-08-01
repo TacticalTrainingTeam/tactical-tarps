@@ -1,6 +1,6 @@
-# Drohnen Tarp
+# Drone Tarp
 
- Ermöglicht das Auslegen eines Tarps, das als Landeplatz für eine Drohne genutzt werden kann. Der Spieler benötigt dazu einen Drohnen-Tarp-Gegenstand im Inventar.
+Allows deploying a tarp that can be used as a landing spot for a drone. The player needs a drone tarp item in their inventory to do this.
 
 ## Maintainer
 

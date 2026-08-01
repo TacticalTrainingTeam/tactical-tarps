@@ -1,6 +1,6 @@
-# Gefahrgut Tarp
+# Hazmat Tarp
 
-Kennzeichnet die Sammelstelle für Gefahrgut.
+Marks the collection point for hazardous materials.
 
 ## Maintainer
 

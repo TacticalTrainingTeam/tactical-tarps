@@ -1,6 +1,6 @@
 # Main
 
-Enthält Macros für andere Addons.
+Contains macros for other addons.
 
 ## Maintainer
 

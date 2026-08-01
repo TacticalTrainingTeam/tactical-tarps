@@ -4,72 +4,72 @@
 
 [![CI](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml/badge.svg)](https://github.com/TacticalTrainingTeam/tactical-tarps/actions/workflows/ci.yml)
 
-Tactical Tarps ist eine ausgliederung aus der internen Mod des [Tactical Training Team](https://tacticalteam.de).
+Tactical Tarps is a spin-off from the internal mod of the [Tactical Training Team](https://tacticalteam.de).
 
 ## Framework
 
-Das `common`-Addon stellt die gemeinsame Infrastruktur für alle auflegbaren Tarps der Tactical-Tarps-Mod bereit.
-Es wird von folgenden Addons genutzt:
+The `common` addon provides the shared infrastructure for all deployable tarps in the Tactical Tarps mod.
+It is used by the following addons:
 
-- Signal Tarp – Markierung einer Hubschrauber-Landezone
-- Drohnen Tarp – Markierung eines Drohnen-Landeplatzes
-- Medizinisches Tarp – mobile medizinische Einrichtung
-- Gefahrgut Tarp - Ablagepunkt für kontaminierte Gegenstände - löscht diese beim Packen und gibt einen vollen Sack zurück statt des Tarp
+- Signal Tarp – marking a helicopter landing zone
+- Drone Tarp – marking a drone landing spot
+- Medical Tarp – mobile medical facility
+- Hazmat Tarp - a drop-off point for contaminated items - deletes them when packed up and returns a full bag instead of the tarp
 
-Diese Beispiele zeigen was mit dem Framework möglich ist.
+These examples show what is possible with the framework.
 
-## Ablauf
+## Flow
 
-Jedes Tarp-Addon registriert seine Aktionen über `tt_common_fnc_deployableAddActions`.
-Danach läuft jede Interaktion wie folgt ab:
+Each tarp addon registers its actions via `tt_common_fnc_deployableAddActions`.
+Every interaction then proceeds as follows:
 
 ```
-Spieler öffnet ACE-Eigeninteraktion
-  └─ [Tarp-Typ] ── [Farbe A]  ──► Fortschrittsbalken (buildTime)
-                ├─ [Farbe B]       └─ Tarp-Objekt wird gespawnt
-                └─ ...             └─ Item wird aus Inventar entfernt
+Player opens ACE self interaction
+  └─ [Tarp type] ── [Color A]  ──► Progress bar (buildTime)
+                ├─ [Color B]       └─ Tarp object is spawned
+                └─ ...             └─ Item is removed from inventory
                                    └─ Event ttt_tarps_tarpConstructed
 
-Spieler öffnet ACE-Fremdinteraktion am Tarp-Objekt
-  └─ [Tarp einpacken]  ──► Fortschrittsbalken (buildTime × 1,5)
-                           └─ Tarp-Objekt wird gelöscht
+Player opens ACE interact-with interaction on the tarp object
+  └─ [Pack up tarp]  ──► Progress bar (buildTime × 1.5)
+                           └─ Tarp object is deleted
                            └─ Event ttt_tarps_tarpDeconstructed
-                           └─ Item wird ins Inventar zurückgelegt
+                           └─ Item is returned to inventory
 ```
 
-Das am Tarp-Objekt gesetzte Objektattribut `tt_tarps_sourceItem` (Typ: STRING) enthält den
-Klassennamen des ursprünglichen Inventar-Items und wird global synchronisiert.
+The object attribute `tt_tarps_sourceItem` (type: STRING) set on the tarp object contains the
+class name of the original inventory item and is globally synchronized.
 
-## Öffentliche API – `tt_tarps_fnc_deployableAddActions`
+## Public API – `tt_tarps_fnc_deployableAddActions`
 
-Registriert alle ACE-Interaktionen für ein neues Tarp-Addon.
-Wird typischerweise einmalig in der `XEH_postInit.sqf` aufgerufen.
+Registers all ACE interactions for a new tarp addon.
+Typically called once in `XEH_postInit.sqf`.
 
 ``` sqf
 private _config = createHashMapFromArray [
-    // Pflichtfelder
-    ["constructId",     "my_addon_construct"],          // Eindeutige ACE-Aktions-ID (Aufbauen)
-    ["deconstructId",   "my_addon_deconstruct"],         // Eindeutige ACE-Aktions-ID (Abbauen)
-    ["tarpItems", [                                      // Zuordnung Inventar-Item → Tarp-Objekt
+    // Required fields
+    ["constructId",     "my_addon_construct"],          // Unique ACE action ID (construct)
+    ["deconstructId",   "my_addon_deconstruct"],         // Unique ACE action ID (deconstruct)
+    ["tarpItems", [                                      // Mapping inventory item → tarp object
         ["my_addon_tarp_Black", "Tarp_01_Large_Black_F"],
         ["my_addon_tarp_Green", "Tarp_01_Large_Green_F"]
     ]],
-    ["inUseVar",        "my_addon_inUse"],               // Objektvariable als Sperrmerkmal
-    ["buildTime",       10],                             // Aufbauzeit in Sekunden; Abbauzeit = × 1,5
-    ["constructText",   "Tarp auslegen..."],              // Text im Fortschrittsbalken (Aufbauen)
-    ["deconstructText", "Tarp einpacken..."],             // Text im Fortschrittsbalken (Abbauen)
-    ["abortText",       "Abgebrochen"],                  // Hinweis bei Abbruch
-    ["hintErrorNoSpace","Kein Platz vorhanden"],          // Hinweis wenn kein Platz
-    ["hintLoaded",      "Tarp wurde eingepackt"],         // Hinweis nach erfolgreichem Abbauen
+    ["inUseVar",        "my_addon_inUse"],               // Object variable used as a lock flag
+    ["buildTime",       10],                             // Build time in seconds; deconstruct time = × 1.5
+    ["constructText",   "Deploying tarp..."],              // Progress bar text (construct)
+    ["deconstructText", "Packing up tarp..."],             // Progress bar text (deconstruct)
+    ["abortText",       "Aborted"],                  // Hint on abort
+    ["hintErrorNoSpace","No space available"],          // Hint when there is no space
+    ["hintLoaded",      "Tarp has been packed up"],         // Hint after successful deconstruction
 
-    // Optionale Felder
+    // Optional fields
     ["useAnimation",   true],                            // default: true
     ["animation",      "Acts_carFixingWheel"],            // default: "Acts_carFixingWheel"
-    ["onConstruct", {                                    // Callback nach dem Aufbauen (lokal)
+    ["onConstruct", {                                    // Callback after construction (local)
         params ["_object", "_caller", "_config"];
         // ...
     }],
-    ["onDeconstruct", {                                  // Callback vor dem Löschen (lokal)
+    ["onDeconstruct", {                                  // Callback before deletion (local)
         params ["_target", "_caller", "_config"];
         // ...
     }]
@@ -78,54 +78,54 @@ private _config = createHashMapFromArray [
 [_config] call tt_common_fnc_deployableAddActions;
 ```
 
-### Parametertabelle
+### Parameter table
 
-| Schlüssel | Typ | Pflicht | Beschreibung |
+| Key | Type | Required | Description |
 | - | - | - | - |
-| `constructId` | STRING | ✓ | Eindeutige ID der ACE-Aufbau-Aktion |
-| `deconstructId` | STRING | ✓ | Eindeutige ID der ACE-Abbau-Aktion |
-| `tarpItems` | ARRAY | ✓ | `[[itemClass, objectClass], ...]` – Zuordnung Item → Tarp-Objekt |
-| `inUseVar` | STRING | ✓ | Objektvariable, die während einer Aktion gesetzt wird, um gleichzeitige Aktionen zu sperren |
-| `buildTime` | NUMBER | ✓ | Aufbauzeit in Sekunden; Abbauzeit beträgt das 1,5-fache |
-| `constructText` | STRING | ✓ | Text im Fortschrittsbalken beim Aufbauen |
-| `deconstructText` | STRING | ✓ | Text im Fortschrittsbalken beim Abbauen |
-| `abortText` | STRING | ✓ | Hinweis bei Abbruch |
-| `hintErrorNoSpace` | STRING | ✓ | Hinweis wenn kein Platz zum Auslegen vorhanden |
-| `hintLoaded` | STRING | ✓ | Hinweis nach erfolgreichem Einpacken |
-| `useAnimation` | BOOLEAN | – | Soll der Spieler eine Animation abspielen? (default: `true`) |
-| `animation` | STRING | – | Name der Animations-Klasse (default: `"Acts_carFixingWheel"`) |
-| `onConstruct` | CODE | – | `[_object, _caller, _config]` – wird lokal nach dem Spawnen aufgerufen |
-| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – wird lokal vor dem Löschen aufgerufen, Rückgabewert überschreibt den Gegenstand welcher ins Inventar gelegt wird |
+| `constructId` | STRING | ✓ | Unique ID of the ACE construct action |
+| `deconstructId` | STRING | ✓ | Unique ID of the ACE deconstruct action |
+| `tarpItems` | ARRAY | ✓ | `[[itemClass, objectClass], ...]` – mapping item → tarp object |
+| `inUseVar` | STRING | ✓ | Object variable set during an action to lock out simultaneous actions |
+| `buildTime` | NUMBER | ✓ | Build time in seconds; deconstruct time is 1.5 times that |
+| `constructText` | STRING | ✓ | Progress bar text while constructing |
+| `deconstructText` | STRING | ✓ | Progress bar text while deconstructing |
+| `abortText` | STRING | ✓ | Hint on abort |
+| `hintErrorNoSpace` | STRING | ✓ | Hint when there is no space to deploy |
+| `hintLoaded` | STRING | ✓ | Hint after successfully packing up |
+| `useAnimation` | BOOLEAN | – | Should the player play an animation? (default: `true`) |
+| `animation` | STRING | – | Name of the animation class (default: `"Acts_carFixingWheel"`) |
+| `onConstruct` | CODE | – | `[_object, _caller, _config]` – called locally after spawning |
+| `onDeconstruct` | CODE | – | `[_target, _caller, _config]` – called locally before deletion; the return value overrides the item that is placed into the inventory |
 
-## events
+## Events
 
-Beide Ereignisse werden als **lokales CBA-Event** auf der Maschine des auslösenden Spielers gefeuert.
+Both events are fired as a **local CBA event** on the machine of the triggering player.
 
 ### `tt_common_tarpConstructed`
 
-Wird ausgelöst, nachdem der Tarp erfolgreich aufgebaut wurde.
+Fired after the tarp has been successfully constructed.
 
 ``` sqf
 ["tt_common_tarpConstructed", {
     params ["_object", "_caller", "_itemClassname", "_config", ];
-    // _object  - das aufgebaute Tarp-Objekt
-    // _caller  - der Spieler
-    // _itemClassname - Klassenname des benutzten Inventar-Items
-    // _config  - die Konfigurations-HashMap
+    // _object  - the constructed tarp object
+    // _caller  - the player
+    // _itemClassname - class name of the inventory item used
+    // _config  - the configuration hash map
 }] call CBA_fnc_addEventHandler;
 ```
 
 ### `tt_common_tarpDeconstructed`
 
-Wird ausgelöst, nachdem der Abbau bestätigt wurde, aber **bevor** das Objekt gelöscht wird.
+Fired after the deconstruction has been confirmed, but **before** the object is deleted.
 
 ``` sqf
 ["tt_common_tarpDeconstructed", {
     params ["_target", "_caller", "_itemClassname", "_config"];
-    // _target        - das noch existierende Tarp-Objekt
-    // _caller        - der Spieler
-    // _itemClassname - Klassenname des zurückgegebenen Inventar-Items
-    // _config        - die Konfigurations-HashMap
+    // _target        - the still-existing tarp object
+    // _caller        - the player
+    // _itemClassname - class name of the returned inventory item
+    // _config        - the configuration hash map
 }] call CBA_fnc_addEventHandler;
 ```
 
