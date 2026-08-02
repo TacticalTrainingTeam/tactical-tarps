@@ -31,19 +31,24 @@ private _onConstruct = {
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
 
     private _position = getPos _object;
+
     {
-        createVehicle [_x, _position, [], 1, "CAN_COLLIDE"];
+        createVehicle [_x, _position, [], 3, "CAN_COLLIDE"];
     } forEach (parseSimpleArray GVAR(additionalItems));
 
-    private _arrayItems = nearestObjects [_position, (parseSimpleArray GVAR(additionalItems)), 10];
+    private _arrayItems = [_position, 8, 8, 0, true, 0] nearEntities [parseSimpleArray GVAR(additionalItems), false, true, false];
+
     {
         _x addCuratorEditableObjects [([_object] + _arrayItems), false];
     } forEach allCurators;
 };
 
 private _onDeconstruct = {
-    params ["_target"];
-    private _arrayItems = nearestObjects [(getPos _target), (parseSimpleArray GVAR(additionalItems)), 10];
+    params ["_object"];
+
+    private _position = getPos _object;
+    private _arrayItems = [_position, 8, 8, 0, true, 0] nearEntities [parseSimpleArray GVAR(additionalItems), false, true, false];
+
     deleteVehicle _arrayItems;
 };
 
