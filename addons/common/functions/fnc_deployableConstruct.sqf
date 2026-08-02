@@ -45,7 +45,7 @@ private _onConstruct = _config getOrDefault ["onConstruct", {}];
 [_object, _target, _config] call _onConstruct;
 
 {
-    _x addCuratorEditableObjects [[_object], false];
+    _x addCuratorEditableObjects [[_object, _grassCutter], false];
 } forEach allCurators;
 
 _target switchMove "";
