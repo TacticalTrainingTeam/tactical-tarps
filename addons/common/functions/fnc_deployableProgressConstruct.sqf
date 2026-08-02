@@ -2,8 +2,10 @@
 /*
  * Author: Andx
  *
- * Starts the progress bar for constructing a deployable item. Part of the
- * TT "deployable tarp" framework.
+ * Entry point for the ACE "construct" action: starts the 3D ghost placement
+ * flow for the selected tarp item. The actual build progress bar only begins
+ * once that placement has been confirmed (see fnc_deployablePlace.sqf and
+ * fnc_deployableStartBuild.sqf). Part of the TT "deployable tarp" framework.
  *
  * Arguments:
  * 0: Args passed in by ACE's interaction menu <ARRAY> - [target, caller, config]
@@ -16,25 +18,6 @@
 
 (_this select 0) params ["_target", "_caller", "_config"];
 
-private _position = (_caller getPos [5, getDir _caller]) findEmptyPosition [1, 2];
-if (_position isEqualTo []) exitWith {
-    [(_config get "hintErrorNoSpace"), true] call ace_common_fnc_displayText;
-};
+private _classname = ((_config get "tarpItems") select 0) select 1;
 
-if (_config getOrDefault ["useAnimation", true]) then {
-    _caller playMove (_config getOrDefault ["animation", "Acts_carFixingWheel"]);
-};
-
-[
-    _config get "buildTime",
-    [_target, _caller, _config, _position],
-    {
-        (_this select 0) params ["_target", "_caller", "_config", "_position"];
-        [_target, _caller, _config, _position] call FUNC(deployableConstruct);
-    },
-    {
-        (_this select 0) params ["_target", "_caller", "_config"];
-        [_target, _caller, _config] call FUNC(deployableCancel);
-    },
-    _config get "constructText"
-] call ace_common_fnc_progressBar;
+[_target, _caller, _config, _classname] call FUNC(deployablePlace);

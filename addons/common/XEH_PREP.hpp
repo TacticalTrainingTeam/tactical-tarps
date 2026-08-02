@@ -4,5 +4,7 @@ PREP(deployableCanDeconstruct);
 PREP(deployableCancel);
 PREP(deployableConstruct);
 PREP(deployableDeconstruct);
+PREP(deployablePlace);
 PREP(deployableProgressConstruct);
 PREP(deployableProgressDeconstruct);
+PREP(deployableStartBuild);

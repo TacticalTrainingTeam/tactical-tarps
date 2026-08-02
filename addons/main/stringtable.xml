@@ -13,5 +13,17 @@
             <English>https://tacticalteam.de</English>
             <German>https://tacticalteam.de</German>
         </Key>
+        <Key ID="STR_tt_Main_placeCancel">
+            <English>Cancel</English>
+            <German>Abbrechen</German>
+        </Key>
+        <Key ID="STR_tt_Main_placeConfirm">
+            <English>Confirm placement</English>
+            <German>Platzierung bestätigen</German>
+        </Key>
+        <Key ID="STR_tt_Main_placeRotate">
+            <English>Rotate</English>
+            <German>Drehen</German>
+        </Key>
     </Package>
 </Project>

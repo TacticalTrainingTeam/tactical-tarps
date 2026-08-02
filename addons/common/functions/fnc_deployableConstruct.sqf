@@ -3,8 +3,9 @@
  * Author: Andx
  *
  * Spawns the deployed object matching whichever tarp item the caller is
- * carrying, consumes that item, and flips the relevant state variables. Part
- * of the TT "deployable tarp" framework.
+ * carrying, at the position/orientation confirmed during the 3D placement
+ * step, consumes that item, and flips the relevant state variables. Part of
+ * the TT "deployable tarp" framework.
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -14,6 +15,8 @@
  *                     carryable tarp item to the object it deploys
  *    "inUseVar"       <STRING> - object variable used to lock the item while (de)constructing
  *    "onConstruct"    <CODE> (optional) - called as [_object, _caller, _config], for addon specific side effects
+ * 3: Confirmed placement position (ASL) <ARRAY>
+ * 4: Confirmed placement [vectorDir, vectorUp] <ARRAY>
  *
  * Return Value:
  * None
@@ -21,7 +24,7 @@
  * Public: No
  */
 
-params ["_target", "_caller", "_config", "_position"];
+params ["_target", "_caller", "_config", "_posASL", "_vectorDirAndUp"];
 
 private _carriedItems = items _target;
 private _tarpItems = _config get "tarpItems";
@@ -29,10 +32,11 @@ private _tarpItems = _config get "tarpItems";
 
 _target removeItem _itemClassname;
 
-private _grassCutter = createVehicle ["Land_ClutterCutter_medium_F", _position, [], 0, "CAN_COLLIDE"];
+private _object = createVehicle [_classname, [0, 0, 0], [], 0, "CAN_COLLIDE"];
+_object setPosASL _posASL;
+_object setVectorDirAndUp _vectorDirAndUp;
 
-private _object = createVehicle [_classname, _position, [], 0, "CAN_COLLIDE"];
-_object setDir (getDir _target);
+private _grassCutter = createVehicle ["Land_ClutterCutter_medium_F", getPos _object, [], 0, "CAN_COLLIDE"];
 
 _object setVariable [(_config get "inUseVar"), false, true];
 _object setVariable [QGVAR(sourceItem), _itemClassname, true];
