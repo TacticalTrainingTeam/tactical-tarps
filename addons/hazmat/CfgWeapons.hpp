@@ -17,6 +17,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(tarp_full_description);
 
         model = "\a3\Props_F_Enoch\Military\Decontamination\HazmatBag_01_F.p3d";
+        picture = QUOTE(\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\HazmatBag_01_F.jpg);
 
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 12;

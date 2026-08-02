@@ -30,15 +30,20 @@ private _onConstruct = {
     params ["_object", "_caller"];
 
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
+    private _weaponHolder = createVehicle ["GroundWeaponHolder_Scripted", getPos _object, [], 0, "CAN_COLLIDE"];
+    _object setVariable [QGVAR(weaponHolder), _weaponHolder];
 };
 
 private _onDeconstruct = {
-    params ["_target"];
+    params ["_object"];
 
-    deleteVehicle [_target nearObjects ITEM_PICKUP_RADIUS];
+    private _weaponHolder = _object getVariable [QGVAR(weaponHolder), objNull];
+    private _arrayItems = itemCargo _weaponHolder;
+
+    deleteVehicle _weaponHolder;
 
     // Give back the "full" item instead of the plain one if anything was dropped on the tarp
-    [QGVAR(tarp_full), ""] select (_droppedItems isEqualTo [])
+    [QGVAR(tarp_full), ""] select (_arrayItems isEqualTo [])
 };
 
 private _config = createHashMapFromArray [
