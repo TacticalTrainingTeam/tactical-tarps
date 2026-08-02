@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Andx
+ * Author: Andx, ACE Team
  *
  * Starts the progress bar for constructing a deployable item once its 3D
  * placement has been confirmed. Part of the TT "deployable tarp" framework.

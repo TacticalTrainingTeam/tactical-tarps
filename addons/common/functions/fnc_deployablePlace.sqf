@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Andx
+ * Author: Andx, ACE Team
  *
  * Shows a local-only ghost preview of the deployable object that follows the
  * caller's view and can be rotated with the mouse wheel. Confirming with the

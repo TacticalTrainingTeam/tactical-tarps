@@ -19,7 +19,7 @@
  * None
  *
  * Example:
- * [_config] call ttt_tarps_fnc_deployableAddActions;
+ * [_config] call tt_common_fnc_deployableAddActions;
  *
  * Public: Yes
  */
