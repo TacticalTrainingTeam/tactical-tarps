@@ -8,7 +8,7 @@ Tactical Tarps is a spin-off from the internal mod of the [Tactical Training Tea
 
 ## Documentation
 
-- Project docs: https://tacticaltrainingteam.github.io/tactical-tarps/
+- Project docs: <https://tacticaltrainingteam.github.io/tactical-tarps/>
 - Source docs: [docs](docs/index.md)
 
 ## License

@@ -20,16 +20,16 @@ It provides:
 
 ``` text
 Player opens ACE self interaction
-	└─ [Tarp type] ── [Color A]  ──► Progress bar (buildTime)
-								├─ [Color B]       └─ Tarp object is spawned
-								└─ ...             └─ Item is removed from inventory
-																	 └─ Event tt_common_tarpConstructed
+    └─ [Tarp type] ── [Color A]  ──► Progress bar (buildTime)
+                                ├─ [Color B]       └─ Tarp object is spawned
+                                └─ ...             └─ Item is removed from inventory
+                                                                     └─ Event tt_common_tarpConstructed
 
 Player opens ACE interact-with interaction on the tarp object
-	└─ [Pack up tarp]  ──► Progress bar (buildTime × 1.5)
-													 └─ Tarp object is deleted
-													 └─ Event tt_common_tarpDeconstructed
-													 └─ Item is returned to inventory
+    └─ [Pack up tarp]  ──► Progress bar (buildTime × 1.5)
+                                                     └─ Tarp object is deleted
+                                                     └─ Event tt_common_tarpDeconstructed
+                                                     └─ Item is returned to inventory
 ```
 
 ## Object variables

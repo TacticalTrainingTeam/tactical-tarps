@@ -14,29 +14,29 @@ Complete integration example:
 
 ``` cpp
 private _config = createHashMapFromArray [
-	["constructId", "my_addon_construct"],
-	["deconstructId", "my_addon_deconstruct"],
-	["tarpItems", [
-		["my_addon_tarp_Black", "Tarp_01_Large_Black_F"],
-		["my_addon_tarp_Green", "Tarp_01_Large_Green_F"]
-	]],
-	["inUseVar", "my_addon_inUse"],
-	["buildTime", 10],
-	["constructText", "Deploying tarp..."],
-	["deconstructText", "Packing up tarp..."],
-	["abortText", "Aborted"],
-	["hintErrorNoSpace", "No space available"],
-	["hintLoaded", "Tarp has been packed up"],
+    ["constructId", "my_addon_construct"],
+    ["deconstructId", "my_addon_deconstruct"],
+    ["tarpItems", [
+        ["my_addon_tarp_Black", "Tarp_01_Large_Black_F"],
+        ["my_addon_tarp_Green", "Tarp_01_Large_Green_F"]
+    ]],
+    ["inUseVar", "my_addon_inUse"],
+    ["buildTime", 10],
+    ["constructText", "Deploying tarp..."],
+    ["deconstructText", "Packing up tarp..."],
+    ["abortText", "Aborted"],
+    ["hintErrorNoSpace", "No space available"],
+    ["hintLoaded", "Tarp has been packed up"],
 
-	// Optional
-	["useAnimation", true],
-	["animation", "Acts_carFixingWheel"],
-	["onConstruct", {
-		params ["_object", "_caller", "_config"];
-	}],
-	["onDeconstruct", {
-		params ["_target", "_caller", "_config"];
-	}]
+    // Optional
+    ["useAnimation", true],
+    ["animation", "Acts_carFixingWheel"],
+    ["onConstruct", {
+        params ["_object", "_caller", "_config"];
+    }],
+    ["onDeconstruct", {
+        params ["_target", "_caller", "_config"];
+    }]
 ];
 
 [_config] call tt_common_fnc_deployableAddActions;
