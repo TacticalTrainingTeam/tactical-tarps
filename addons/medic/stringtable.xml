@@ -3,79 +3,516 @@
     <Package name="Medic">
         <Key ID="STR_tt_Medic_SubCategory">
             <English>Medical Tarp</English>
+            <Czech>Zdravotnická plachta</Czech>
+            <French>Bâche médicale</French>
+            <Spanish>Lona médica</Spanish>
+            <Italian>Telone medico</Italian>
+            <Polish>Plandeka medyczna</Polish>
+            <Portuguese>Lona médica</Portuguese>
+            <Russian>Медицинский тент</Russian>
             <German>Medizinischer Tarp</German>
+            <Korean>의료용 방수포</Korean>
+            <Japanese>医療用シート</Japanese>
+            <Chinese>醫療帆布</Chinese>
+            <Chinesesimp>医疗帆布</Chinesesimp>
+            <Turkish>Tıbbi Branda</Turkish>
+            <Swedish>Medicinsk presenning</Swedish>
+            <Slovak>Zdravotnícka plachta</Slovak>
+            <Norwegian>Medisinsk presenning</Norwegian>
+            <Icelandic>Sjúkradúkur</Icelandic>
+            <Hungarian>Orvosi ponyva</Hungarian>
+            <Greek>Ιατρικός Μουσαμάς</Greek>
+            <Finnish>Lääkintäpeite</Finnish>
+            <Dutch>Medisch dekzeil</Dutch>
+            <Ukrainian>Медичний тент</Ukrainian>
+            <Bulgarian>Медицински брезент</Bulgarian>
+            <Latin>Tegumentum Medicinale</Latin>
         </Key>
         <Key ID="STR_tt_Medic_abort">
             <English>Action aborted</English>
+            <Czech>Akce přerušena</Czech>
+            <French>Action annulée</French>
+            <Spanish>Acción cancelada</Spanish>
+            <Italian>Azione interrotta</Italian>
+            <Polish>Czynność przerwana</Polish>
+            <Portuguese>Ação cancelada</Portuguese>
+            <Russian>Действие прервано</Russian>
             <German>Vorgang abgebrochen</German>
+            <Korean>동작이 중단되었습니다</Korean>
+            <Japanese>動作が中止されました</Japanese>
+            <Chinese>動作已中止</Chinese>
+            <Chinesesimp>动作已中止</Chinesesimp>
+            <Turkish>İşlem iptal edildi</Turkish>
+            <Swedish>Åtgärden avbröts</Swedish>
+            <Slovak>Akcia prerušená</Slovak>
+            <Norwegian>Handlingen ble avbrutt</Norwegian>
+            <Icelandic>Hætt var við aðgerðina</Icelandic>
+            <Hungarian>A művelet megszakítva</Hungarian>
+            <Greek>Η ενέργεια ματαιώθηκε</Greek>
+            <Finnish>Toiminto keskeytetty</Finnish>
+            <Dutch>Actie afgebroken</Dutch>
+            <Ukrainian>Дію перервано</Ukrainian>
+            <Bulgarian>Действието е прекратено</Bulgarian>
+            <Latin>Actio interrupta</Latin>
         </Key>
         <Key ID="STR_tt_Medic_actionConstruct">
             <English>Lay out medical tarp</English>
+            <Czech>Rozložit zdravotnickou plachtu</Czech>
+            <French>Déployer la bâche médicale</French>
+            <Spanish>Desplegar lona médica</Spanish>
+            <Italian>Stendi il telone medico</Italian>
+            <Polish>Rozłóż plandekę medyczną</Polish>
+            <Portuguese>Estender lona médica</Portuguese>
+            <Russian>Расстелить медицинский тент</Russian>
             <German>Medizinischen Tarp auslegen</German>
+            <Korean>의료용 방수포 펼치기</Korean>
+            <Japanese>医療用シートを広げる</Japanese>
+            <Chinese>鋪設醫療帆布</Chinese>
+            <Chinesesimp>铺设医疗帆布</Chinesesimp>
+            <Turkish>Tıbbi brandayı ser</Turkish>
+            <Swedish>Lägg ut medicinsk presenning</Swedish>
+            <Slovak>Rozložiť zdravotnícku plachtu</Slovak>
+            <Norwegian>Legg ut medisinsk presenning</Norwegian>
+            <Icelandic>Leggja út sjúkradúk</Icelandic>
+            <Hungarian>Orvosi ponyva kiterítése</Hungarian>
+            <Greek>Άπλωμα ιατρικού μουσαμά</Greek>
+            <Finnish>Levitä lääkintäpeite</Finnish>
+            <Dutch>Medisch dekzeil uitleggen</Dutch>
+            <Ukrainian>Розстелити медичний тент</Ukrainian>
+            <Bulgarian>Разгъни медицински брезент</Bulgarian>
+            <Latin>Tegumentum medicinale extende</Latin>
         </Key>
         <Key ID="STR_tt_Medic_actionDeconstruct">
             <English>Stow medical tarp into backpack</English>
+            <Czech>Uložit zdravotnickou plachtu do batohu</Czech>
+            <French>Ranger la bâche médicale dans le sac à dos</French>
+            <Spanish>Guardar la lona médica en la mochila</Spanish>
+            <Italian>Riponi il telone medico nello zaino</Italian>
+            <Polish>Schowaj plandekę medyczną do plecaka</Polish>
+            <Portuguese>Guardar a lona médica na mochila</Portuguese>
+            <Russian>Убрать медицинский тент в рюкзак</Russian>
             <German>Packe medizinischen Tarp in Rucksack</German>
+            <Korean>의료용 방수포를 배낭에 수납</Korean>
+            <Japanese>医療用シートをバックパックに収納</Japanese>
+            <Chinese>將醫療帆布收入背包</Chinese>
+            <Chinesesimp>将医疗帆布收入背包</Chinesesimp>
+            <Turkish>Tıbbi brandayı sırt çantasına kaldır</Turkish>
+            <Swedish>Packa ner den medicinska presenningen i ryggsäcken</Swedish>
+            <Slovak>Uložiť zdravotnícku plachtu do batohu</Slovak>
+            <Norwegian>Legg den medisinske presenningen i sekken</Norwegian>
+            <Icelandic>Setja sjúkradúkinn í bakpokann</Icelandic>
+            <Hungarian>Orvosi ponyva berakása a hátizsákba</Hungarian>
+            <Greek>Αποθήκευση ιατρικού μουσαμά στο σακίδιο</Greek>
+            <Finnish>Laita lääkintäpeite reppuun</Finnish>
+            <Dutch>Medisch dekzeil opbergen in de rugzak</Dutch>
+            <Ukrainian>Прибрати медичний тент у рюкзак</Ukrainian>
+            <Bulgarian>Прибери медицинския брезент в раницата</Bulgarian>
+            <Latin>Tegumentum medicinale in sarcinam repone</Latin>
         </Key>
         <Key ID="STR_tt_Medic_hintErrorNoSpace">
             <English>No space to lay out the tarp</English>
+            <Czech>Není dostatek místa k rozložení plachty</Czech>
+            <French>Pas assez de place pour déployer la bâche</French>
+            <Spanish>No hay espacio para desplegar la lona</Spanish>
+            <Italian>Non c'è spazio per stendere il telone</Italian>
+            <Polish>Brak miejsca na rozłożenie plandeki</Polish>
+            <Portuguese>Não há espaço para estender a lona</Portuguese>
+            <Russian>Недостаточно места, чтобы расстелить тент</Russian>
             <German>Nicht genug Platz zum Auslegen des Tarps vorhanden.</German>
+            <Korean>방수포를 펼칠 공간이 없습니다</Korean>
+            <Japanese>シートを広げるスペースがありません</Japanese>
+            <Chinese>沒有足夠空間鋪設帆布</Chinese>
+            <Chinesesimp>没有足够空间铺设帆布</Chinesesimp>
+            <Turkish>Brandayı sermek için yeterli alan yok</Turkish>
+            <Swedish>Inte tillräckligt med utrymme för att lägga ut presenningen</Swedish>
+            <Slovak>Nedostatok miesta na rozloženie plachty</Slovak>
+            <Norwegian>Ikke nok plass til å legge ut presenningen</Norwegian>
+            <Icelandic>Ekki nóg pláss til að leggja út dúkinn</Icelandic>
+            <Hungarian>Nincs elég hely a ponyva kiterítéséhez</Hungarian>
+            <Greek>Δεν υπάρχει χώρος για να απλωθεί ο μουσαμάς</Greek>
+            <Finnish>Ei tarpeeksi tilaa suojapeitteen levittämiseen</Finnish>
+            <Dutch>Niet genoeg ruimte om het dekzeil uit te leggen</Dutch>
+            <Ukrainian>Недостатньо місця, щоб розстелити тент</Ukrainian>
+            <Bulgarian>Няма достатъчно място за разгъване на брезента</Bulgarian>
+            <Latin>Non est spatium ad tegumentum extendendum</Latin>
         </Key>
         <Key ID="STR_tt_Medic_hintLoaded">
             <English>The tarp was stowed into the backpack.</English>
+            <Czech>Plachta byla uložena do batohu.</Czech>
+            <French>La bâche a été rangée dans le sac à dos.</French>
+            <Spanish>La lona fue guardada en la mochila.</Spanish>
+            <Italian>Il telone è stato riposto nello zaino.</Italian>
+            <Polish>Plandeka została schowana do plecaka.</Polish>
+            <Portuguese>A lona foi guardada na mochila.</Portuguese>
+            <Russian>Тент был убран в рюкзак.</Russian>
             <German>"Das Tarp wurde in den Rucksack gepackt."</German>
+            <Korean>방수포가 배낭에 수납되었습니다.</Korean>
+            <Japanese>シートはバックパックに収納されました。</Japanese>
+            <Chinese>帆布已收入背包。</Chinese>
+            <Chinesesimp>帆布已收入背包。</Chinesesimp>
+            <Turkish>Branda sırt çantasına kaldırıldı.</Turkish>
+            <Swedish>Presenningen packades ner i ryggsäcken.</Swedish>
+            <Slovak>Plachta bola uložená do batohu.</Slovak>
+            <Norwegian>Presenningen ble lagt i sekken.</Norwegian>
+            <Icelandic>Dúkurinn var settur í bakpokann.</Icelandic>
+            <Hungarian>A ponyva a hátizsákba lett rakva.</Hungarian>
+            <Greek>Ο μουσαμάς αποθηκεύτηκε στο σακίδιο.</Greek>
+            <Finnish>Suojapeite laitettiin reppuun.</Finnish>
+            <Dutch>Het dekzeil is opgeborgen in de rugzak.</Dutch>
+            <Ukrainian>Тент прибрано в рюкзак.</Ukrainian>
+            <Bulgarian>Брезентът беше прибран в раницата.</Bulgarian>
+            <Latin>Tegumentum in sarcina repositum est.</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingAdditionalItems_description">
             <English>Classnames of additional items to be placed on/near the facility.\ni.e.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(The array must be enclosed with ' in cba_settings.sqf)</English>
+            <Czech>Classnames dalších předmětů, které mají být umístěny na/poblíž zařízení.\nnapř.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Pole musí být v cba_settings.sqf uzavřeno v ')</Czech>
+            <French>Noms de classe des objets supplémentaires à placer sur/près de l'installation.\nex. : ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Le tableau doit être entouré de ' dans cba_settings.sqf)</French>
+            <Spanish>Nombres de clase de objetos adicionales para colocar en/cerca de la instalación.\nej.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(La matriz debe estar encerrada con ' en cba_settings.sqf)</Spanish>
+            <Italian>Nomi classe di oggetti aggiuntivi da posizionare su/vicino alla struttura.\nes.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(L'array deve essere racchiuso tra ' in cba_settings.sqf)</Italian>
+            <Polish>Nazwy klas dodatkowych przedmiotów do umieszczenia na/w pobliżu obiektu.\nnp.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Tablica musi być ujęta w ' w cba_settings.sqf)</Polish>
+            <Portuguese>Nomes de classe de itens adicionais a serem colocados sobre/perto da instalação.\nex.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(A matriz deve estar entre ' no cba_settings.sqf)</Portuguese>
+            <Russian>Классы дополнительных предметов, размещаемых на/возле объекта.\nнапр.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Массив должен быть заключён в ' в cba_settings.sqf)</Russian>
             <German>Klassennamen zusätzlicher Objekte die auf/bei der Einrichtung platziert werden sollen.\nBsp: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(In der cba_settings.sqf muss das Array mit ' umschlossen werden)</German>
+            <Korean>시설 위/근처에 배치할 추가 아이템의 클래스명.\n예: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(cba_settings.sqf에서는 배열을 '로 감싸야 합니다)</Korean>
+            <Japanese>施設の上または近くに配置する追加アイテムのクラス名。\n例：["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(cba_settings.sqf では配列を ' で囲む必要があります)</Japanese>
+            <Chinese>要放置在設施上/附近的額外物品的類別名稱。\n例如：["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(在 cba_settings.sqf 中，陣列必須用 ' 括起來)</Chinese>
+            <Chinesesimp>要放置在设施上/附近的额外物品的类别名称。\n例如：["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(在 cba_settings.sqf 中，数组必须用 ' 括起来)</Chinesesimp>
+            <Turkish>Tesisin üzerine/yakınına yerleştirilecek ek eşyaların sınıf adları.\nör.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Dizi, cba_settings.sqf içinde ' ile çevrelenmelidir)</Turkish>
+            <Swedish>Klassnamn för ytterligare föremål som ska placeras på/nära anläggningen.\nt.ex.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Arrayen måste omges av ' i cba_settings.sqf)</Swedish>
+            <Slovak>Názvy tried ďalších predmetov, ktoré sa majú umiestniť na/pri zariadení.\nnapr.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Pole musí byť v cba_settings.sqf uzavreté v ')</Slovak>
+            <Norwegian>Klassenavn på tilleggsgjenstander som skal plasseres på/nær anlegget.\nf.eks.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Arrayet må være omsluttet av ' i cba_settings.sqf)</Norwegian>
+            <Icelandic>Flokksnöfn aukahluta sem á að setja á/nálægt aðstöðunni.\nt.d.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Fylkið verður að vera umlukið ' í cba_settings.sqf)</Icelandic>
+            <Hungarian>A létesítmény mellé/közelébe helyezendő további tárgyak osztálynevei.\npl.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(A tömböt a cba_settings.sqf fájlban ' jelek közé kell zárni)</Hungarian>
+            <Greek>Ονόματα κλάσεων πρόσθετων αντικειμένων που θα τοποθετηθούν πάνω/κοντά στην εγκατάσταση.\nπ.χ.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Ο πίνακας πρέπει να περικλείεται σε ' στο cba_settings.sqf)</Greek>
+            <Finnish>Lisäesineiden luokkanimet, jotka sijoitetaan tilan päälle/lähelle.\nesim.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Taulukko on suljettava ' -merkeillä tiedostossa cba_settings.sqf)</Finnish>
+            <Dutch>Classnamen van extra voorwerpen die op/bij de faciliteit geplaatst moeten worden.\nbijv.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(De array moet in cba_settings.sqf tussen ' staan)</Dutch>
+            <Ukrainian>Класи додаткових предметів, які розміщуються на/біля об'єкта.\nнапр.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Масив має бути взятий у ' у cba_settings.sqf)</Ukrainian>
+            <Bulgarian>Класови имена на допълнителни предмети, които да се поставят върху/близо до съоръжението.\nнапр.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Масивът трябва да бъде ограден с ' в cba_settings.sqf)</Bulgarian>
+            <Latin>Nomina classium rerum additarum quae prope instrumentum ponendae sunt.\nex. gr.: ["Land_Camping_Light_F","Land_FirstAidKit_01_open_F","Land_Defibrillator_F"]\n(Ordo in cba_settings.sqf signis ' includi debet)</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingAdditionalItems_name">
             <English>Additional Objects</English>
+            <Czech>Další objekty</Czech>
+            <French>Objets supplémentaires</French>
+            <Spanish>Objetos adicionales</Spanish>
+            <Italian>Oggetti aggiuntivi</Italian>
+            <Polish>Dodatkowe obiekty</Polish>
+            <Portuguese>Objetos adicionais</Portuguese>
+            <Russian>Дополнительные объекты</Russian>
             <German>Zusätzliche Objekte</German>
+            <Korean>추가 오브젝트</Korean>
+            <Japanese>追加オブジェクト</Japanese>
+            <Chinese>額外物件</Chinese>
+            <Chinesesimp>额外物件</Chinesesimp>
+            <Turkish>Ek Nesneler</Turkish>
+            <Swedish>Ytterligare objekt</Swedish>
+            <Slovak>Ďalšie objekty</Slovak>
+            <Norwegian>Tilleggsobjekter</Norwegian>
+            <Icelandic>Aukahlutir</Icelandic>
+            <Hungarian>További objektumok</Hungarian>
+            <Greek>Πρόσθετα Αντικείμενα</Greek>
+            <Finnish>Lisäesineet</Finnish>
+            <Dutch>Extra objecten</Dutch>
+            <Ukrainian>Додаткові об'єкти</Ukrainian>
+            <Bulgarian>Допълнителни обекти</Bulgarian>
+            <Latin>Res Additae</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingBuildAnimation_description">
             <English>The name of the animation to be played.\ni.e.: Acts_carFixingWheel</English>
+            <Czech>Název animace, která se má přehrát.\nnapř.: Acts_carFixingWheel</Czech>
+            <French>Le nom de l'animation à jouer.\nex. : Acts_carFixingWheel</French>
+            <Spanish>El nombre de la animación que se reproducirá.\nej.: Acts_carFixingWheel</Spanish>
+            <Italian>Il nome dell'animazione da riprodurre.\nes.: Acts_carFixingWheel</Italian>
+            <Polish>Nazwa animacji do odtworzenia.\nnp.: Acts_carFixingWheel</Polish>
+            <Portuguese>O nome da animação a ser reproduzida.\nex.: Acts_carFixingWheel</Portuguese>
+            <Russian>Название анимации, которая будет воспроизведена.\nнапр.: Acts_carFixingWheel</Russian>
             <German>Die Bezeichnung der abzuspielenden Animation.\nBsp.: Acts_carFixingWheel</German>
+            <Korean>재생할 애니메이션의 이름.\n예: Acts_carFixingWheel</Korean>
+            <Japanese>再生するアニメーションの名前。\n例：Acts_carFixingWheel</Japanese>
+            <Chinese>要播放的動畫名稱。\n例如：Acts_carFixingWheel</Chinese>
+            <Chinesesimp>要播放的动画名称。\n例如：Acts_carFixingWheel</Chinesesimp>
+            <Turkish>Oynatılacak animasyonun adı.\nör.: Acts_carFixingWheel</Turkish>
+            <Swedish>Namnet på animationen som ska spelas.\nt.ex.: Acts_carFixingWheel</Swedish>
+            <Slovak>Názov animácie, ktorá sa má prehrať.\nnapr.: Acts_carFixingWheel</Slovak>
+            <Norwegian>Navnet på animasjonen som skal spilles av.\nf.eks.: Acts_carFixingWheel</Norwegian>
+            <Icelandic>Nafn hreyfimyndarinnar sem á að spila.\nt.d.: Acts_carFixingWheel</Icelandic>
+            <Hungarian>A lejátszandó animáció neve.\npl.: Acts_carFixingWheel</Hungarian>
+            <Greek>Το όνομα της κίνησης που θα αναπαραχθεί.\nπ.χ.: Acts_carFixingWheel</Greek>
+            <Finnish>Toistettavan animaation nimi.\nesim.: Acts_carFixingWheel</Finnish>
+            <Dutch>De naam van de animatie die moet worden afgespeeld.\nbijv.: Acts_carFixingWheel</Dutch>
+            <Ukrainian>Назва анімації, яку буде відтворено.\nнапр.: Acts_carFixingWheel</Ukrainian>
+            <Bulgarian>Името на анимацията, която ще се възпроизведе.\nнапр.: Acts_carFixingWheel</Bulgarian>
+            <Latin>Nomen animationis agendae.\nex. gr.: Acts_carFixingWheel</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingBuildAnimation_name">
             <English>Animation</English>
+            <Czech>Animace</Czech>
+            <French>Animation</French>
+            <Spanish>Animación</Spanish>
+            <Italian>Animazione</Italian>
+            <Polish>Animacja</Polish>
+            <Portuguese>Animação</Portuguese>
+            <Russian>Анимация</Russian>
             <German>Animation</German>
+            <Korean>애니메이션</Korean>
+            <Japanese>アニメーション</Japanese>
+            <Chinese>動畫</Chinese>
+            <Chinesesimp>动画</Chinesesimp>
+            <Turkish>Animasyon</Turkish>
+            <Swedish>Animation</Swedish>
+            <Slovak>Animácia</Slovak>
+            <Norwegian>Animasjon</Norwegian>
+            <Icelandic>Hreyfimynd</Icelandic>
+            <Hungarian>Animáció</Hungarian>
+            <Greek>Κίνηση</Greek>
+            <Finnish>Animaatio</Finnish>
+            <Dutch>Animatie</Dutch>
+            <Ukrainian>Анімація</Ukrainian>
+            <Bulgarian>Анимация</Bulgarian>
+            <Latin>Animatio</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingBuildTime_description">
             <English>How many seconds does the player need to lay out the tarp.</English>
+            <Czech>Kolik sekund potřebuje hráč k rozložení plachty.</Czech>
+            <French>Combien de secondes le joueur a besoin pour déployer la bâche.</French>
+            <Spanish>Cuántos segundos necesita el jugador para desplegar la lona.</Spanish>
+            <Italian>Quanti secondi impiega il giocatore a stendere il telone.</Italian>
+            <Polish>Ile sekund gracz potrzebuje na rozłożenie plandeki.</Polish>
+            <Portuguese>Quantos segundos o jogador precisa para estender a lona.</Portuguese>
+            <Russian>Сколько секунд нужно игроку, чтобы расстелить тент.</Russian>
             <German>Wie viele Sekunden der Spieler braucht, um den Tarp auszulegen.</German>
+            <Korean>플레이어가 방수포를 펼치는 데 필요한 시간(초).</Korean>
+            <Japanese>プレイヤーがシートを広げるのに必要な秒数。</Japanese>
+            <Chinese>玩家鋪設帆布所需的秒數。</Chinese>
+            <Chinesesimp>玩家铺设帆布所需的秒数。</Chinesesimp>
+            <Turkish>Oyuncunun brandayı sermesi için kaç saniyeye ihtiyacı var.</Turkish>
+            <Swedish>Hur många sekunder spelaren behöver för att lägga ut presenningen.</Swedish>
+            <Slovak>Koľko sekúnd potrebuje hráč na rozloženie plachty.</Slovak>
+            <Norwegian>Hvor mange sekunder spilleren trenger for å legge ut presenningen.</Norwegian>
+            <Icelandic>Hversu margar sekúndur leikmaðurinn þarf til að leggja út dúkinn.</Icelandic>
+            <Hungarian>Hány másodpercre van szüksége a játékosnak a ponyva kiterítéséhez.</Hungarian>
+            <Greek>Πόσα δευτερόλεπτα χρειάζεται ο παίκτης για να απλώσει τον μουσαμά.</Greek>
+            <Finnish>Kuinka monta sekuntia pelaaja tarvitsee suojapeitteen levittämiseen.</Finnish>
+            <Dutch>Hoeveel seconden de speler nodig heeft om het dekzeil uit te leggen.</Dutch>
+            <Ukrainian>Скільки секунд потрібно гравцю, щоб розстелити тент.</Ukrainian>
+            <Bulgarian>Колко секунди са необходими на играча за разгъване на брезента.</Bulgarian>
+            <Latin>Quot secunda lusori necessaria sunt ut tegumentum extendat.</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingBuildTime_name">
             <English>Buildtime</English>
+            <Czech>Doba stavby</Czech>
+            <French>Temps de construction</French>
+            <Spanish>Tiempo de construcción</Spanish>
+            <Italian>Tempo di costruzione</Italian>
+            <Polish>Czas budowy</Polish>
+            <Portuguese>Tempo de construção</Portuguese>
+            <Russian>Время постройки</Russian>
             <German>Bauzeit</German>
+            <Korean>제작 시간</Korean>
+            <Japanese>設営時間</Japanese>
+            <Chinese>建造時間</Chinese>
+            <Chinesesimp>建造时间</Chinesesimp>
+            <Turkish>Kurulum Süresi</Turkish>
+            <Swedish>Byggtid</Swedish>
+            <Slovak>Čas výstavby</Slovak>
+            <Norwegian>Byggetid</Norwegian>
+            <Icelandic>Byggingartími</Icelandic>
+            <Hungarian>Építési idő</Hungarian>
+            <Greek>Χρόνος κατασκευής</Greek>
+            <Finnish>Rakennusaika</Finnish>
+            <Dutch>Bouwtijd</Dutch>
+            <Ukrainian>Час встановлення</Ukrainian>
+            <Bulgarian>Време за изграждане</Bulgarian>
+            <Latin>Tempus exstructionis</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingUseAnimation_description">
             <English>Should the player play an animation during the execution.\n(the animation duration is not taken into account)</English>
+            <Czech>Má hráč během provádění přehrát animaci.\n(délka animace se nebere v úvahu)</Czech>
+            <French>Le joueur doit-il jouer une animation pendant l'exécution.\n(la durée de l'animation n'est pas prise en compte)</French>
+            <Spanish>Si el jugador debe reproducir una animación durante la ejecución.\n(la duración de la animación no se tiene en cuenta)</Spanish>
+            <Italian>Se il giocatore deve riprodurre un'animazione durante l'esecuzione.\n(la durata dell'animazione non viene considerata)</Italian>
+            <Polish>Czy gracz ma odtworzyć animację podczas wykonywania czynności.\n(czas trwania animacji nie jest brany pod uwagę)</Polish>
+            <Portuguese>Se o jogador deve reproduzir uma animação durante a execução.\n(a duração da animação não é levada em conta)</Portuguese>
+            <Russian>Должен ли игрок воспроизводить анимацию во время выполнения действия.\n(продолжительность анимации не учитывается)</Russian>
             <German>Soll der Spieler während der Durchführung eine Animation abspielen.\n(Die Animationsdauer wird nicht berücksichtigt)</German>
+            <Korean>실행 중 플레이어가 애니메이션을 재생해야 하는지 여부.\n(애니메이션 재생 시간은 고려되지 않습니다)</Korean>
+            <Japanese>実行中にプレイヤーがアニメーションを再生するかどうか。\n(アニメーションの長さは考慮されません)</Japanese>
+            <Chinese>玩家在執行期間是否應播放動畫。\n(動畫時長不計入內)</Chinese>
+            <Chinesesimp>玩家在执行期间是否应播放动画。\n(动画时长不计入内)</Chinesesimp>
+            <Turkish>Oyuncunun işlem sırasında bir animasyon oynatıp oynatmayacağı.\n(animasyon süresi hesaba katılmaz)</Turkish>
+            <Swedish>Om spelaren ska spela en animation under utförandet.\n(animationens längd tas inte med i beräkningen)</Swedish>
+            <Slovak>Či má hráč počas vykonávania prehrať animáciu.\n(dĺžka animácie sa neberie do úvahy)</Slovak>
+            <Norwegian>Om spilleren skal spille av en animasjon under utførelsen.\n(animasjonens varighet tas ikke med i beregningen)</Norwegian>
+            <Icelandic>Hvort leikmaðurinn eigi að spila hreyfimynd meðan á framkvæmd stendur.\n(lengd hreyfimyndarinnar er ekki tekin með í reikninginn)</Icelandic>
+            <Hungarian>Játsszon-e le a játékos animációt a végrehajtás közben.\n(az animáció időtartama nem számít bele)</Hungarian>
+            <Greek>Αν ο παίκτης πρέπει να αναπαράγει μια κίνηση κατά την εκτέλεση.\n(η διάρκεια της κίνησης δεν λαμβάνεται υπόψη)</Greek>
+            <Finnish>Toistaako pelaaja animaation suorituksen aikana.\n(animaation kestoa ei oteta huomioon)</Finnish>
+            <Dutch>Of de speler tijdens de uitvoering een animatie moet afspelen.\n(de duur van de animatie wordt niet meegerekend)</Dutch>
+            <Ukrainian>Чи повинен гравець відтворювати анімацію під час виконання.\n(тривалість анімації не враховується)</Ukrainian>
+            <Bulgarian>Дали играчът трябва да възпроизведе анимация по време на изпълнението.\n(продължителността на анимацията не се взема предвид)</Bulgarian>
+            <Latin>Utrum lusor animationem durante actione agere debeat.\n(duratio animationis non computatur)</Latin>
         </Key>
         <Key ID="STR_tt_Medic_settingUseAnimation_name">
             <English>Play Animation</English>
+            <Czech>Přehrát animaci</Czech>
+            <French>Jouer l'animation</French>
+            <Spanish>Reproducir animación</Spanish>
+            <Italian>Riproduci animazione</Italian>
+            <Polish>Odtwórz animację</Polish>
+            <Portuguese>Reproduzir animação</Portuguese>
+            <Russian>Воспроизвести анимацию</Russian>
             <German>Animation abspielen</German>
+            <Korean>애니메이션 재생</Korean>
+            <Japanese>アニメーションを再生</Japanese>
+            <Chinese>播放動畫</Chinese>
+            <Chinesesimp>播放动画</Chinesesimp>
+            <Turkish>Animasyonu Oynat</Turkish>
+            <Swedish>Spela animation</Swedish>
+            <Slovak>Prehrať animáciu</Slovak>
+            <Norwegian>Spill av animasjon</Norwegian>
+            <Icelandic>Spila hreyfimynd</Icelandic>
+            <Hungarian>Animáció lejátszása</Hungarian>
+            <Greek>Αναπαραγωγή κίνησης</Greek>
+            <Finnish>Toista animaatio</Finnish>
+            <Dutch>Animatie afspelen</Dutch>
+            <Ukrainian>Відтворити анімацію</Ukrainian>
+            <Bulgarian>Възпроизведи анимация</Bulgarian>
+            <Latin>Animationem age</Latin>
         </Key>
         <Key ID="STR_tt_Medic_tarp_black_displayName">
             <English>Medical Tarp (Black)</English>
+            <Czech>Zdravotnická plachta (Černá)</Czech>
+            <French>Bâche médicale (Noir)</French>
+            <Spanish>Lona médica (Negro)</Spanish>
+            <Italian>Telone medico (Nero)</Italian>
+            <Polish>Plandeka medyczna (Czarny)</Polish>
+            <Portuguese>Lona médica (Preto)</Portuguese>
+            <Russian>Медицинский тент (Чёрный)</Russian>
             <German>Medizinischer Tarp (Schwarz)</German>
+            <Korean>의료용 방수포 (검정)</Korean>
+            <Japanese>医療用シート（黒）</Japanese>
+            <Chinese>醫療帆布（黑色）</Chinese>
+            <Chinesesimp>医疗帆布（黑色）</Chinesesimp>
+            <Turkish>Tıbbi Branda (Siyah)</Turkish>
+            <Swedish>Medicinsk presenning (Svart)</Swedish>
+            <Slovak>Zdravotnícka plachta (Čierna)</Slovak>
+            <Norwegian>Medisinsk presenning (Svart)</Norwegian>
+            <Icelandic>Sjúkradúkur (Svartur)</Icelandic>
+            <Hungarian>Orvosi ponyva (Fekete)</Hungarian>
+            <Greek>Ιατρικός Μουσαμάς (Μαύρο)</Greek>
+            <Finnish>Lääkintäpeite (Musta)</Finnish>
+            <Dutch>Medisch dekzeil (Zwart)</Dutch>
+            <Ukrainian>Медичний тент (Чорний)</Ukrainian>
+            <Bulgarian>Медицински брезент (Черен)</Bulgarian>
+            <Latin>Tegumentum Medicinale (Nigrum)</Latin>
         </Key>
         <Key ID="STR_tt_Medic_tarp_description">
             <English>A tarp that sets up a medical facility when deployed.</English>
+            <Czech>Plachta, která po rozložení vytvoří zdravotnické zařízení.</Czech>
+            <French>Une bâche qui met en place une installation médicale une fois déployée.</French>
+            <Spanish>Una lona que establece una instalación médica al desplegarse.</Spanish>
+            <Italian>Un telone che allestisce una struttura medica una volta steso.</Italian>
+            <Polish>Plandeka, która po rozłożeniu tworzy obiekt medyczny.</Polish>
+            <Portuguese>Uma lona que monta uma instalação médica quando estendida.</Portuguese>
+            <Russian>Тент, который при развёртывании образует медицинский пункт.</Russian>
             <German>Ein Tarp, das beim Auslegen eine medizinische Einrichtung aufbaut.</German>
+            <Korean>배치하면 의료 시설이 설치되는 방수포입니다.</Korean>
+            <Japanese>展開すると医療施設が設営されるシートです。</Japanese>
+            <Chinese>一塊部署後可建立醫療設施的帆布。</Chinese>
+            <Chinesesimp>一块部署后可建立医疗设施的帆布。</Chinesesimp>
+            <Turkish>Serildiğinde bir tıbbi tesis kuran bir branda.</Turkish>
+            <Swedish>En presenning som upprättar en medicinsk anläggning när den läggs ut.</Swedish>
+            <Slovak>Plachta, ktorá po rozložení vytvorí zdravotnícke zariadenie.</Slovak>
+            <Norwegian>En presenning som oppretter et medisinsk anlegg når den legges ut.</Norwegian>
+            <Icelandic>Dúkur sem setur upp sjúkraaðstöðu þegar hann er lagður út.</Icelandic>
+            <Hungarian>Egy ponyva, amely kiterítve orvosi létesítményt hoz létre.</Hungarian>
+            <Greek>Ένας μουσαμάς που δημιουργεί μια ιατρική εγκατάσταση όταν απλωθεί.</Greek>
+            <Finnish>Peite, joka levitettynä muodostaa lääkintätilan.</Finnish>
+            <Dutch>Een dekzeil dat bij uitleggen een medische faciliteit opzet.</Dutch>
+            <Ukrainian>Тент, який після розгортання створює медичний пункт.</Ukrainian>
+            <Bulgarian>Брезент, който при разгъване изгражда медицинско съоръжение.</Bulgarian>
+            <Latin>Tegumentum quod, cum extenditur, instrumentum medicinale constituit.</Latin>
         </Key>
         <Key ID="STR_tt_Medic_tarp_green_displayName">
             <English>Medical Tarp (Green)</English>
+            <Czech>Zdravotnická plachta (Zelená)</Czech>
+            <French>Bâche médicale (Vert)</French>
+            <Spanish>Lona médica (Verde)</Spanish>
+            <Italian>Telone medico (Verde)</Italian>
+            <Polish>Plandeka medyczna (Zielony)</Polish>
+            <Portuguese>Lona médica (Verde)</Portuguese>
+            <Russian>Медицинский тент (Зелёный)</Russian>
             <German>Medizinischer Tarp (Grün)</German>
+            <Korean>의료용 방수포 (초록)</Korean>
+            <Japanese>医療用シート（緑）</Japanese>
+            <Chinese>醫療帆布（綠色）</Chinese>
+            <Chinesesimp>医疗帆布（绿色）</Chinesesimp>
+            <Turkish>Tıbbi Branda (Yeşil)</Turkish>
+            <Swedish>Medicinsk presenning (Grön)</Swedish>
+            <Slovak>Zdravotnícka plachta (Zelená)</Slovak>
+            <Norwegian>Medisinsk presenning (Grønn)</Norwegian>
+            <Icelandic>Sjúkradúkur (Grænn)</Icelandic>
+            <Hungarian>Orvosi ponyva (Zöld)</Hungarian>
+            <Greek>Ιατρικός Μουσαμάς (Πράσινο)</Greek>
+            <Finnish>Lääkintäpeite (Vihreä)</Finnish>
+            <Dutch>Medisch dekzeil (Groen)</Dutch>
+            <Ukrainian>Медичний тент (Зелений)</Ukrainian>
+            <Bulgarian>Медицински брезент (Зелен)</Bulgarian>
+            <Latin>Tegumentum Medicinale (Viride)</Latin>
         </Key>
         <Key ID="STR_tt_Medic_tarp_red_displayName">
             <English>Medical Tarp (Red)</English>
+            <Czech>Zdravotnická plachta (Červená)</Czech>
+            <French>Bâche médicale (Rouge)</French>
+            <Spanish>Lona médica (Rojo)</Spanish>
+            <Italian>Telone medico (Rosso)</Italian>
+            <Polish>Plandeka medyczna (Czerwony)</Polish>
+            <Portuguese>Lona médica (Vermelho)</Portuguese>
+            <Russian>Медицинский тент (Красный)</Russian>
             <German>Medizinischer Tarp (Rot)</German>
+            <Korean>의료용 방수포 (빨강)</Korean>
+            <Japanese>医療用シート（赤）</Japanese>
+            <Chinese>醫療帆布（紅色）</Chinese>
+            <Chinesesimp>医疗帆布（红色）</Chinesesimp>
+            <Turkish>Tıbbi Branda (Kırmızı)</Turkish>
+            <Swedish>Medicinsk presenning (Röd)</Swedish>
+            <Slovak>Zdravotnícka plachta (Červená)</Slovak>
+            <Norwegian>Medisinsk presenning (Rød)</Norwegian>
+            <Icelandic>Sjúkradúkur (Rauður)</Icelandic>
+            <Hungarian>Orvosi ponyva (Piros)</Hungarian>
+            <Greek>Ιατρικός Μουσαμάς (Κόκκινο)</Greek>
+            <Finnish>Lääkintäpeite (Punainen)</Finnish>
+            <Dutch>Medisch dekzeil (Rood)</Dutch>
+            <Ukrainian>Медичний тент (Червоний)</Ukrainian>
+            <Bulgarian>Медицински брезент (Червен)</Bulgarian>
+            <Latin>Tegumentum Medicinale (Rubrum)</Latin>
         </Key>
         <Key ID="STR_tt_Medic_tarp_yellow_displayName">
             <English>Medical Tarp (Yellow)</English>
+            <Czech>Zdravotnická plachta (Žlutá)</Czech>
+            <French>Bâche médicale (Jaune)</French>
+            <Spanish>Lona médica (Amarillo)</Spanish>
+            <Italian>Telone medico (Giallo)</Italian>
+            <Polish>Plandeka medyczna (Żółty)</Polish>
+            <Portuguese>Lona médica (Amarelo)</Portuguese>
+            <Russian>Медицинский тент (Жёлтый)</Russian>
             <German>Medizinischer Tarp (Gelb)</German>
+            <Korean>의료용 방수포 (노랑)</Korean>
+            <Japanese>医療用シート（黄）</Japanese>
+            <Chinese>醫療帆布（黃色）</Chinese>
+            <Chinesesimp>医疗帆布（黄色）</Chinesesimp>
+            <Turkish>Tıbbi Branda (Sarı)</Turkish>
+            <Swedish>Medicinsk presenning (Gul)</Swedish>
+            <Slovak>Zdravotnícka plachta (Žltá)</Slovak>
+            <Norwegian>Medisinsk presenning (Gul)</Norwegian>
+            <Icelandic>Sjúkradúkur (Gulur)</Icelandic>
+            <Hungarian>Orvosi ponyva (Sárga)</Hungarian>
+            <Greek>Ιατρικός Μουσαμάς (Κίτρινο)</Greek>
+            <Finnish>Lääkintäpeite (Keltainen)</Finnish>
+            <Dutch>Medisch dekzeil (Geel)</Dutch>
+            <Ukrainian>Медичний тент (Жовтий)</Ukrainian>
+            <Bulgarian>Медицински брезент (Жълт)</Bulgarian>
+            <Latin>Tegumentum Medicinale (Flavum)</Latin>
         </Key>
     </Package>
 </Project>

@@ -21,7 +21,7 @@ if (GVAR(addArsenalCategory)) then {
 
     GVAR(arsenalButton) = [
         _items,
-       "Tarps",
+       ELSTRING(main,Name),
        QPATHTOF(data\tt_icon.paa)
     ] call ace_arsenal_fnc_addRightPanelButton;
 };
