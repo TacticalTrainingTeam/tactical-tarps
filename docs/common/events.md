@@ -6,7 +6,7 @@ The `common` addon emits local CBA events on the triggering player's machine.
 
 Fired after a tarp has been successfully constructed.
 
-```sqf
+``` cpp
 ["tt_common_tarpConstructed", {
     params ["_target", "_caller", "_itemClassname", "_config"];
     // _target: object that triggered the action (usually player)
@@ -20,7 +20,7 @@ Fired after a tarp has been successfully constructed.
 
 Fired after deconstruction is confirmed and before the tarp object is deleted.
 
-```sqf
+``` cpp
 ["tt_common_tarpDeconstructed", {
     params ["_target", "_caller", "_itemClassname", "_config"];
     // _target: deployed tarp object being packed up
