@@ -23,9 +23,6 @@ private _tarpItems = [
     [QGVAR(tarp_empty), "HazmatBag_01_empty_F"]
 ];
 
-// Items dropped by players within this radius of the tarp count as "on it"
-#define ITEM_PICKUP_RADIUS 2
-
 private _onConstruct = {
     params ["_object", "_caller"];
 
