@@ -27,4 +27,4 @@ force tt_common_addArsenalCategory = false; // default: true
 
 ## Image
 
-![Image of the ACE Arsenal showing the new Tab on the right side that includes all items of this mod.](https://images.steamusercontent.com/ugc/11644517392562959346/F52807BD292EABD02DF82C6940D2274D5BBE9CD5/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
+![Image of the ACE Arsenal showing the new Tab on the right side that includes all items of this mod.](https://images.steamusercontent.com/ugc/12395444052461539974/E530E0CAD17B0DA4A8C3271850BDE280DFACF33E/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
