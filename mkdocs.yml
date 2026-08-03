@@ -1,0 +1,80 @@
+site_name: Tactical Tarps Documentation
+site_description: Mod-wide documentation for Tactical Tarps
+
+repo_url: https://github.com/TacticalTrainingTeam/tactical-tarps
+repo_name: TacticalTrainingTeam/tactical-tarps
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+  
+  language: en
+  logo: tt_icon.png
+  favicon: tt_favicon.ico
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    #- navigation.top
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    #- navigation.expand
+
+    #- toc.follow
+
+    - search.suggest
+    - search.highlight
+    - search.share
+
+    - content.code.copy
+
+plugins:
+  - privacy
+  - search
+
+markdown_extensions:
+  - tables
+  # Python Markdown
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Common:
+      - Overview: common/index.md
+      - API Functions: common/api.md
+      - Events: common/events.md
+      - Settings: common/settings.md
+  - Drone:
+      - Overview: drone/index.md
+      - Settings: drone/settings.md
+  - Hazmat:
+      - Overview: hazmat/index.md
+      - Settings: hazmat/settings.md
+  - Medic:
+      - Overview: medic/index.md
+      - Settings: medic/settings.md
+  - Signal:
+      - Overview: signal/index.md
+      - Settings: signal/settings.md
+
