@@ -1,5 +1,5 @@
 site_name: Tactical Tarps Documentation
-site_description: Mod-wide documentation for Tactical Tarps
+site_description: Documentation for Tactical Tarps Mod for Arma 3
 
 repo_url: https://github.com/TacticalTrainingTeam/tactical-tarps
 repo_name: TacticalTrainingTeam/tactical-tarps
@@ -9,7 +9,7 @@ theme:
   palette:
     scheme: slate
     primary: teal
-  
+
   language: en
   logo: tt_icon.png
   favicon: tt_favicon.ico
@@ -77,4 +77,3 @@ nav:
   - Signal:
       - Overview: signal/index.md
       - Settings: signal/settings.md
-

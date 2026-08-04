@@ -3,67 +3,435 @@
     <Package name="Hazmat">
         <Key ID="STR_tt_Hazmat_SubCategory">
             <English>Hazmat Tarp</English>
+            <Czech>Plachta pro nebezpečné látky</Czech>
+            <French>Bâche pour matières dangereuses</French>
+            <Spanish>Lona de materiales peligrosos</Spanish>
+            <Italian>Telone per materiali pericolosi</Italian>
+            <Polish>Plandeka na materiały niebezpieczne</Polish>
+            <Portuguese>Lona de materiais perigosos</Portuguese>
+            <Russian>Тент для опасных материалов</Russian>
             <German>Gefahrguttarp</German>
+            <Korean>위험물용 방수포</Korean>
+            <Japanese>危険物シート</Japanese>
+            <Chinese>危險品帆布</Chinese>
+            <Chinesesimp>危险品帆布</Chinesesimp>
+            <Turkish>Tehlikeli Madde Brandası</Turkish>
+            <Swedish>Presenning för farligt gods</Swedish>
+            <Slovak>Plachta na nebezpečné látky</Slovak>
+            <Norwegian>Presenning for farlig gods</Norwegian>
+            <Icelandic>Hættuefnadúkur</Icelandic>
+            <Hungarian>Veszélyesanyag-ponyva</Hungarian>
+            <Greek>Μουσαμάς Επικίνδυνων Υλικών</Greek>
+            <Finnish>Vaarallisten aineiden peite</Finnish>
+            <Dutch>Gevaarlijke-stoffendekzeil</Dutch>
+            <Ukrainian>Тент для небезпечних матеріалів</Ukrainian>
+            <Bulgarian>Брезент за опасни материали</Bulgarian>
+            <Latin>Tegumentum Materiarum Periculosarum</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_abort">
             <English>Aborted</English>
+            <Czech>Přerušeno</Czech>
+            <French>Annulé</French>
+            <Spanish>Cancelado</Spanish>
+            <Italian>Interrotto</Italian>
+            <Polish>Przerwano</Polish>
+            <Portuguese>Cancelado</Portuguese>
+            <Russian>Прервано</Russian>
             <German>Abgebrochen</German>
+            <Korean>중단됨</Korean>
+            <Japanese>中止しました</Japanese>
+            <Chinese>已中止</Chinese>
+            <Chinesesimp>已中止</Chinesesimp>
+            <Turkish>İptal edildi</Turkish>
+            <Swedish>Avbruten</Swedish>
+            <Slovak>Prerušené</Slovak>
+            <Norwegian>Avbrutt</Norwegian>
+            <Icelandic>Hætt við</Icelandic>
+            <Hungarian>Megszakítva</Hungarian>
+            <Greek>Ματαιώθηκε</Greek>
+            <Finnish>Keskeytetty</Finnish>
+            <Dutch>Afgebroken</Dutch>
+            <Ukrainian>Перервано</Ukrainian>
+            <Bulgarian>Прекратено</Bulgarian>
+            <Latin>Interruptum</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_actionConstruct">
             <English>Laying out hazmat tarp.</English>
+            <Czech>Rozkládání plachty pro nebezpečné látky.</Czech>
+            <French>Déploiement de la bâche pour matières dangereuses.</French>
+            <Spanish>Desplegando lona de materiales peligrosos.</Spanish>
+            <Italian>Stendendo il telone per materiali pericolosi.</Italian>
+            <Polish>Rozkładanie plandeki na materiały niebezpieczne.</Polish>
+            <Portuguese>Estendendo a lona de materiais perigosos.</Portuguese>
+            <Russian>Расстилание тента для опасных материалов.</Russian>
             <German>Gefahrguttarp auslegen.</German>
+            <Korean>위험물용 방수포를 펼치는 중.</Korean>
+            <Japanese>危険物シートを広げています。</Japanese>
+            <Chinese>正在鋪設危險品帆布。</Chinese>
+            <Chinesesimp>正在铺设危险品帆布。</Chinesesimp>
+            <Turkish>Tehlikeli madde brandası seriliyor.</Turkish>
+            <Swedish>Lägger ut presenning för farligt gods.</Swedish>
+            <Slovak>Rozkladanie plachty na nebezpečné látky.</Slovak>
+            <Norwegian>Legger ut presenning for farlig gods.</Norwegian>
+            <Icelandic>Leggur út hættuefnadúk.</Icelandic>
+            <Hungarian>Veszélyesanyag-ponyva kiterítése.</Hungarian>
+            <Greek>Άπλωμα μουσαμά επικίνδυνων υλικών.</Greek>
+            <Finnish>Levitetään vaarallisten aineiden peitettä.</Finnish>
+            <Dutch>Gevaarlijke-stoffendekzeil wordt uitgelegd.</Dutch>
+            <Ukrainian>Розстеляння тенту для небезпечних матеріалів.</Ukrainian>
+            <Bulgarian>Разгъване на брезент за опасни материали.</Bulgarian>
+            <Latin>Tegumentum materiarum periculosarum extenditur.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_actionDeconstruct">
             <English>Stow hazmat tarp into backpack.</English>
+            <Czech>Uložit plachtu pro nebezpečné látky do batohu.</Czech>
+            <French>Ranger la bâche pour matières dangereuses dans le sac à dos.</French>
+            <Spanish>Guardar la lona de materiales peligrosos en la mochila.</Spanish>
+            <Italian>Riponi il telone per materiali pericolosi nello zaino.</Italian>
+            <Polish>Schowaj plandekę na materiały niebezpieczne do plecaka.</Polish>
+            <Portuguese>Guardar a lona de materiais perigosos na mochila.</Portuguese>
+            <Russian>Убрать тент для опасных материалов в рюкзак.</Russian>
             <German>Packe Gefahrguttarp in Rucksack.</German>
+            <Korean>위험물용 방수포를 배낭에 수납.</Korean>
+            <Japanese>危険物シートをバックパックに収納。</Japanese>
+            <Chinese>將危險品帆布收入背包。</Chinese>
+            <Chinesesimp>将危险品帆布收入背包。</Chinesesimp>
+            <Turkish>Tehlikeli madde brandasını sırt çantasına kaldır.</Turkish>
+            <Swedish>Packa ner presenningen för farligt gods i ryggsäcken.</Swedish>
+            <Slovak>Uložiť plachtu na nebezpečné látky do batohu.</Slovak>
+            <Norwegian>Legg presenningen for farlig gods i sekken.</Norwegian>
+            <Icelandic>Setja hættuefnadúkinn í bakpokann.</Icelandic>
+            <Hungarian>Veszélyesanyag-ponyva berakása a hátizsákba.</Hungarian>
+            <Greek>Αποθήκευση μουσαμά επικίνδυνων υλικών στο σακίδιο.</Greek>
+            <Finnish>Laita vaarallisten aineiden peite reppuun.</Finnish>
+            <Dutch>Gevaarlijke-stoffendekzeil opbergen in de rugzak.</Dutch>
+            <Ukrainian>Прибрати тент для небезпечних матеріалів у рюкзак.</Ukrainian>
+            <Bulgarian>Прибери брезента за опасни материали в раницата.</Bulgarian>
+            <Latin>Tegumentum materiarum periculosarum in sarcinam repone.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_hintErrorNoSpace">
             <English>No space to lay out the tarp</English>
+            <Czech>Není dostatek místa k rozložení plachty</Czech>
+            <French>Pas assez de place pour déployer la bâche</French>
+            <Spanish>No hay espacio para desplegar la lona</Spanish>
+            <Italian>Non c'è spazio per stendere il telone</Italian>
+            <Polish>Brak miejsca na rozłożenie plandeki</Polish>
+            <Portuguese>Não há espaço para estender a lona</Portuguese>
+            <Russian>Недостаточно места, чтобы расстелить тент</Russian>
             <German>Nicht genügend Platz um den Tarp auszulegen</German>
+            <Korean>방수포를 펼칠 공간이 없습니다</Korean>
+            <Japanese>シートを広げるスペースがありません</Japanese>
+            <Chinese>沒有足夠空間鋪設帆布</Chinese>
+            <Chinesesimp>没有足够空间铺设帆布</Chinesesimp>
+            <Turkish>Brandayı sermek için yeterli alan yok</Turkish>
+            <Swedish>Inte tillräckligt med utrymme för att lägga ut presenningen</Swedish>
+            <Slovak>Nedostatok miesta na rozloženie plachty</Slovak>
+            <Norwegian>Ikke nok plass til å legge ut presenningen</Norwegian>
+            <Icelandic>Ekki nóg pláss til að leggja út dúkinn</Icelandic>
+            <Hungarian>Nincs elég hely a ponyva kiterítéséhez</Hungarian>
+            <Greek>Δεν υπάρχει χώρος για να απλωθεί ο μουσαμάς</Greek>
+            <Finnish>Ei tarpeeksi tilaa suojapeitteen levittämiseen</Finnish>
+            <Dutch>Niet genoeg ruimte om het dekzeil uit te leggen</Dutch>
+            <Ukrainian>Недостатньо місця, щоб розстелити тент</Ukrainian>
+            <Bulgarian>Няма достатъчно място за разгъване на брезента</Bulgarian>
+            <Latin>Non est spatium ad tegumentum extendendum</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_hintLoaded">
             <English>The tarp was stowed into the backpack.</English>
+            <Czech>Plachta byla uložena do batohu.</Czech>
+            <French>La bâche a été rangée dans le sac à dos.</French>
+            <Spanish>La lona fue guardada en la mochila.</Spanish>
+            <Italian>Il telone è stato riposto nello zaino.</Italian>
+            <Polish>Plandeka została schowana do plecaka.</Polish>
+            <Portuguese>A lona foi guardada na mochila.</Portuguese>
+            <Russian>Тент был убран в рюкзак.</Russian>
             <German>"Das Tarp wurde in den Rucksack gepackt."</German>
+            <Korean>방수포가 배낭에 수납되었습니다.</Korean>
+            <Japanese>シートはバックパックに収納されました。</Japanese>
+            <Chinese>帆布已收入背包。</Chinese>
+            <Chinesesimp>帆布已收入背包。</Chinesesimp>
+            <Turkish>Branda sırt çantasına kaldırıldı.</Turkish>
+            <Swedish>Presenningen packades ner i ryggsäcken.</Swedish>
+            <Slovak>Plachta bola uložená do batohu.</Slovak>
+            <Norwegian>Presenningen ble lagt i sekken.</Norwegian>
+            <Icelandic>Dúkurinn var settur í bakpokann.</Icelandic>
+            <Hungarian>A ponyva a hátizsákba lett rakva.</Hungarian>
+            <Greek>Ο μουσαμάς αποθηκεύτηκε στο σακίδιο.</Greek>
+            <Finnish>Suojapeite laitettiin reppuun.</Finnish>
+            <Dutch>Het dekzeil is opgeborgen in de rugzak.</Dutch>
+            <Ukrainian>Тент прибрано в рюкзак.</Ukrainian>
+            <Bulgarian>Брезентът беше прибран в раницата.</Bulgarian>
+            <Latin>Tegumentum in sarcina repositum est.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingBuildAnimation_description">
             <English>The name of the animation to be played.\ni.e.: Acts_carFixingWheel</English>
+            <Czech>Název animace, která se má přehrát.\nnapř.: Acts_carFixingWheel</Czech>
+            <French>Le nom de l'animation à jouer.\nex. : Acts_carFixingWheel</French>
+            <Spanish>El nombre de la animación que se reproducirá.\nej.: Acts_carFixingWheel</Spanish>
+            <Italian>Il nome dell'animazione da riprodurre.\nes.: Acts_carFixingWheel</Italian>
+            <Polish>Nazwa animacji do odtworzenia.\nnp.: Acts_carFixingWheel</Polish>
+            <Portuguese>O nome da animação a ser reproduzida.\nex.: Acts_carFixingWheel</Portuguese>
+            <Russian>Название анимации, которая будет воспроизведена.\nнапр.: Acts_carFixingWheel</Russian>
             <German>Die Bezeichnung der abzuspielenden Animation.\nBsp.: Acts_carFixingWheel</German>
+            <Korean>재생할 애니메이션의 이름.\n예: Acts_carFixingWheel</Korean>
+            <Japanese>再生するアニメーションの名前。\n例：Acts_carFixingWheel</Japanese>
+            <Chinese>要播放的動畫名稱。\n例如：Acts_carFixingWheel</Chinese>
+            <Chinesesimp>要播放的动画名称。\n例如：Acts_carFixingWheel</Chinesesimp>
+            <Turkish>Oynatılacak animasyonun adı.\nör.: Acts_carFixingWheel</Turkish>
+            <Swedish>Namnet på animationen som ska spelas.\nt.ex.: Acts_carFixingWheel</Swedish>
+            <Slovak>Názov animácie, ktorá sa má prehrať.\nnapr.: Acts_carFixingWheel</Slovak>
+            <Norwegian>Navnet på animasjonen som skal spilles av.\nf.eks.: Acts_carFixingWheel</Norwegian>
+            <Icelandic>Nafn hreyfimyndarinnar sem á að spila.\nt.d.: Acts_carFixingWheel</Icelandic>
+            <Hungarian>A lejátszandó animáció neve.\npl.: Acts_carFixingWheel</Hungarian>
+            <Greek>Το όνομα της κίνησης που θα αναπαραχθεί.\nπ.χ.: Acts_carFixingWheel</Greek>
+            <Finnish>Toistettavan animaation nimi.\nesim.: Acts_carFixingWheel</Finnish>
+            <Dutch>De naam van de animatie die moet worden afgespeeld.\nbijv.: Acts_carFixingWheel</Dutch>
+            <Ukrainian>Назва анімації, яку буде відтворено.\nнапр.: Acts_carFixingWheel</Ukrainian>
+            <Bulgarian>Името на анимацията, която ще се възпроизведе.\nнапр.: Acts_carFixingWheel</Bulgarian>
+            <Latin>Nomen animationis agendae.\nex. gr.: Acts_carFixingWheel</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingBuildAnimation_name">
             <English>Animation</English>
+            <Czech>Animace</Czech>
+            <French>Animation</French>
+            <Spanish>Animación</Spanish>
+            <Italian>Animazione</Italian>
+            <Polish>Animacja</Polish>
+            <Portuguese>Animação</Portuguese>
+            <Russian>Анимация</Russian>
             <German>Animation</German>
+            <Korean>애니메이션</Korean>
+            <Japanese>アニメーション</Japanese>
+            <Chinese>動畫</Chinese>
+            <Chinesesimp>动画</Chinesesimp>
+            <Turkish>Animasyon</Turkish>
+            <Swedish>Animation</Swedish>
+            <Slovak>Animácia</Slovak>
+            <Norwegian>Animasjon</Norwegian>
+            <Icelandic>Hreyfimynd</Icelandic>
+            <Hungarian>Animáció</Hungarian>
+            <Greek>Κίνηση</Greek>
+            <Finnish>Animaatio</Finnish>
+            <Dutch>Animatie</Dutch>
+            <Ukrainian>Анімація</Ukrainian>
+            <Bulgarian>Анимация</Bulgarian>
+            <Latin>Animatio</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingBuildTime_description">
             <English>How many seconds does the player need to lay out the tarp.</English>
+            <Czech>Kolik sekund potřebuje hráč k rozložení plachty.</Czech>
+            <French>Combien de secondes le joueur a besoin pour déployer la bâche.</French>
+            <Spanish>Cuántos segundos necesita el jugador para desplegar la lona.</Spanish>
+            <Italian>Quanti secondi impiega il giocatore a stendere il telone.</Italian>
+            <Polish>Ile sekund gracz potrzebuje na rozłożenie plandeki.</Polish>
+            <Portuguese>Quantos segundos o jogador precisa para estender a lona.</Portuguese>
+            <Russian>Сколько секунд нужно игроку, чтобы расстелить тент.</Russian>
             <German>Wie viele Sekunden der Spieler braucht, um das Tarp auszubreiten.</German>
+            <Korean>플레이어가 방수포를 펼치는 데 필요한 시간(초).</Korean>
+            <Japanese>プレイヤーがシートを広げるのに必要な秒数。</Japanese>
+            <Chinese>玩家鋪設帆布所需的秒數。</Chinese>
+            <Chinesesimp>玩家铺设帆布所需的秒数。</Chinesesimp>
+            <Turkish>Oyuncunun brandayı sermesi için kaç saniyeye ihtiyacı var.</Turkish>
+            <Swedish>Hur många sekunder spelaren behöver för att lägga ut presenningen.</Swedish>
+            <Slovak>Koľko sekúnd potrebuje hráč na rozloženie plachty.</Slovak>
+            <Norwegian>Hvor mange sekunder spilleren trenger for å legge ut presenningen.</Norwegian>
+            <Icelandic>Hversu margar sekúndur leikmaðurinn þarf til að leggja út dúkinn.</Icelandic>
+            <Hungarian>Hány másodpercre van szüksége a játékosnak a ponyva kiterítéséhez.</Hungarian>
+            <Greek>Πόσα δευτερόλεπτα χρειάζεται ο παίκτης για να απλώσει τον μουσαμά.</Greek>
+            <Finnish>Kuinka monta sekuntia pelaaja tarvitsee suojapeitteen levittämiseen.</Finnish>
+            <Dutch>Hoeveel seconden de speler nodig heeft om het dekzeil uit te leggen.</Dutch>
+            <Ukrainian>Скільки секунд потрібно гравцю, щоб розстелити тент.</Ukrainian>
+            <Bulgarian>Колко секунди са необходими на играча за разгъване на брезента.</Bulgarian>
+            <Latin>Quot secunda lusori necessaria sunt ut tegumentum extendat.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingBuildTime_name">
             <English>Buildtime</English>
+            <Czech>Doba stavby</Czech>
+            <French>Temps de construction</French>
+            <Spanish>Tiempo de construcción</Spanish>
+            <Italian>Tempo di costruzione</Italian>
+            <Polish>Czas budowy</Polish>
+            <Portuguese>Tempo de construção</Portuguese>
+            <Russian>Время постройки</Russian>
             <German>Bauzeit</German>
+            <Korean>제작 시간</Korean>
+            <Japanese>設営時間</Japanese>
+            <Chinese>建造時間</Chinese>
+            <Chinesesimp>建造时间</Chinesesimp>
+            <Turkish>Kurulum Süresi</Turkish>
+            <Swedish>Byggtid</Swedish>
+            <Slovak>Čas výstavby</Slovak>
+            <Norwegian>Byggetid</Norwegian>
+            <Icelandic>Byggingartími</Icelandic>
+            <Hungarian>Építési idő</Hungarian>
+            <Greek>Χρόνος κατασκευής</Greek>
+            <Finnish>Rakennusaika</Finnish>
+            <Dutch>Bouwtijd</Dutch>
+            <Ukrainian>Час встановлення</Ukrainian>
+            <Bulgarian>Време за изграждане</Bulgarian>
+            <Latin>Tempus exstructionis</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingUseAnimation_description">
             <English>Should the player play an animation during the execution.\n(the animation duration is not taken into account)</English>
+            <Czech>Má hráč během provádění přehrát animaci.\n(délka animace se nebere v úvahu)</Czech>
+            <French>Le joueur doit-il jouer une animation pendant l'exécution.\n(la durée de l'animation n'est pas prise en compte)</French>
+            <Spanish>Si el jugador debe reproducir una animación durante la ejecución.\n(la duración de la animación no se tiene en cuenta)</Spanish>
+            <Italian>Se il giocatore deve riprodurre un'animazione durante l'esecuzione.\n(la durata dell'animazione non viene considerata)</Italian>
+            <Polish>Czy gracz ma odtworzyć animację podczas wykonywania czynności.\n(czas trwania animacji nie jest brany pod uwagę)</Polish>
+            <Portuguese>Se o jogador deve reproduzir uma animação durante a execução.\n(a duração da animação não é levada em conta)</Portuguese>
+            <Russian>Должен ли игрок воспроизводить анимацию во время выполнения действия.\n(продолжительность анимации не учитывается)</Russian>
             <German>Soll der Spieler während der Durchführung eine Animation abspielen.\n(Die Animationsdauer wird nicht berücksichtigt)</German>
+            <Korean>실행 중 플레이어가 애니메이션을 재생해야 하는지 여부.\n(애니메이션 재생 시간은 고려되지 않습니다)</Korean>
+            <Japanese>実行中にプレイヤーがアニメーションを再生するかどうか。\n(アニメーションの長さは考慮されません)</Japanese>
+            <Chinese>玩家在執行期間是否應播放動畫。\n(動畫時長不計入內)</Chinese>
+            <Chinesesimp>玩家在执行期间是否应播放动画。\n(动画时长不计入内)</Chinesesimp>
+            <Turkish>Oyuncunun işlem sırasında bir animasyon oynatıp oynatmayacağı.\n(animasyon süresi hesaba katılmaz)</Turkish>
+            <Swedish>Om spelaren ska spela en animation under utförandet.\n(animationens längd tas inte med i beräkningen)</Swedish>
+            <Slovak>Či má hráč počas vykonávania prehrať animáciu.\n(dĺžka animácie sa neberie do úvahy)</Slovak>
+            <Norwegian>Om spilleren skal spille av en animasjon under utførelsen.\n(animasjonens varighet tas ikke med i beregningen)</Norwegian>
+            <Icelandic>Hvort leikmaðurinn eigi að spila hreyfimynd meðan á framkvæmd stendur.\n(lengd hreyfimyndarinnar er ekki tekin með í reikninginn)</Icelandic>
+            <Hungarian>Játsszon-e le a játékos animációt a végrehajtás közben.\n(az animáció időtartama nem számít bele)</Hungarian>
+            <Greek>Αν ο παίκτης πρέπει να αναπαράγει μια κίνηση κατά την εκτέλεση.\n(η διάρκεια της κίνησης δεν λαμβάνεται υπόψη)</Greek>
+            <Finnish>Toistaako pelaaja animaation suorituksen aikana.\n(animaation kestoa ei oteta huomioon)</Finnish>
+            <Dutch>Of de speler tijdens de uitvoering een animatie moet afspelen.\n(de duur van de animatie wordt niet meegerekend)</Dutch>
+            <Ukrainian>Чи повинен гравець відтворювати анімацію під час виконання.\n(тривалість анімації не враховується)</Ukrainian>
+            <Bulgarian>Дали играчът трябва да възпроизведе анимация по време на изпълнението.\n(продължителността на анимацията не се взема предвид)</Bulgarian>
+            <Latin>Utrum lusor animationem durante actione agere debeat.\n(duratio animationis non computatur)</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_settingUseAnimation_name">
             <English>Play Animation</English>
+            <Czech>Přehrát animaci</Czech>
+            <French>Jouer l'animation</French>
+            <Spanish>Reproducir animación</Spanish>
+            <Italian>Riproduci animazione</Italian>
+            <Polish>Odtwórz animację</Polish>
+            <Portuguese>Reproduzir animação</Portuguese>
+            <Russian>Воспроизвести анимацию</Russian>
             <German>Animation abspielen</German>
+            <Korean>애니메이션 재생</Korean>
+            <Japanese>アニメーションを再生</Japanese>
+            <Chinese>播放動畫</Chinese>
+            <Chinesesimp>播放动画</Chinesesimp>
+            <Turkish>Animasyonu Oynat</Turkish>
+            <Swedish>Spela animation</Swedish>
+            <Slovak>Prehrať animáciu</Slovak>
+            <Norwegian>Spill av animasjon</Norwegian>
+            <Icelandic>Spila hreyfimynd</Icelandic>
+            <Hungarian>Animáció lejátszása</Hungarian>
+            <Greek>Αναπαραγωγή κίνησης</Greek>
+            <Finnish>Toista animaatio</Finnish>
+            <Dutch>Animatie afspelen</Dutch>
+            <Ukrainian>Відтворити анімацію</Ukrainian>
+            <Bulgarian>Възпроизведи анимация</Bulgarian>
+            <Latin>Animationem age</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_tarp_empty_description">
             <English>An empty hazmat containment tarp.</English>
+            <Czech>Prázdná ochranná plachta pro nebezpečné látky.</Czech>
+            <French>Une bâche de confinement vide pour matières dangereuses.</French>
+            <Spanish>Una lona de contención de materiales peligrosos vacía.</Spanish>
+            <Italian>Un telone di contenimento per materiali pericolosi vuoto.</Italian>
+            <Polish>Pusta plandeka do przechowywania materiałów niebezpiecznych.</Polish>
+            <Portuguese>Uma lona de contenção de materiais perigosos vazia.</Portuguese>
+            <Russian>Пустой защитный тент для опасных материалов.</Russian>
             <German>Ein leeres Gefahrgut-Containment-Tarp.</German>
+            <Korean>비어 있는 위험물 격리용 방수포입니다.</Korean>
+            <Japanese>空の危険物収容シートです。</Japanese>
+            <Chinese>一塊空的危險品收容帆布。</Chinese>
+            <Chinesesimp>一块空的危险品收容帆布。</Chinesesimp>
+            <Turkish>Boş bir tehlikeli madde muhafaza brandası.</Turkish>
+            <Swedish>En tom presenning för förvaring av farligt gods.</Swedish>
+            <Slovak>Prázdna ochranná plachta na nebezpečné látky.</Slovak>
+            <Norwegian>En tom presenning for oppbevaring av farlig gods.</Norwegian>
+            <Icelandic>Tómur hættuefnadúkur til geymslu.</Icelandic>
+            <Hungarian>Egy üres, veszélyes anyagok tárolására szolgáló ponyva.</Hungarian>
+            <Greek>Ένας άδειος μουσαμάς συγκράτησης επικίνδυνων υλικών.</Greek>
+            <Finnish>Tyhjä vaarallisten aineiden suojapeite.</Finnish>
+            <Dutch>Een leeg dekzeil voor de opslag van gevaarlijke stoffen.</Dutch>
+            <Ukrainian>Порожній захисний тент для небезпечних матеріалів.</Ukrainian>
+            <Bulgarian>Празен защитен брезент за опасни материали.</Bulgarian>
+            <Latin>Tegumentum vacuum ad materias periculosas continendas.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_tarp_empty_displayName">
             <English>Hazmat Tarp</English>
+            <Czech>Plachta pro nebezpečné látky</Czech>
+            <French>Bâche pour matières dangereuses</French>
+            <Spanish>Lona de materiales peligrosos</Spanish>
+            <Italian>Telone per materiali pericolosi</Italian>
+            <Polish>Plandeka na materiały niebezpieczne</Polish>
+            <Portuguese>Lona de materiais perigosos</Portuguese>
+            <Russian>Тент для опасных материалов</Russian>
             <German>Gefahrguttarp</German>
+            <Korean>위험물용 방수포</Korean>
+            <Japanese>危険物シート</Japanese>
+            <Chinese>危險品帆布</Chinese>
+            <Chinesesimp>危险品帆布</Chinesesimp>
+            <Turkish>Tehlikeli Madde Brandası</Turkish>
+            <Swedish>Presenning för farligt gods</Swedish>
+            <Slovak>Plachta na nebezpečné látky</Slovak>
+            <Norwegian>Presenning for farlig gods</Norwegian>
+            <Icelandic>Hættuefnadúkur</Icelandic>
+            <Hungarian>Veszélyesanyag-ponyva</Hungarian>
+            <Greek>Μουσαμάς Επικίνδυνων Υλικών</Greek>
+            <Finnish>Vaarallisten aineiden peite</Finnish>
+            <Dutch>Gevaarlijke-stoffendekzeil</Dutch>
+            <Ukrainian>Тент для небезпечних матеріалів</Ukrainian>
+            <Bulgarian>Брезент за опасни материали</Bulgarian>
+            <Latin>Tegumentum Materiarum Periculosarum</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_tarp_full_description">
             <English>A hazmat containment tarp full of contaminated items.</English>
+            <Czech>Ochranná plachta pro nebezpečné látky plná kontaminovaných předmětů.</Czech>
+            <French>Une bâche de confinement pour matières dangereuses pleine d'objets contaminés.</French>
+            <Spanish>Una lona de contención de materiales peligrosos llena de objetos contaminados.</Spanish>
+            <Italian>Un telone di contenimento per materiali pericolosi pieno di oggetti contaminati.</Italian>
+            <Polish>Plandeka do przechowywania materiałów niebezpiecznych pełna skażonych przedmiotów.</Polish>
+            <Portuguese>Uma lona de contenção de materiais perigosos cheia de itens contaminados.</Portuguese>
+            <Russian>Защитный тент для опасных материалов, заполненный заражёнными предметами.</Russian>
             <German>Ein Gefahrgut-Containment-Tarp voller kontaminierter Gegenstände.</German>
+            <Korean>오염된 물품으로 가득 찬 위험물 격리용 방수포입니다.</Korean>
+            <Japanese>汚染された物品でいっぱいの危険物収容シートです。</Japanese>
+            <Chinese>一塊裝滿受污染物品的危險品收容帆布。</Chinese>
+            <Chinesesimp>一块装满受污染物品的危险品收容帆布。</Chinesesimp>
+            <Turkish>Kontamine eşyalarla dolu bir tehlikeli madde muhafaza brandası.</Turkish>
+            <Swedish>En presenning för förvaring av farligt gods, full av kontaminerade föremål.</Swedish>
+            <Slovak>Ochranná plachta na nebezpečné látky plná kontaminovaných predmetov.</Slovak>
+            <Norwegian>En presenning for oppbevaring av farlig gods full av kontaminerte gjenstander.</Norwegian>
+            <Icelandic>Hættuefnadúkur fullur af mengaðum hlutum.</Icelandic>
+            <Hungarian>Egy szennyezett tárgyakkal teli, veszélyes anyagok tárolására szolgáló ponyva.</Hungarian>
+            <Greek>Ένας μουσαμάς συγκράτησης επικίνδυνων υλικών γεμάτος με μολυσμένα αντικείμενα.</Greek>
+            <Finnish>Vaarallisten aineiden suojapeite täynnä saastuneita esineitä.</Finnish>
+            <Dutch>Een dekzeil voor de opslag van gevaarlijke stoffen vol met besmette voorwerpen.</Dutch>
+            <Ukrainian>Захисний тент для небезпечних матеріалів, заповнений забрудненими предметами.</Ukrainian>
+            <Bulgarian>Защитен брезент за опасни материали, пълен със замърсени предмети.</Bulgarian>
+            <Latin>Tegumentum ad materias periculosas continendas rebus contaminatis plenum.</Latin>
         </Key>
         <Key ID="STR_tt_Hazmat_tarp_full_displayName">
             <English>Hazmat Tarp (full)</English>
+            <Czech>Plachta pro nebezpečné látky (plná)</Czech>
+            <French>Bâche pour matières dangereuses (pleine)</French>
+            <Spanish>Lona de materiales peligrosos (llena)</Spanish>
+            <Italian>Telone per materiali pericolosi (pieno)</Italian>
+            <Polish>Plandeka na materiały niebezpieczne (pełna)</Polish>
+            <Portuguese>Lona de materiais perigosos (cheia)</Portuguese>
+            <Russian>Тент для опасных материалов (заполненный)</Russian>
             <German>Gefahrguttarp (voll)</German>
+            <Korean>위험물용 방수포 (가득 참)</Korean>
+            <Japanese>危険物シート（満杯）</Japanese>
+            <Chinese>危險品帆布（已裝滿）</Chinese>
+            <Chinesesimp>危险品帆布（已装满）</Chinesesimp>
+            <Turkish>Tehlikeli Madde Brandası (dolu)</Turkish>
+            <Swedish>Presenning för farligt gods (full)</Swedish>
+            <Slovak>Plachta na nebezpečné látky (plná)</Slovak>
+            <Norwegian>Presenning for farlig gods (full)</Norwegian>
+            <Icelandic>Hættuefnadúkur (fullur)</Icelandic>
+            <Hungarian>Veszélyesanyag-ponyva (tele)</Hungarian>
+            <Greek>Μουσαμάς Επικίνδυνων Υλικών (γεμάτος)</Greek>
+            <Finnish>Vaarallisten aineiden peite (täysi)</Finnish>
+            <Dutch>Gevaarlijke-stoffendekzeil (vol)</Dutch>
+            <Ukrainian>Тент для небезпечних матеріалів (повний)</Ukrainian>
+            <Bulgarian>Брезент за опасни материали (пълен)</Bulgarian>
+            <Latin>Tegumentum Materiarum Periculosarum (plenum)</Latin>
         </Key>
     </Package>
 </Project>

@@ -3,71 +3,462 @@
     <Package name="Drone">
         <Key ID="STR_tt_Drone_SubCategory">
             <English>Drone Tarp</English>
+            <Czech>Plachta pro dron</Czech>
+            <French>Bâche pour drone</French>
+            <Spanish>Lona para dron</Spanish>
+            <Italian>Telone per drone</Italian>
+            <Polish>Plandeka dla drona</Polish>
+            <Portuguese>Lona para drone</Portuguese>
+            <Russian>Тент для дрона</Russian>
             <German>Drohnentarp</German>
+            <Korean>드론용 방수포</Korean>
+            <Japanese>ドローン用シート</Japanese>
+            <Chinese>無人機帆布</Chinese>
+            <Chinesesimp>无人机帆布</Chinesesimp>
+            <Turkish>Drone Brandası</Turkish>
+            <Swedish>Dronpresenning</Swedish>
+            <Slovak>Plachta pre dron</Slovak>
+            <Norwegian>Dronepresenning</Norwegian>
+            <Icelandic>Drónadúkur</Icelandic>
+            <Hungarian>Drónponyva</Hungarian>
+            <Greek>Μουσαμάς για Drone</Greek>
+            <Finnish>Drone-peite</Finnish>
+            <Dutch>Dronedekzeil</Dutch>
+            <Ukrainian>Тент для дрона</Ukrainian>
+            <Bulgarian>Брезент за дрон</Bulgarian>
+            <Latin>Tegumentum Drone</Latin>
         </Key>
         <Key ID="STR_tt_Drone_abort">
             <English>Aborted</English>
+            <Czech>Přerušeno</Czech>
+            <French>Annulé</French>
+            <Spanish>Cancelado</Spanish>
+            <Italian>Interrotto</Italian>
+            <Polish>Przerwano</Polish>
+            <Portuguese>Cancelado</Portuguese>
+            <Russian>Прервано</Russian>
             <German>Abgebrochen</German>
+            <Korean>중단됨</Korean>
+            <Japanese>中止しました</Japanese>
+            <Chinese>已中止</Chinese>
+            <Chinesesimp>已中止</Chinesesimp>
+            <Turkish>İptal edildi</Turkish>
+            <Swedish>Avbruten</Swedish>
+            <Slovak>Prerušené</Slovak>
+            <Norwegian>Avbrutt</Norwegian>
+            <Icelandic>Hætt við</Icelandic>
+            <Hungarian>Megszakítva</Hungarian>
+            <Greek>Ματαιώθηκε</Greek>
+            <Finnish>Keskeytetty</Finnish>
+            <Dutch>Afgebroken</Dutch>
+            <Ukrainian>Перервано</Ukrainian>
+            <Bulgarian>Прекратено</Bulgarian>
+            <Latin>Interruptum</Latin>
         </Key>
         <Key ID="STR_tt_Drone_actionConstruct">
             <English>Laying out drone tarp.</English>
+            <Czech>Rozkládání plachty pro dron.</Czech>
+            <French>Déploiement de la bâche pour drone.</French>
+            <Spanish>Desplegando lona para dron.</Spanish>
+            <Italian>Stendendo il telone per drone.</Italian>
+            <Polish>Rozkładanie plandeki dla drona.</Polish>
+            <Portuguese>Estendendo a lona para drone.</Portuguese>
+            <Russian>Расстилание тента для дрона.</Russian>
             <German>Drohnentarp auslegen.</German>
+            <Korean>드론용 방수포를 펼치는 중.</Korean>
+            <Japanese>ドローン用シートを広げています。</Japanese>
+            <Chinese>正在鋪設無人機帆布。</Chinese>
+            <Chinesesimp>正在铺设无人机帆布。</Chinesesimp>
+            <Turkish>Drone brandası seriliyor.</Turkish>
+            <Swedish>Lägger ut dronpresenning.</Swedish>
+            <Slovak>Rozkladanie plachty pre dron.</Slovak>
+            <Norwegian>Legger ut dronepresenning.</Norwegian>
+            <Icelandic>Leggur út drónadúk.</Icelandic>
+            <Hungarian>Drónponyva kiterítése.</Hungarian>
+            <Greek>Άπλωμα μουσαμά για drone.</Greek>
+            <Finnish>Levitetään drone-peitettä.</Finnish>
+            <Dutch>Dronedekzeil wordt uitgelegd.</Dutch>
+            <Ukrainian>Розстеляння тенту для дрона.</Ukrainian>
+            <Bulgarian>Разгъване на брезент за дрон.</Bulgarian>
+            <Latin>Tegumentum drone extenditur.</Latin>
         </Key>
         <Key ID="STR_tt_Drone_actionDeconstruct">
             <English>Stow drone tarp into backpack.</English>
+            <Czech>Uložit plachtu pro dron do batohu.</Czech>
+            <French>Ranger la bâche pour drone dans le sac à dos.</French>
+            <Spanish>Guardar la lona para dron en la mochila.</Spanish>
+            <Italian>Riponi il telone per drone nello zaino.</Italian>
+            <Polish>Schowaj plandekę dla drona do plecaka.</Polish>
+            <Portuguese>Guardar a lona para drone na mochila.</Portuguese>
+            <Russian>Убрать тент для дрона в рюкзак.</Russian>
             <German>Packe Drohnentarp in Rucksack.</German>
+            <Korean>드론용 방수포를 배낭에 수납.</Korean>
+            <Japanese>ドローン用シートをバックパックに収納。</Japanese>
+            <Chinese>將無人機帆布收入背包。</Chinese>
+            <Chinesesimp>将无人机帆布收入背包。</Chinesesimp>
+            <Turkish>Drone brandasını sırt çantasına kaldır.</Turkish>
+            <Swedish>Packa ner dronpresenningen i ryggsäcken.</Swedish>
+            <Slovak>Uložiť plachtu pre dron do batohu.</Slovak>
+            <Norwegian>Legg dronepresenningen i sekken.</Norwegian>
+            <Icelandic>Setja drónadúkinn í bakpokann.</Icelandic>
+            <Hungarian>Drónponyva berakása a hátizsákba.</Hungarian>
+            <Greek>Αποθήκευση μουσαμά για drone στο σακίδιο.</Greek>
+            <Finnish>Laita drone-peite reppuun.</Finnish>
+            <Dutch>Dronedekzeil opbergen in de rugzak.</Dutch>
+            <Ukrainian>Прибрати тент для дрона у рюкзак.</Ukrainian>
+            <Bulgarian>Прибери брезента за дрон в раницата.</Bulgarian>
+            <Latin>Tegumentum drone in sarcinam repone.</Latin>
         </Key>
         <Key ID="STR_tt_Drone_hintErrorNoSpace">
             <English>No space to lay out the tarp</English>
+            <Czech>Není dostatek místa k rozložení plachty</Czech>
+            <French>Pas assez de place pour déployer la bâche</French>
+            <Spanish>No hay espacio para desplegar la lona</Spanish>
+            <Italian>Non c'è spazio per stendere il telone</Italian>
+            <Polish>Brak miejsca na rozłożenie plandeki</Polish>
+            <Portuguese>Não há espaço para estender a lona</Portuguese>
+            <Russian>Недостаточно места, чтобы расстелить тент</Russian>
             <German>Nicht genügend Platz um den Tarp auszulegen</German>
+            <Korean>방수포를 펼칠 공간이 없습니다</Korean>
+            <Japanese>シートを広げるスペースがありません</Japanese>
+            <Chinese>沒有足夠空間鋪設帆布</Chinese>
+            <Chinesesimp>没有足够空间铺设帆布</Chinesesimp>
+            <Turkish>Brandayı sermek için yeterli alan yok</Turkish>
+            <Swedish>Inte tillräckligt med utrymme för att lägga ut presenningen</Swedish>
+            <Slovak>Nedostatok miesta na rozloženie plachty</Slovak>
+            <Norwegian>Ikke nok plass til å legge ut presenningen</Norwegian>
+            <Icelandic>Ekki nóg pláss til að leggja út dúkinn</Icelandic>
+            <Hungarian>Nincs elég hely a ponyva kiterítéséhez</Hungarian>
+            <Greek>Δεν υπάρχει χώρος για να απλωθεί ο μουσαμάς</Greek>
+            <Finnish>Ei tarpeeksi tilaa suojapeitteen levittämiseen</Finnish>
+            <Dutch>Niet genoeg ruimte om het dekzeil uit te leggen</Dutch>
+            <Ukrainian>Недостатньо місця, щоб розстелити тент</Ukrainian>
+            <Bulgarian>Няма достатъчно място за разгъване на брезента</Bulgarian>
+            <Latin>Non est spatium ad tegumentum extendendum</Latin>
         </Key>
         <Key ID="STR_tt_Drone_hintLoaded">
             <English>The tarp was stowed into the backpack.</English>
+            <Czech>Plachta byla uložena do batohu.</Czech>
+            <French>La bâche a été rangée dans le sac à dos.</French>
+            <Spanish>La lona fue guardada en la mochila.</Spanish>
+            <Italian>Il telone è stato riposto nello zaino.</Italian>
+            <Polish>Plandeka została schowana do plecaka.</Polish>
+            <Portuguese>A lona foi guardada na mochila.</Portuguese>
+            <Russian>Тент был убран в рюкзак.</Russian>
             <German>"Das Tarp wurde in den Rucksack gepackt."</German>
+            <Korean>방수포가 배낭에 수납되었습니다.</Korean>
+            <Japanese>シートはバックパックに収納されました。</Japanese>
+            <Chinese>帆布已收入背包。</Chinese>
+            <Chinesesimp>帆布已收入背包。</Chinesesimp>
+            <Turkish>Branda sırt çantasına kaldırıldı.</Turkish>
+            <Swedish>Presenningen packades ner i ryggsäcken.</Swedish>
+            <Slovak>Plachta bola uložená do batohu.</Slovak>
+            <Norwegian>Presenningen ble lagt i sekken.</Norwegian>
+            <Icelandic>Dúkurinn var settur í bakpokann.</Icelandic>
+            <Hungarian>A ponyva a hátizsákba lett rakva.</Hungarian>
+            <Greek>Ο μουσαμάς αποθηκεύτηκε στο σακίδιο.</Greek>
+            <Finnish>Suojapeite laitettiin reppuun.</Finnish>
+            <Dutch>Het dekzeil is opgeborgen in de rugzak.</Dutch>
+            <Ukrainian>Тент прибрано в рюкзак.</Ukrainian>
+            <Bulgarian>Брезентът беше прибран в раницата.</Bulgarian>
+            <Latin>Tegumentum in sarcina repositum est.</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingBuildAnimation_description">
             <English>The name of the animation to be played.\ni.e.: Acts_carFixingWheel</English>
+            <Czech>Název animace, která se má přehrát.\nnapř.: Acts_carFixingWheel</Czech>
+            <French>Le nom de l'animation à jouer.\nex. : Acts_carFixingWheel</French>
+            <Spanish>El nombre de la animación que se reproducirá.\nej.: Acts_carFixingWheel</Spanish>
+            <Italian>Il nome dell'animazione da riprodurre.\nes.: Acts_carFixingWheel</Italian>
+            <Polish>Nazwa animacji do odtworzenia.\nnp.: Acts_carFixingWheel</Polish>
+            <Portuguese>O nome da animação a ser reproduzida.\nex.: Acts_carFixingWheel</Portuguese>
+            <Russian>Название анимации, которая будет воспроизведена.\nнапр.: Acts_carFixingWheel</Russian>
             <German>Die Bezeichnung der abzuspielenden Animation.\nBsp.: Acts_carFixingWheel</German>
+            <Korean>재생할 애니메이션의 이름.\n예: Acts_carFixingWheel</Korean>
+            <Japanese>再生するアニメーションの名前。\n例：Acts_carFixingWheel</Japanese>
+            <Chinese>要播放的動畫名稱。\n例如：Acts_carFixingWheel</Chinese>
+            <Chinesesimp>要播放的动画名称。\n例如：Acts_carFixingWheel</Chinesesimp>
+            <Turkish>Oynatılacak animasyonun adı.\nör.: Acts_carFixingWheel</Turkish>
+            <Swedish>Namnet på animationen som ska spelas.\nt.ex.: Acts_carFixingWheel</Swedish>
+            <Slovak>Názov animácie, ktorá sa má prehrať.\nnapr.: Acts_carFixingWheel</Slovak>
+            <Norwegian>Navnet på animasjonen som skal spilles av.\nf.eks.: Acts_carFixingWheel</Norwegian>
+            <Icelandic>Nafn hreyfimyndarinnar sem á að spila.\nt.d.: Acts_carFixingWheel</Icelandic>
+            <Hungarian>A lejátszandó animáció neve.\npl.: Acts_carFixingWheel</Hungarian>
+            <Greek>Το όνομα της κίνησης που θα αναπαραχθεί.\nπ.χ.: Acts_carFixingWheel</Greek>
+            <Finnish>Toistettavan animaation nimi.\nesim.: Acts_carFixingWheel</Finnish>
+            <Dutch>De naam van de animatie die moet worden afgespeeld.\nbijv.: Acts_carFixingWheel</Dutch>
+            <Ukrainian>Назва анімації, яку буде відтворено.\nнапр.: Acts_carFixingWheel</Ukrainian>
+            <Bulgarian>Името на анимацията, която ще се възпроизведе.\nнапр.: Acts_carFixingWheel</Bulgarian>
+            <Latin>Nomen animationis agendae.\nex. gr.: Acts_carFixingWheel</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingBuildAnimation_name">
             <English>Animation</English>
+            <Czech>Animace</Czech>
+            <French>Animation</French>
+            <Spanish>Animación</Spanish>
+            <Italian>Animazione</Italian>
+            <Polish>Animacja</Polish>
+            <Portuguese>Animação</Portuguese>
+            <Russian>Анимация</Russian>
             <German>Animation</German>
+            <Korean>애니메이션</Korean>
+            <Japanese>アニメーション</Japanese>
+            <Chinese>動畫</Chinese>
+            <Chinesesimp>动画</Chinesesimp>
+            <Turkish>Animasyon</Turkish>
+            <Swedish>Animation</Swedish>
+            <Slovak>Animácia</Slovak>
+            <Norwegian>Animasjon</Norwegian>
+            <Icelandic>Hreyfimynd</Icelandic>
+            <Hungarian>Animáció</Hungarian>
+            <Greek>Κίνηση</Greek>
+            <Finnish>Animaatio</Finnish>
+            <Dutch>Animatie</Dutch>
+            <Ukrainian>Анімація</Ukrainian>
+            <Bulgarian>Анимация</Bulgarian>
+            <Latin>Animatio</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingBuildTime_description">
             <English>How many seconds does the player need to lay out the tarp.</English>
+            <Czech>Kolik sekund potřebuje hráč k rozložení plachty.</Czech>
+            <French>Combien de secondes le joueur a besoin pour déployer la bâche.</French>
+            <Spanish>Cuántos segundos necesita el jugador para desplegar la lona.</Spanish>
+            <Italian>Quanti secondi impiega il giocatore a stendere il telone.</Italian>
+            <Polish>Ile sekund gracz potrzebuje na rozłożenie plandeki.</Polish>
+            <Portuguese>Quantos segundos o jogador precisa para estender a lona.</Portuguese>
+            <Russian>Сколько секунд нужно игроку, чтобы расстелить тент.</Russian>
             <German>Wie viele Sekunden der Spieler braucht, um das Tarp auszubreiten.</German>
+            <Korean>플레이어가 방수포를 펼치는 데 필요한 시간(초).</Korean>
+            <Japanese>プレイヤーがシートを広げるのに必要な秒数。</Japanese>
+            <Chinese>玩家鋪設帆布所需的秒數。</Chinese>
+            <Chinesesimp>玩家铺设帆布所需的秒数。</Chinesesimp>
+            <Turkish>Oyuncunun brandayı sermesi için kaç saniyeye ihtiyacı var.</Turkish>
+            <Swedish>Hur många sekunder spelaren behöver för att lägga ut presenningen.</Swedish>
+            <Slovak>Koľko sekúnd potrebuje hráč na rozloženie plachty.</Slovak>
+            <Norwegian>Hvor mange sekunder spilleren trenger for å legge ut presenningen.</Norwegian>
+            <Icelandic>Hversu margar sekúndur leikmaðurinn þarf til að leggja út dúkinn.</Icelandic>
+            <Hungarian>Hány másodpercre van szüksége a játékosnak a ponyva kiterítéséhez.</Hungarian>
+            <Greek>Πόσα δευτερόλεπτα χρειάζεται ο παίκτης για να απλώσει τον μουσαμά.</Greek>
+            <Finnish>Kuinka monta sekuntia pelaaja tarvitsee suojapeitteen levittämiseen.</Finnish>
+            <Dutch>Hoeveel seconden de speler nodig heeft om het dekzeil uit te leggen.</Dutch>
+            <Ukrainian>Скільки секунд потрібно гравцю, щоб розстелити тент.</Ukrainian>
+            <Bulgarian>Колко секунди са необходими на играча за разгъване на брезента.</Bulgarian>
+            <Latin>Quot secunda lusori necessaria sunt ut tegumentum extendat.</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingBuildTime_name">
             <English>Buildtime</English>
+            <Czech>Doba stavby</Czech>
+            <French>Temps de construction</French>
+            <Spanish>Tiempo de construcción</Spanish>
+            <Italian>Tempo di costruzione</Italian>
+            <Polish>Czas budowy</Polish>
+            <Portuguese>Tempo de construção</Portuguese>
+            <Russian>Время постройки</Russian>
             <German>Bauzeit</German>
+            <Korean>제작 시간</Korean>
+            <Japanese>設営時間</Japanese>
+            <Chinese>建造時間</Chinese>
+            <Chinesesimp>建造时间</Chinesesimp>
+            <Turkish>Kurulum Süresi</Turkish>
+            <Swedish>Byggtid</Swedish>
+            <Slovak>Čas výstavby</Slovak>
+            <Norwegian>Byggetid</Norwegian>
+            <Icelandic>Byggingartími</Icelandic>
+            <Hungarian>Építési idő</Hungarian>
+            <Greek>Χρόνος κατασκευής</Greek>
+            <Finnish>Rakennusaika</Finnish>
+            <Dutch>Bouwtijd</Dutch>
+            <Ukrainian>Час встановлення</Ukrainian>
+            <Bulgarian>Време за изграждане</Bulgarian>
+            <Latin>Tempus exstructionis</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingUseAnimation_description">
             <English>Should the player play an animation during the execution.\n(the animation duration is not taken into account)</English>
+            <Czech>Má hráč během provádění přehrát animaci.\n(délka animace se nebere v úvahu)</Czech>
+            <French>Le joueur doit-il jouer une animation pendant l'exécution.\n(la durée de l'animation n'est pas prise en compte)</French>
+            <Spanish>Si el jugador debe reproducir una animación durante la ejecución.\n(la duración de la animación no se tiene en cuenta)</Spanish>
+            <Italian>Se il giocatore deve riprodurre un'animazione durante l'esecuzione.\n(la durata dell'animazione non viene considerata)</Italian>
+            <Polish>Czy gracz ma odtworzyć animację podczas wykonywania czynności.\n(czas trwania animacji nie jest brany pod uwagę)</Polish>
+            <Portuguese>Se o jogador deve reproduzir uma animação durante a execução.\n(a duração da animação não é levada em conta)</Portuguese>
+            <Russian>Должен ли игрок воспроизводить анимацию во время выполнения действия.\n(продолжительность анимации не учитывается)</Russian>
             <German>Soll der Spieler während der Durchführung eine Animation abspielen.\n(Die Animationsdauer wird nicht berücksichtigt)</German>
+            <Korean>실행 중 플레이어가 애니메이션을 재생해야 하는지 여부.\n(애니메이션 재생 시간은 고려되지 않습니다)</Korean>
+            <Japanese>実行中にプレイヤーがアニメーションを再生するかどうか。\n(アニメーションの長さは考慮されません)</Japanese>
+            <Chinese>玩家在執行期間是否應播放動畫。\n(動畫時長不計入內)</Chinese>
+            <Chinesesimp>玩家在执行期间是否应播放动画。\n(动画时长不计入内)</Chinesesimp>
+            <Turkish>Oyuncunun işlem sırasında bir animasyon oynatıp oynatmayacağı.\n(animasyon süresi hesaba katılmaz)</Turkish>
+            <Swedish>Om spelaren ska spela en animation under utförandet.\n(animationens längd tas inte med i beräkningen)</Swedish>
+            <Slovak>Či má hráč počas vykonávania prehrať animáciu.\n(dĺžka animácie sa neberie do úvahy)</Slovak>
+            <Norwegian>Om spilleren skal spille av en animasjon under utførelsen.\n(animasjonens varighet tas ikke med i beregningen)</Norwegian>
+            <Icelandic>Hvort leikmaðurinn eigi að spila hreyfimynd meðan á framkvæmd stendur.\n(lengd hreyfimyndarinnar er ekki tekin með í reikninginn)</Icelandic>
+            <Hungarian>Játsszon-e le a játékos animációt a végrehajtás közben.\n(az animáció időtartama nem számít bele)</Hungarian>
+            <Greek>Αν ο παίκτης πρέπει να αναπαράγει μια κίνηση κατά την εκτέλεση.\n(η διάρκεια της κίνησης δεν λαμβάνεται υπόψη)</Greek>
+            <Finnish>Toistaako pelaaja animaation suorituksen aikana.\n(animaation kestoa ei oteta huomioon)</Finnish>
+            <Dutch>Of de speler tijdens de uitvoering een animatie moet afspelen.\n(de duur van de animatie wordt niet meegerekend)</Dutch>
+            <Ukrainian>Чи повинен гравець відтворювати анімацію під час виконання.\n(тривалість анімації не враховується)</Ukrainian>
+            <Bulgarian>Дали играчът трябва да възпроизведе анимация по време на изпълнението.\n(продължителността на анимацията не се взема предвид)</Bulgarian>
+            <Latin>Utrum lusor animationem durante actione agere debeat.\n(duratio animationis non computatur)</Latin>
         </Key>
         <Key ID="STR_tt_Drone_settingUseAnimation_name">
             <English>Play Animation</English>
+            <Czech>Přehrát animaci</Czech>
+            <French>Jouer l'animation</French>
+            <Spanish>Reproducir animación</Spanish>
+            <Italian>Riproduci animazione</Italian>
+            <Polish>Odtwórz animację</Polish>
+            <Portuguese>Reproduzir animação</Portuguese>
+            <Russian>Воспроизвести анимацию</Russian>
             <German>Animation abspielen</German>
+            <Korean>애니메이션 재생</Korean>
+            <Japanese>アニメーションを再生</Japanese>
+            <Chinese>播放動畫</Chinese>
+            <Chinesesimp>播放动画</Chinesesimp>
+            <Turkish>Animasyonu Oynat</Turkish>
+            <Swedish>Spela animation</Swedish>
+            <Slovak>Prehrať animáciu</Slovak>
+            <Norwegian>Spill av animasjon</Norwegian>
+            <Icelandic>Spila hreyfimynd</Icelandic>
+            <Hungarian>Animáció lejátszása</Hungarian>
+            <Greek>Αναπαραγωγή κίνησης</Greek>
+            <Finnish>Toista animaatio</Finnish>
+            <Dutch>Animatie afspelen</Dutch>
+            <Ukrainian>Відтворити анімацію</Ukrainian>
+            <Bulgarian>Възпроизведи анимация</Bulgarian>
+            <Latin>Animationem age</Latin>
         </Key>
         <Key ID="STR_tt_Drone_tarp_black_displayName">
             <English>Drone Tarp (Black)</English>
+            <Czech>Plachta pro dron (Černá)</Czech>
+            <French>Bâche pour drone (Noir)</French>
+            <Spanish>Lona para dron (Negro)</Spanish>
+            <Italian>Telone per drone (Nero)</Italian>
+            <Polish>Plandeka dla drona (Czarny)</Polish>
+            <Portuguese>Lona para drone (Preto)</Portuguese>
+            <Russian>Тент для дрона (Чёрный)</Russian>
             <German>Drohnentarp (Schwarz)</German>
+            <Korean>드론용 방수포 (검정)</Korean>
+            <Japanese>ドローン用シート（黒）</Japanese>
+            <Chinese>無人機帆布（黑色）</Chinese>
+            <Chinesesimp>无人机帆布（黑色）</Chinesesimp>
+            <Turkish>Drone Brandası (Siyah)</Turkish>
+            <Swedish>Dronpresenning (Svart)</Swedish>
+            <Slovak>Plachta pre dron (Čierna)</Slovak>
+            <Norwegian>Dronepresenning (Svart)</Norwegian>
+            <Icelandic>Drónadúkur (Svartur)</Icelandic>
+            <Hungarian>Drónponyva (Fekete)</Hungarian>
+            <Greek>Μουσαμάς για Drone (Μαύρο)</Greek>
+            <Finnish>Drone-peite (Musta)</Finnish>
+            <Dutch>Dronedekzeil (Zwart)</Dutch>
+            <Ukrainian>Тент для дрона (Чорний)</Ukrainian>
+            <Bulgarian>Брезент за дрон (Черен)</Bulgarian>
+            <Latin>Tegumentum Drone (Nigrum)</Latin>
         </Key>
         <Key ID="STR_tt_Drone_tarp_description">
             <English>A tarp that can be laid out as a landing zone for a drone.</English>
+            <Czech>Plachta, kterou lze rozložit jako přistávací zónu pro dron.</Czech>
+            <French>Une bâche pouvant être déployée comme zone d'atterrissage pour un drone.</French>
+            <Spanish>Una lona que puede desplegarse como zona de aterrizaje para un dron.</Spanish>
+            <Italian>Un telone che può essere steso come zona di atterraggio per un drone.</Italian>
+            <Polish>Plandeka, którą można rozłożyć jako strefę lądowania dla drona.</Polish>
+            <Portuguese>Uma lona que pode ser estendida como uma zona de pouso para um drone.</Portuguese>
+            <Russian>Тент, который можно расстелить как место посадки для дрона.</Russian>
             <German>Ein Tarp, das als Landeplatz für eine Drohne ausgelegt werden kann.</German>
+            <Korean>드론의 착륙 지점으로 펼칠 수 있는 방수포입니다.</Korean>
+            <Japanese>ドローンの着陸地点として広げることができるシートです。</Japanese>
+            <Chinese>一塊可鋪設為無人機降落區的帆布。</Chinese>
+            <Chinesesimp>一块可铺设为无人机降落区的帆布。</Chinesesimp>
+            <Turkish>Bir drone için iniş bölgesi olarak serilebilen bir branda.</Turkish>
+            <Swedish>En presenning som kan läggas ut som en landningszon för en drönare.</Swedish>
+            <Slovak>Plachta, ktorú je možné rozložiť ako pristávaciu zónu pre dron.</Slovak>
+            <Norwegian>En presenning som kan legges ut som en landingssone for en drone.</Norwegian>
+            <Icelandic>Dúkur sem hægt er að leggja út sem lendingarsvæði fyrir dróna.</Icelandic>
+            <Hungarian>Egy ponyva, amely drón leszállóhelyeként teríthető ki.</Hungarian>
+            <Greek>Ένας μουσαμάς που μπορεί να απλωθεί ως ζώνη προσγείωσης για drone.</Greek>
+            <Finnish>Peite, joka voidaan levittää droonin laskeutumisalueeksi.</Finnish>
+            <Dutch>Een dekzeil dat kan worden uitgelegd als landingszone voor een drone.</Dutch>
+            <Ukrainian>Тент, який можна розстелити як зону посадки для дрона.</Ukrainian>
+            <Bulgarian>Брезент, който може да се разгъне като зона за кацане на дрон.</Bulgarian>
+            <Latin>Tegumentum quod ut zona descensus pro drone extendi potest.</Latin>
         </Key>
         <Key ID="STR_tt_Drone_tarp_green_displayName">
             <English>Drone Tarp (Green)</English>
+            <Czech>Plachta pro dron (Zelená)</Czech>
+            <French>Bâche pour drone (Vert)</French>
+            <Spanish>Lona para dron (Verde)</Spanish>
+            <Italian>Telone per drone (Verde)</Italian>
+            <Polish>Plandeka dla drona (Zielony)</Polish>
+            <Portuguese>Lona para drone (Verde)</Portuguese>
+            <Russian>Тент для дрона (Зелёный)</Russian>
             <German>Drohnentarp (Grün)</German>
+            <Korean>드론용 방수포 (초록)</Korean>
+            <Japanese>ドローン用シート（緑）</Japanese>
+            <Chinese>無人機帆布（綠色）</Chinese>
+            <Chinesesimp>无人机帆布（绿色）</Chinesesimp>
+            <Turkish>Drone Brandası (Yeşil)</Turkish>
+            <Swedish>Dronpresenning (Grön)</Swedish>
+            <Slovak>Plachta pre dron (Zelená)</Slovak>
+            <Norwegian>Dronepresenning (Grønn)</Norwegian>
+            <Icelandic>Drónadúkur (Grænn)</Icelandic>
+            <Hungarian>Drónponyva (Zöld)</Hungarian>
+            <Greek>Μουσαμάς για Drone (Πράσινο)</Greek>
+            <Finnish>Drone-peite (Vihreä)</Finnish>
+            <Dutch>Dronedekzeil (Groen)</Dutch>
+            <Ukrainian>Тент для дрона (Зелений)</Ukrainian>
+            <Bulgarian>Брезент за дрон (Зелен)</Bulgarian>
+            <Latin>Tegumentum Drone (Viride)</Latin>
         </Key>
         <Key ID="STR_tt_Drone_tarp_red_displayName">
             <English>Drone Tarp (Red)</English>
+            <Czech>Plachta pro dron (Červená)</Czech>
+            <French>Bâche pour drone (Rouge)</French>
+            <Spanish>Lona para dron (Rojo)</Spanish>
+            <Italian>Telone per drone (Rosso)</Italian>
+            <Polish>Plandeka dla drona (Czerwony)</Polish>
+            <Portuguese>Lona para drone (Vermelho)</Portuguese>
+            <Russian>Тент для дрона (Красный)</Russian>
             <German>Drohnentarp (Rot)</German>
+            <Korean>드론용 방수포 (빨강)</Korean>
+            <Japanese>ドローン用シート（赤）</Japanese>
+            <Chinese>無人機帆布（紅色）</Chinese>
+            <Chinesesimp>无人机帆布（红色）</Chinesesimp>
+            <Turkish>Drone Brandası (Kırmızı)</Turkish>
+            <Swedish>Dronpresenning (Röd)</Swedish>
+            <Slovak>Plachta pre dron (Červená)</Slovak>
+            <Norwegian>Dronepresenning (Rød)</Norwegian>
+            <Icelandic>Drónadúkur (Rauður)</Icelandic>
+            <Hungarian>Drónponyva (Piros)</Hungarian>
+            <Greek>Μουσαμάς για Drone (Κόκκινο)</Greek>
+            <Finnish>Drone-peite (Punainen)</Finnish>
+            <Dutch>Dronedekzeil (Rood)</Dutch>
+            <Ukrainian>Тент для дрона (Червоний)</Ukrainian>
+            <Bulgarian>Брезент за дрон (Червен)</Bulgarian>
+            <Latin>Tegumentum Drone (Rubrum)</Latin>
         </Key>
         <Key ID="STR_tt_Drone_tarp_yellow_displayName">
             <English>Drone Tarp (Yellow)</English>
+            <Czech>Plachta pro dron (Žlutá)</Czech>
+            <French>Bâche pour drone (Jaune)</French>
+            <Spanish>Lona para dron (Amarillo)</Spanish>
+            <Italian>Telone per drone (Giallo)</Italian>
+            <Polish>Plandeka dla drona (Żółty)</Polish>
+            <Portuguese>Lona para drone (Amarelo)</Portuguese>
+            <Russian>Тент для дрона (Жёлтый)</Russian>
             <German>Drohnentarp (Gelb)</German>
+            <Korean>드론용 방수포 (노랑)</Korean>
+            <Japanese>ドローン用シート（黄）</Japanese>
+            <Chinese>無人機帆布（黃色）</Chinese>
+            <Chinesesimp>无人机帆布（黄色）</Chinesesimp>
+            <Turkish>Drone Brandası (Sarı)</Turkish>
+            <Swedish>Dronpresenning (Gul)</Swedish>
+            <Slovak>Plachta pre dron (Žltá)</Slovak>
+            <Norwegian>Dronepresenning (Gul)</Norwegian>
+            <Icelandic>Drónadúkur (Gulur)</Icelandic>
+            <Hungarian>Drónponyva (Sárga)</Hungarian>
+            <Greek>Μουσαμάς για Drone (Κίτρινο)</Greek>
+            <Finnish>Drone-peite (Keltainen)</Finnish>
+            <Dutch>Dronedekzeil (Geel)</Dutch>
+            <Ukrainian>Тент для дрона (Жовтий)</Ukrainian>
+            <Bulgarian>Брезент за дрон (Жълт)</Bulgarian>
+            <Latin>Tegumentum Drone (Flavum)</Latin>
         </Key>
     </Package>
 </Project>

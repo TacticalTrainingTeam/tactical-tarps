@@ -3,27 +3,165 @@
     <Package name="Main">
         <Key ID="STR_tt_Main_Author">
             <English>Tactical Tarps Team</English>
+            <Czech>Tactical Tarps Team</Czech>
+            <French>Tactical Tarps Team</French>
+            <Spanish>Tactical Tarps Team</Spanish>
+            <Italian>Tactical Tarps Team</Italian>
+            <Polish>Tactical Tarps Team</Polish>
+            <Portuguese>Tactical Tarps Team</Portuguese>
+            <Russian>Tactical Tarps Team</Russian>
             <German>Tactical Tarps Team</German>
+            <Korean>Tactical Tarps Team</Korean>
+            <Japanese>Tactical Tarps Team</Japanese>
+            <Chinese>Tactical Tarps Team</Chinese>
+            <Chinesesimp>Tactical Tarps Team</Chinesesimp>
+            <Turkish>Tactical Tarps Team</Turkish>
+            <Swedish>Tactical Tarps Team</Swedish>
+            <Slovak>Tactical Tarps Team</Slovak>
+            <Norwegian>Tactical Tarps Team</Norwegian>
+            <Icelandic>Tactical Tarps Team</Icelandic>
+            <Hungarian>Tactical Tarps Team</Hungarian>
+            <Greek>Tactical Tarps Team</Greek>
+            <Finnish>Tactical Tarps Team</Finnish>
+            <Dutch>Tactical Tarps Team</Dutch>
+            <Ukrainian>Tactical Tarps Team</Ukrainian>
+            <Bulgarian>Tactical Tarps Team</Bulgarian>
+            <Latin>Tactical Tarps Team</Latin>
         </Key>
         <Key ID="STR_tt_Main_Name">
             <English>Tactical Tarps</English>
-            <German>Tactial Tarps</German>
+            <Czech>Tactical Tarps</Czech>
+            <French>Tactical Tarps</French>
+            <Spanish>Tactical Tarps</Spanish>
+            <Italian>Tactical Tarps</Italian>
+            <Polish>Tactical Tarps</Polish>
+            <Portuguese>Tactical Tarps</Portuguese>
+            <Russian>Tactical Tarps</Russian>
+            <German>Tactical Tarps</German>
+            <Korean>Tactical Tarps</Korean>
+            <Japanese>Tactical Tarps</Japanese>
+            <Chinese>Tactical Tarps</Chinese>
+            <Chinesesimp>Tactical Tarps</Chinesesimp>
+            <Turkish>Tactical Tarps</Turkish>
+            <Swedish>Tactical Tarps</Swedish>
+            <Slovak>Tactical Tarps</Slovak>
+            <Norwegian>Tactical Tarps</Norwegian>
+            <Icelandic>Tactical Tarps</Icelandic>
+            <Hungarian>Tactical Tarps</Hungarian>
+            <Greek>Tactical Tarps</Greek>
+            <Finnish>Tactical Tarps</Finnish>
+            <Dutch>Tactical Tarps</Dutch>
+            <Ukrainian>Tactical Tarps</Ukrainian>
+            <Bulgarian>Tactical Tarps</Bulgarian>
+            <Latin>Tactical Tarps</Latin>
         </Key>
         <Key ID="STR_tt_Main_URL">
             <English>https://tacticalteam.de</English>
+            <Czech>https://tacticalteam.de</Czech>
+            <French>https://tacticalteam.de</French>
+            <Spanish>https://tacticalteam.de</Spanish>
+            <Italian>https://tacticalteam.de</Italian>
+            <Polish>https://tacticalteam.de</Polish>
+            <Portuguese>https://tacticalteam.de</Portuguese>
+            <Russian>https://tacticalteam.de</Russian>
             <German>https://tacticalteam.de</German>
+            <Korean>https://tacticalteam.de</Korean>
+            <Japanese>https://tacticalteam.de</Japanese>
+            <Chinese>https://tacticalteam.de</Chinese>
+            <Chinesesimp>https://tacticalteam.de</Chinesesimp>
+            <Turkish>https://tacticalteam.de</Turkish>
+            <Swedish>https://tacticalteam.de</Swedish>
+            <Slovak>https://tacticalteam.de</Slovak>
+            <Norwegian>https://tacticalteam.de</Norwegian>
+            <Icelandic>https://tacticalteam.de</Icelandic>
+            <Hungarian>https://tacticalteam.de</Hungarian>
+            <Greek>https://tacticalteam.de</Greek>
+            <Finnish>https://tacticalteam.de</Finnish>
+            <Dutch>https://tacticalteam.de</Dutch>
+            <Ukrainian>https://tacticalteam.de</Ukrainian>
+            <Bulgarian>https://tacticalteam.de</Bulgarian>
+            <Latin>https://tacticalteam.de</Latin>
         </Key>
         <Key ID="STR_tt_Main_placeCancel">
             <English>Cancel</English>
+            <Czech>Zrušit</Czech>
+            <French>Annuler</French>
+            <Spanish>Cancelar</Spanish>
+            <Italian>Annulla</Italian>
+            <Polish>Anuluj</Polish>
+            <Portuguese>Cancelar</Portuguese>
+            <Russian>Отмена</Russian>
             <German>Abbrechen</German>
+            <Korean>취소</Korean>
+            <Japanese>キャンセル</Japanese>
+            <Chinese>取消</Chinese>
+            <Chinesesimp>取消</Chinesesimp>
+            <Turkish>İptal</Turkish>
+            <Swedish>Avbryt</Swedish>
+            <Slovak>Zrušiť</Slovak>
+            <Norwegian>Avbryt</Norwegian>
+            <Icelandic>Hætta við</Icelandic>
+            <Hungarian>Mégse</Hungarian>
+            <Greek>Ακύρωση</Greek>
+            <Finnish>Peruuta</Finnish>
+            <Dutch>Annuleren</Dutch>
+            <Ukrainian>Скасувати</Ukrainian>
+            <Bulgarian>Отказ</Bulgarian>
+            <Latin>Cancella</Latin>
         </Key>
         <Key ID="STR_tt_Main_placeConfirm">
             <English>Confirm placement</English>
+            <Czech>Potvrdit umístění</Czech>
+            <French>Confirmer le placement</French>
+            <Spanish>Confirmar colocación</Spanish>
+            <Italian>Conferma posizionamento</Italian>
+            <Polish>Potwierdź umieszczenie</Polish>
+            <Portuguese>Confirmar posicionamento</Portuguese>
+            <Russian>Подтвердить размещение</Russian>
             <German>Platzierung bestätigen</German>
+            <Korean>배치 확인</Korean>
+            <Japanese>配置を確定</Japanese>
+            <Chinese>確認放置</Chinese>
+            <Chinesesimp>确认放置</Chinesesimp>
+            <Turkish>Yerleşimi Onayla</Turkish>
+            <Swedish>Bekräfta placering</Swedish>
+            <Slovak>Potvrdiť umiestnenie</Slovak>
+            <Norwegian>Bekreft plassering</Norwegian>
+            <Icelandic>Staðfesta staðsetningu</Icelandic>
+            <Hungarian>Elhelyezés megerősítése</Hungarian>
+            <Greek>Επιβεβαίωση τοποθέτησης</Greek>
+            <Finnish>Vahvista sijoitus</Finnish>
+            <Dutch>Plaatsing bevestigen</Dutch>
+            <Ukrainian>Підтвердити розміщення</Ukrainian>
+            <Bulgarian>Потвърди поставянето</Bulgarian>
+            <Latin>Positionem confirma</Latin>
         </Key>
         <Key ID="STR_tt_Main_placeRotate">
             <English>Rotate</English>
+            <Czech>Otočit</Czech>
+            <French>Pivoter</French>
+            <Spanish>Rotar</Spanish>
+            <Italian>Ruota</Italian>
+            <Polish>Obróć</Polish>
+            <Portuguese>Girar</Portuguese>
+            <Russian>Повернуть</Russian>
             <German>Drehen</German>
+            <Korean>회전</Korean>
+            <Japanese>回転</Japanese>
+            <Chinese>旋轉</Chinese>
+            <Chinesesimp>旋转</Chinesesimp>
+            <Turkish>Döndür</Turkish>
+            <Swedish>Rotera</Swedish>
+            <Slovak>Otočiť</Slovak>
+            <Norwegian>Roter</Norwegian>
+            <Icelandic>Snúa</Icelandic>
+            <Hungarian>Forgatás</Hungarian>
+            <Greek>Περιστροφή</Greek>
+            <Finnish>Kierrä</Finnish>
+            <Dutch>Draaien</Dutch>
+            <Ukrainian>Повернути</Ukrainian>
+            <Bulgarian>Завърти</Bulgarian>
+            <Latin>Verte</Latin>
         </Key>
     </Package>
 </Project>

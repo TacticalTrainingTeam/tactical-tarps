@@ -36,7 +36,13 @@ private _object = createVehicle [_classname, [0, 0, 0], [], 0, "CAN_COLLIDE"];
 _object setPosASL _posASL;
 _object setVectorDirAndUp _vectorDirAndUp;
 
-private _grassCutter = createVehicle ["Land_ClutterCutter_medium_F", getPos _object, [], 0, "CAN_COLLIDE"];
+private _boundingSphere = boundingBoxReal _object select 2;
+
+private _grassCutter = switch true do {
+    case (_boundingSphere < 2): {createVehicle ["Land_ClutterCutter_small_F", getPos _object, [], 0, "CAN_COLLIDE"];};
+    case (_boundingSphere < 6): {createVehicle ["Land_ClutterCutter_medium_F", getPos _object, [], 0, "CAN_COLLIDE"];};
+    default {createVehicle ["Land_ClutterCutter_large_F", getPos _object, [], 0, "CAN_COLLIDE"];};
+};
 
 _object setVariable [(_config get "inUseVar"), false, true];
 _object setVariable [QGVAR(sourceItem), _itemClassname, true];
