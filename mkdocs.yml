@@ -74,6 +74,9 @@ nav:
   - Medic:
       - Overview: medic/index.md
       - Settings: medic/settings.md
+  - Repair:
+      - Overview: repair/index.md
+      - Settings: repair/settings.md
   - Signal:
       - Overview: signal/index.md
       - Settings: signal/settings.md

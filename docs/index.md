@@ -8,6 +8,7 @@ This is the documentation site for the Tactical Tarps mod.
 - [Drone](drone/index.md) marks drone landing spots and spawns a helper helipad object
 - [Hazmat](hazmat/index.md) provides a contaminated-item drop-off flow with full/empty bag behavior
 - [Medic](medic/index.md) creates a mobile treatment point and optional extra spawned assets
+- [Repair](repair/index.md) marks a vehicle repair point with decorative tool props (black only)
 - [Signal](signal/index.md) provides visual landing zone and range marking tarps
 
 ## License
