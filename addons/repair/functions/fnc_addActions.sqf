@@ -59,9 +59,9 @@ private _config = createHashMapFromArray [
     ["animation", GVAR(buildAnimation)],
     ["constructText", LLSTRING(actionConstruct)],
     ["deconstructText", LLSTRING(actionDeconstruct)],
-    ["abortText", LLSTRING(abort)],
-    ["hintErrorNoSpace", LLSTRING(hintErrorNoSpace)],
-    ["hintLoaded", LLSTRING(hintLoaded)],
+    ["abortText", localize ELSTRING(common,abort)],
+    ["hintErrorNoSpace", localize ELSTRING(common,hintErrorNoSpace)],
+    ["hintLoaded", localize ELSTRING(common,hintLoaded)],
     ["onConstruct", _onConstruct],
     ["onDeconstruct", _onDeconstruct]
 ];

@@ -1,7 +1,7 @@
 [
     QGVAR(buildTime),
     "SLIDER",
-    [LSTRING(settingBuildTime_name), LSTRING(settingBuildTime_description)],
+    [ELSTRING(common,settingBuildTime_name), ELSTRING(common,settingBuildTime_description)],
     [ELSTRING(main,Name), LSTRING(SubCategory)],
     [2, 60, 6, 0],
     true
@@ -10,7 +10,7 @@
 [
     QGVAR(useAnimation),
     "CHECKBOX",
-    [LSTRING(settingUseAnimation_name), LSTRING(settingUseAnimation_description)],
+    [ELSTRING(common,settingUseAnimation_name), ELSTRING(common,settingUseAnimation_description)],
     [ELSTRING(main,Name), LSTRING(SubCategory)],
     true,
     true
@@ -19,7 +19,7 @@
 [
     QGVAR(buildAnimation),
     "EDITBOX",
-    [LSTRING(settingBuildAnimation_name), LSTRING(settingBuildAnimation_description)],
+    [ELSTRING(common,settingBuildAnimation_name), ELSTRING(common,settingBuildAnimation_description)],
     [ELSTRING(main,Name), LSTRING(SubCategory)],
     "Acts_carFixingWheel",
     true

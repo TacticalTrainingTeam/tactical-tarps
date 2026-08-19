@@ -4,44 +4,14 @@
         <Key ID="STR_tt_Repair_SubCategory">
             <English>Repair Tarp</English>
         </Key>
-        <Key ID="STR_tt_Repair_abort">
-            <English>Action aborted</English>
-        </Key>
         <Key ID="STR_tt_Repair_actionConstruct">
             <English>Lay out repair tarp</English>
         </Key>
         <Key ID="STR_tt_Repair_actionDeconstruct">
             <English>Stow repair tarp into backpack</English>
         </Key>
-        <Key ID="STR_tt_Repair_hintErrorNoSpace">
-            <English>No space to lay out the tarp</English>
-        </Key>
-        <Key ID="STR_tt_Repair_hintLoaded">
-            <English>The tarp was stowed into the backpack.</English>
-        </Key>
         <Key ID="STR_tt_Repair_settingAdditionalItems_description">
             <English>Classnames of additional items to be placed on/near the facility.\ni.e.: ["Land_Wrench_F","Land_Pliers_F","Land_Screwdriver_V1_F","Land_Gloves_F"]\n(The array must be enclosed with ' in cba_settings.sqf)</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingAdditionalItems_name">
-            <English>Additional Objects</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingBuildAnimation_description">
-            <English>The name of the animation to be played.\ni.e.: Acts_carFixingWheel</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingBuildAnimation_name">
-            <English>Animation</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingBuildTime_description">
-            <English>How many seconds does the player need to lay out the tarp.</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingBuildTime_name">
-            <English>Buildtime</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingUseAnimation_description">
-            <English>Should the player play an animation during the execution.\n(the animation duration is not taken into account)</English>
-        </Key>
-        <Key ID="STR_tt_Repair_settingUseAnimation_name">
-            <English>Play Animation</English>
         </Key>
         <Key ID="STR_tt_Repair_tarp_black_displayName">
             <English>Repair Tarp (Black)</English>
