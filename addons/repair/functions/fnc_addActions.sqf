@@ -36,7 +36,7 @@ private _onConstruct = {
     private _arrayItems = [_position, 8, 8, 0, true, 0] nearEntities [parseSimpleArray GVAR(additionalItems), false, true, false];
 
     {
-        _x addCuratorEditableObjects [([_object] + _arrayItems), false];
+        _x addCuratorEditableObjects [([_object]), false];
     } forEach allCurators;
 };
 
