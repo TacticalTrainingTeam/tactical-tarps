@@ -3,21 +3,27 @@
     <Package name="Repair">
         <Key ID="STR_tt_Repair_SubCategory">
             <English>Repair Tarp</English>
+            <German>Reparaturtarp</German>
         </Key>
         <Key ID="STR_tt_Repair_actionConstruct">
             <English>Lay out repair tarp</English>
+            <German>Reparaturtarp auslegen</German>
         </Key>
         <Key ID="STR_tt_Repair_actionDeconstruct">
             <English>Stow repair tarp into backpack</English>
+            <German>Packe Reparaturtarp in Rucksack</German>
         </Key>
         <Key ID="STR_tt_Repair_settingAdditionalItems_description">
             <English>Classnames of additional items to be placed on/near the facility.\ni.e.: ["Land_Wrench_F","Land_Pliers_F","Land_Screwdriver_V1_F","Land_Gloves_F"]\n(The array must be enclosed with ' in cba_settings.sqf)</English>
+            <German>Klassennamen zusätzlicher Objekte die auf/bei der Einrichtung platziert werden sollen.\nBsp: ["Land_Wrench_F","Land_Pliers_F","Land_Screwdriver_V1_F","Land_Gloves_F"]\n(In der cba_settings.sqf muss das Array mit ' umschlossen werden)</German>
         </Key>
         <Key ID="STR_tt_Repair_tarp_black_displayName">
             <English>Repair Tarp (Black)</English>
+            <German>Reparaturtarp (Schwarz)</German>
         </Key>
         <Key ID="STR_tt_Repair_tarp_description">
             <English>A tarp that sets up a vehicle repair point when deployed, laying out a set of tool props.</English>
+            <German>Ein Tarp, das beim Auslegen einen Reparaturpunkt für Fahrzeuge einrichtet und dabei Werkzeug-Requisiten platziert.</German>
         </Key>
     </Package>
 </Project>
