@@ -25,7 +25,7 @@ It then registers an ACE Arsenal right panel button named `Tarps`.
 ## `tt_common_enableZenContextActions`
 
 - Type: `CHECKBOX`
-- Default: `true`
+- Default: `false`
 - Scope: client setting
 - Purpose: Adds "TT - Construct"/"TT - Remove" actions to the [Zeus Enhanced](https://github.com/zen-mod/ZEN)
   context menu for objects belonging to the deployable tarp framework (medic, hazmat, repair,
@@ -38,5 +38,5 @@ It then registers an ACE Arsenal right panel button named `Tarps`.
 ``` cpp
 // cba_settings.sqf example
 force tt_common_addArsenalCategory = false; // default: true
-force tt_common_enableZenContextActions = false; // default: true
+force tt_common_enableZenContextActions = true; // default: false
 ```

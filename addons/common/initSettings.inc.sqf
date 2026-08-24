@@ -12,7 +12,7 @@ if ("zen_main" call CBA_fnc_isModLoaded) then {
         "CHECKBOX",
         [LSTRING(settingEnableZenContextActions_name), LSTRING(settingEnableZenContextActions_description)],
         [ELSTRING(main,Name), "Common"],
-        true
+        false
     ] call CBA_fnc_addSetting;
 };
 
