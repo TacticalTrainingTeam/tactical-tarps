@@ -7,6 +7,8 @@
  * when any matching tarp is carried) with one child action per tarp colour
  * (shown only when that specific item is carried, labelled with its displayName).
  * Also registers the "deconstruct" action on every possible deployed tarp class.
+ * Also registers the config into GVAR(zenDeployableConfigs) so the ZEN context menu
+ * integration (see CfgZenContext.hpp) can recognize items that belong to this framework.
  * Driven entirely by the supplied config HashMap. Used by ttt_drone_tarp,
  * ttt_signal_tarp and ttt_medic_tarp. Always registered - availability is gated
  * purely by whether the caller carries one of the configured tarp items.
@@ -36,6 +38,14 @@ private _constructId = _config get "constructId";
 private _deconstructId = _config get "deconstructId";
 private _tarpItems = _config get "tarpItems";
 private _deconstructClasses = _tarpItems apply {_x select 1};
+
+// Register with the ZEN context menu registry (see CfgZenContext.hpp) so the
+// "Instant Construct"/"Instant Remove" actions are only ever offered for items
+// that are actually part of this framework, keyed by the source item's classname.
+{
+    _x params ["_itemClassname"];
+    GVAR(zenDeployableConfigs) set [_itemClassname, _config];
+} forEach _tarpItems;
 
 [ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId]] call ace_interact_menu_fnc_removeActionFromObject;
 {

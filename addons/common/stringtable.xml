@@ -217,6 +217,12 @@
             <Bulgarian>Време за изграждане</Bulgarian>
             <Latin>Tempus exstructionis</Latin>
         </Key>
+        <Key ID="STR_tt_Common_settingEnableZenContextActions_description">
+            <English>Adds "Instant Construct"/"Instant Remove" actions to the Zeus Enhanced context menu for objects belonging to the deployable tarp framework (medic, hazmat, repair, signal, drone). Lets a curator build or remove a station instantly, without needing a player to carry the item.</English>
+        </Key>
+        <Key ID="STR_tt_Common_settingEnableZenContextActions_name">
+            <English>Enable ZEN Context Actions</English>
+        </Key>
         <Key ID="STR_tt_Common_settingUseAnimation_description">
             <English>Should the player play an animation during the execution.\n(the animation duration is not taken into account)</English>
             <Czech>Má hráč během provádění přehrát animaci.\n(délka animace se nebere v úvahu)</Czech>
@@ -270,6 +276,12 @@
             <Ukrainian>Відтворити анімацію</Ukrainian>
             <Bulgarian>Възпроизведи анимация</Bulgarian>
             <Latin>Animationem age</Latin>
+        </Key>
+        <Key ID="STR_tt_Common_zenInstantConstruct">
+            <English>TT - Construct</English>
+        </Key>
+        <Key ID="STR_tt_Common_zenInstantRemove">
+            <English>TT - Remove</English>
         </Key>
     </Package>
 </Project>

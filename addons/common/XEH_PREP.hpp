@@ -8,3 +8,6 @@ PREP(deployablePlace);
 PREP(deployableProgressConstruct);
 PREP(deployableProgressDeconstruct);
 PREP(deployableStartBuild);
+PREP(zenGetConstructActions);
+PREP(zenInstantConstruct);
+PREP(zenInstantRemove);

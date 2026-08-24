@@ -33,6 +33,11 @@ if (_itemOverride != "") then {
 
 [QGVAR(tarpDeconstructed), [_target, _caller, _itemClassname, _config], _caller] call CBA_fnc_localEvent;
 
+private _grassCutter = _target getVariable [QGVAR(grassCutter), objNull];
+if !(isNull _grassCutter) then {
+    deleteVehicle _grassCutter;
+};
+
 deleteVehicle _target;
 
 [(_config get "hintLoaded")] call ace_common_fnc_displayText;

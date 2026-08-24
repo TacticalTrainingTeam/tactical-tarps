@@ -46,6 +46,7 @@ private _grassCutter = switch true do {
 
 _object setVariable [(_config get "inUseVar"), false, true];
 _object setVariable [QGVAR(sourceItem), _itemClassname, true];
+_object setVariable [QGVAR(grassCutter), _grassCutter, true];
 
 private _onConstruct = _config getOrDefault ["onConstruct", {}];
 [_object, _target, _config] call _onConstruct;
