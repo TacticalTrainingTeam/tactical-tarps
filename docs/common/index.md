@@ -39,4 +39,24 @@ the class name of the inventory item that was consumed during construction.
 This value is synchronized globally and used during deconstruction to determine
 which item should be returned.
 
-Use the pages in this site for events, settings, API details, and integration examples.
+## Zeus Enhanced (ZEN) integration (optional)
+
+`common` optionally extends [Zeus Enhanced](https://github.com/zen-mod/ZEN)'s map context menu
+with two curator-only entries. This is entirely optional - if ZEN isn't loaded, this integration
+is completely inert and has no effect on the rest of the mod.
+
+- **TT - Construct** - right-click empty ground to build any registered tarp instantly at that
+  position, skipping the carry-item/build-time/animation flow. Entries are grouped into a submenu
+  per tarp type (alphabetically), with one leaf per colour variant inside (also alphabetical).
+  A tarp type with only a single registered colour skips the colour submenu and is offered
+  directly.
+- **TT - Remove** - right-click an existing deployed tarp to delete it instantly, with no item
+  given back (there is no caller to receive it).
+
+Both entries:
+
+- Only appear for objects/positions relevant to this framework - **TT - Construct** never shows
+  when right-clicking an existing object, and **TT - Remove** only ever appears for objects
+  actually built by this framework (tracked via the `tt_common_sourceItem` object variable above),
+  never for unrelated objects that merely share a classname.
+- Are gated behind the `tt_common_enableZenContextActions` setting (see [Settings](settings.md)).

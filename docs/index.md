@@ -11,6 +11,12 @@ This is the documentation site for the Tactical Tarps mod.
 - [Repair](repair/index.md) marks a vehicle repair point with decorative tool props (black only)
 - [Signal](signal/index.md) provides visual landing zone and range marking tarps
 
+## Optional compatibility
+
+[Common](common/index.md#zeus-enhanced-zen-integration-optional) adds "TT - Construct"/"TT - Remove"
+entries to [Zeus Enhanced](https://github.com/zen-mod/ZEN)'s map context menu, letting a curator
+build or remove any station instantly. This is fully optional and inert if ZEN isn't loaded.
+
 ## License
 
 This mod is licences under [Arma Public License - Share Alike](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/LICENSE) with exception of the common functions folder which is under [GNU General Public License](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/addons/common/functions/LICENSE).
