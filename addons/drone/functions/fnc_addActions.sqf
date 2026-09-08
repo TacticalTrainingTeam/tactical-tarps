@@ -3,7 +3,7 @@
  * Author: EinStein, Andx
  *
  * Builds the config for, and registers with, the shared TT "deployable
- * tarp" framework (see ttt_common's deployable* functions).
+ * tarp" framework (see tt_common's deployable* functions).
  *
  * Arguments:
  * None
@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [] call ttt_drone_tarp_fnc_addActions;
+ * [] call tt_drone_tarp_fnc_addActions;
  *
  * Public: No
  */

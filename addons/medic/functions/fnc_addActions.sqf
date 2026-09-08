@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [] call ttt_medic_tarp_fnc_addActions;
+ * [] call tt_medic_tarp_fnc_addActions;
  *
  * Public: No
  */
