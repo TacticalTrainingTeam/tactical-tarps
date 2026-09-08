@@ -1,21 +1,21 @@
 #include "..\script_component.hpp"
 /*
-* Author: EinStein, Andx
-*
-* Builds the config for, and registers with, the shared TT "deployable
-* tarp" framework (see ttt_common's deployable* functions).
-*
-* Arguments:
-* None
-*
-* Return Value:
-* None
-*
-* Example:
-* [] call ttt_drone_tarp_fnc_addActions;
-*
-* Public: No
-*/
+ * Author: EinStein, Andx
+ *
+ * Builds the config for, and registers with, the shared TT "deployable
+ * tarp" framework (see ttt_common's deployable* functions).
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call ttt_drone_tarp_fnc_addActions;
+ *
+ * Public: No
+ */
 
 private _tarpItems = [
     [QGVAR(tarp_Black), "Tarp_01_Small_Black_F"],

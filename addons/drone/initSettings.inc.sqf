@@ -4,7 +4,7 @@
     [ELSTRING(common,settingBuildTime_name), ELSTRING(common,settingBuildTime_description)],
     [ELSTRING(main,Name), LSTRING(SubCategory)],
     [2, 60, 6, 0],
-    1
+    true
 ] call CBA_fnc_addSetting;
 
 [
