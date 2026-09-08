@@ -9,8 +9,8 @@
  * Also registers the "deconstruct" action on every possible deployed tarp class.
  * Also registers the config into GVAR(zenDeployableConfigs) so the ZEN context menu
  * integration (see CfgZenContext.hpp) can recognize items that belong to this framework.
- * Driven entirely by the supplied config HashMap. Used by ttt_drone_tarp,
- * ttt_signal_tarp and ttt_medic_tarp. Always registered - availability is gated
+ * Driven entirely by the supplied config HashMap. Used by tt_drone_tarp,
+ * tt_signal_tarp and tt_medic_tarp. Always registered - availability is gated
  * purely by whether the caller carries one of the configured tarp items.
  *
  * Arguments:

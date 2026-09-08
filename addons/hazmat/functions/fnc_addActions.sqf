@@ -1,23 +1,23 @@
 #include "..\script_component.hpp"
 /*
-* Author: EinStein, Andx
-*
-* Builds the config for, and registers with, the shared TT "deployable
-* tarp" framework (see tt_common's deployable* functions). Also handles
-* deleting any items players dropped on the tarp and swapping the item
-* given back on pickup to the "full" variant when that happens.
-*
-* Arguments:
-* None
-*
-* Return Value:
-* None
-*
-* Example:
-* [] call ttt_hazmat_tarp_fnc_addActions;
-*
-* Public: No
-*/
+ * Author: EinStein, Andx
+ *
+ * Builds the config for, and registers with, the shared TT "deployable
+ * tarp" framework (see tt_common's deployable* functions). Also handles
+ * deleting any items players dropped on the tarp and swapping the item
+ * given back on pickup to the "full" variant when that happens.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call tt_hazmat_tarp_fnc_addActions;
+ *
+ * Public: No
+ */
 
 private _tarpItems = [
     [QGVAR(tarp_empty), "HazmatBag_01_empty_F"]
@@ -28,7 +28,7 @@ private _onConstruct = {
 
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
     private _weaponHolder = createVehicle ["GroundWeaponHolder_Scripted", getPos _object, [], 0, "CAN_COLLIDE"];
-    _object setVariable [QGVAR(weaponHolder), _weaponHolder];
+    _object setVariable [QGVAR(weaponHolder), _weaponHolder, true];
 };
 
 private _onDeconstruct = {
