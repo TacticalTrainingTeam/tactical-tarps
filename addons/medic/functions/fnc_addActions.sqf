@@ -3,7 +3,7 @@
  * Author: EinStein
  *
  * Builds the config for, and registers with, the shared TT "deployable
- * tarp" framework (see ttt_common's deployable* functions).
+ * tarp" framework (see tt_common's deployable* functions).
  *
  * Arguments:
  * None
