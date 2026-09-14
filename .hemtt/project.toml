@@ -19,3 +19,7 @@ include = [
 # minor = 1
 # patch = 1
 git_hash = 0 # Default: 8
+
+[hemtt.publish]
+description = "workshop/steam_description.md"
+changelog = "CHANGELOG.md"
