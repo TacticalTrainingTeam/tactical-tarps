@@ -10,6 +10,10 @@ Tactical Tarps is a spin-off from the internal mod of the [Tactical Training Tea
 
 - Project docs: <https://tacticaltrainingteam.github.io/tactical-tarps/>
 
+## Contributing
+
+For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+
 ## License
 
 - Main mod: [Arma Public License - Share Alike](LICENSE)
