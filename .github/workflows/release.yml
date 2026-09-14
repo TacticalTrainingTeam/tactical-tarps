@@ -12,7 +12,7 @@
 # 3. Add STEAM_USERNAME as github repo secret
 # 4. Add STEAM_PASSWORD as github repo secret
 
-name: Upload Release
+name: Release
 
 env:
   FOLDER: '@tt'
@@ -21,52 +21,51 @@ env:
 
 on:
   release:
-    types: [ "published" ]
+    types: released
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  release-addon:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Set VERSION env
-        run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
+        - name: Set VERSION env
+          run: echo VERSION=${GITHUB_REF:11} >> $GITHUB_ENV
 
-      - name: Checkout the source code
-        uses: actions/checkout@v7
+        - name: Checkout the source code
+          uses: actions/checkout@v4
 
-      - name: Setup HEMTT
-        uses: arma-actions/hemtt@v1
+        - name: Setup HEMTT
+          uses: arma-actions/hemtt@v1
 
-      - name: Run HEMTT build
-        run: hemtt release --no-archive
+        - name: Run HEMTT build
+          run: hemtt release --no-archive
 
-      - name: Move release to releases folder
-        run:
-          version="${{ github.event.release.tag_name }}"
-          mv .hemttout/release "${{ env.FOLDER }}-${{ env.VERSION }}"
+        - name: Move release to releases folder
+          run:
+            version="${{ github.event.release.tag_name }}"
+            mv .hemttout/release "${{ env.FOLDER }}-${{ env.VERSION }}"
 
-      - name: Zip release
-        run: zip -r "${{ env.FOLDER }}-${{ env.VERSION }}.zip" ./${{ env.FOLDER }}-${{ env.VERSION }}
+        - name: Zip release
+          run: zip -r "${{ env.FOLDER }}-${{ env.VERSION }}.zip" ./${{ env.FOLDER }}-${{ env.VERSION }}
 
-      - name: Update Release with Files
-        uses: softprops/action-gh-release@v1
-        with:
-          files: ./${{ env.FOLDER }}-${{ env.VERSION }}.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: Update Release with Files
+          uses: softprops/action-gh-release@v1
+          with:
+            files: ./${{ env.FOLDER }}-${{ env.VERSION }}.zip
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update to Steam Workshop (stable)
-        uses: arma-actions/workshop-upload@v1
-        with:
-          itemId: ${{ env.WORKSHOPID }}
-          contentPath: './${{ env.FOLDER }}-${{ env.VERSION }}'
-          changelog: |
-            https://github.com/${{ github.repository }}/releases/tag/v${{ env.VERSION }}
+        - name: Update to Steam Workshop (stable)
+          uses: arma-actions/workshop-upload@v1
+          with:
+            itemId: ${{ env.WORKSHOPID }}
+            contentPath: './${{ env.FOLDER }}-${{ env.VERSION }}'
+            changelog: |
+              https://github.com/${{ github.repository }}/releases/tag/v${{ env.VERSION }}
 
-            ${{ github.event.release.body }}
-        env:
-          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
-          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+              ${{ github.event.release.body }}
+          env:
+            STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+            STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
