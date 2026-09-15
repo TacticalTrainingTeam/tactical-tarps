@@ -10,5 +10,5 @@ action          = "https://github.com/TacticalTrainingTeam/tactical-tarps";     
 overview        = "Provides tactical tarps for signalling and utility.";    // Supports structured text
 hideName        = 0;                        // Hide the extension name
 hidePicture     = 0;                        // Hide the extension menu
-dlcColor[]      = { 0.23, 0.39, 0.30, 1 };    // Color used for DLC stripes and backgrounds (RGBA)
+dlcColor[]      = { 1.00, 0.76, 0.00, 1 };    // Signal yellow (RGBA) — color used for DLC stripes and backgrounds
 logoSmall       = "img\tt_icon.paa";        // Display in creative lists, next to the entities added by the mod
