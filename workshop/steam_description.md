@@ -23,7 +23,7 @@ Most tarps come in multiple colors, and the framework is built to be extended wi
 
 - GitHub: [https://github.com/TacticalTrainingTeam/tactical-tarps](https://github.com/TacticalTrainingTeam/tactical-tarps)
 - Documentation: [https://tacticaltrainingteam.github.io/tactical-tarps/](https://tacticaltrainingteam.github.io/tactical-tarps/)
-- Discord: [https://discord.com/invite/cQ7dSwRcVd](https://discord.com/invite/cQ7dSwRcVd)
+- Discord: [https://discord.gg/ag4v6kxYAa](https://discord.gg/ag4v6kxYAa)
 
 Original framework by joko & EinStein, improved by Andx.
 
