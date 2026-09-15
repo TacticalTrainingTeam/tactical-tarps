@@ -1,13 +1,13 @@
-name: Deploy MkDocs
+name: Docs
 
 on:
   push:
     branches:
       - main
     paths:
-      - ".github/workflows/docs.yml"
-      - "mkdocs.yml"
       - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/docs.yml"
   workflow_dispatch:
 
 permissions:
@@ -23,21 +23,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout the source code
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install MkDocs
+      - name: Install dependencies
         run: pip install -r docs/requirements.txt
-
-      - name: Build site
-        run: python -m mkdocs build --config-file mkdocs.yml --site-dir site
-
-      - name: Upload Pages artifact
+      - name: Build documentation
+        run: mkdocs build --strict
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site

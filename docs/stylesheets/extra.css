@@ -1,0 +1,19 @@
+/* Tactical Tarps brand color: signal yellow.
+   Header text is fixed white regardless of scheme, so the primary/light
+   accent are a darkened gold rather than the raw signal yellow -- pure
+   #FFC300 fails contrast against white. Dark mode gets the full-bright
+   signal yellow instead, since it reads clearly against the slate
+   background there. */
+:root {
+  --md-primary-fg-color: #8A6D00;
+  --md-primary-fg-color--light: #C79D00;
+  --md-primary-fg-color--dark: #574500;
+}
+
+[data-md-color-scheme="default"] {
+  --md-accent-fg-color: #8A6D00;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #FFC300;
+}
