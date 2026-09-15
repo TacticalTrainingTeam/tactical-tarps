@@ -7,3 +7,4 @@ hemtt.exe
 releases
 *.zip
 .cache
+site/
