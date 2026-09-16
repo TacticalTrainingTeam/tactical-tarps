@@ -2,12 +2,12 @@
 
 **Tactical Tarps** is a framework for laying out a tarp for various use cases. Deploy an item from your inventory into a fully-fledged field station, then pack it up again when you're done - no trace left behind.
 
-# Requirements
+## Requirements
 
 - [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 - [ACE3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
 
-# Features
+## Features
 
 Comes with 5 ready-to-use tarps:
 
@@ -19,21 +19,21 @@ Comes with 5 ready-to-use tarps:
 
 Most tarps come in multiple colors, and the framework is built to be extended with new tarp types.
 
-# Usage
+## Usage
 
 - Have one of the mod's items in your inventory.
 - Lay it out via the ACE Self-Interaction menu.
 - Pick it back up via ACE Interaction.
 - Tweak spawned props and other details via CBA Settings.
 
-# Credits
+## Credits
 
 - Original framework: joko & EinStein
 - Rewrite: Andx
 - Translations: done using an LLM — input from native speakers is much appreciated!
 - Images: [TTT] LittleBassman
 
-# Source & Issues
+## Source & Issues
 
 Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
