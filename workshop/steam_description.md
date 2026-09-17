@@ -37,9 +37,9 @@ Most tarps come in multiple colors, and the framework is built to be extended wi
 
 Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-[GitHub Repository](https://github.com/TacticalTrainingTeam/tactical-tarps)
-[Report an Issue](https://github.com/TacticalTrainingTeam/tactical-tarps/issues)
-[Documentation](https://tacticaltrainingteam.github.io/tactical-tarps/)
+[GitHub Repository](https://github.com/TacticalTrainingTeam/tactical-tarps)  
+[Report an Issue](https://github.com/TacticalTrainingTeam/tactical-tarps/issues)  
+[Documentation](https://tacticaltrainingteam.github.io/tactical-tarps/)  
 [Discord](https://discord.gg/ag4v6kxYAa)
 
 Licensed under the [Arma Public License – Share Alike](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/LICENSE). Functions in `addons/common/functions` are licensed under [GPL](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/addons/common/functions/LICENSE).
