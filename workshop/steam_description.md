@@ -1,6 +1,13 @@
 # Tactical Tarps
 
-A framework for laying out a tarp for various use cases. Deploy an item from your inventory into a fully-fledged field station, then pack it up again when you're done - no trace left behind.
+**Tactical Tarps** is a framework for laying out a tarp for various use cases. Deploy an item from your inventory into a fully-fledged field station, then pack it up again when you're done - no trace left behind.
+
+## Requirements
+
+- [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+- [ACE3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
+
+## Features
 
 Comes with 5 ready-to-use tarps:
 
@@ -10,27 +17,33 @@ Comes with 5 ready-to-use tarps:
 - **Hazmat Tarp** - A drop-off point for contaminated items - place your gear on it and it's gone.
 - **Repair Tarp** - Black tarp that keeps your clothes clean while working on vehicles, and provides an ACE Repair Facility while deployed.
 
-# Usage
+Most tarps come in multiple colors, and the framework is built to be extended with new tarp types.
+
+## Usage
 
 - Have one of the mod's items in your inventory.
 - Lay it out via the ACE Self-Interaction menu.
 - Pick it back up via ACE Interaction.
 - Tweak spawned props and other details via CBA Settings.
 
-Most tarps come in multiple colors, and the framework is built to be extended with new tarp types.
+## Credits
 
-# Links
+- Original framework: joko & EinStein
+- Rewrite: Andx
+- Translations: done using an LLM — input from native speakers is much appreciated!
+- Images: [TTT] LittleBassman
 
-- GitHub: [https://github.com/TacticalTrainingTeam/tactical-tarps](https://github.com/TacticalTrainingTeam/tactical-tarps)
-- Documentation: [https://tacticaltrainingteam.github.io/tactical-tarps/](https://tacticaltrainingteam.github.io/tactical-tarps/)
-- Discord: [https://discord.gg/ag4v6kxYAa](https://discord.gg/ag4v6kxYAa)
+## Source & Issues
 
-Original framework by joko & EinStein, improved by Andx.
+Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-Translations are done using an LLM - input from native speakers is much appreciated!
+[GitHub Repository](https://github.com/TacticalTrainingTeam/tactical-tarps)
+[Report an Issue](https://github.com/TacticalTrainingTeam/tactical-tarps/issues)
+[Documentation](https://tacticaltrainingteam.github.io/tactical-tarps/)
+[Discord](https://discord.gg/ag4v6kxYAa)
 
-Images by [TTT] LittleBassman.
+Licensed under the [Arma Public License – Share Alike](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/LICENSE). Functions in `addons/common/functions` are licensed under [GPL](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/addons/common/functions/LICENSE).
 
 ---
 
-Suchst du eine deutschsprachige Arma3 + Reforger MilSim Community? -> https://tacticalteam.de/mitmachen
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> [tacticalteam.de/mitmachen](https://tacticalteam.de/mitmachen)

@@ -1,6 +1,8 @@
 # Tactical Tarps
 
-![Tactical Tarps Logo](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/tt_logo.png)
+<p align="center">
+    <img src="https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/tt_logo.png" alt="Tactical Tarps Logo">
+</p>
 
 <p align="center">
     <a href="https://github.com/TacticalTrainingTeam/tactical-tarps/issues">
