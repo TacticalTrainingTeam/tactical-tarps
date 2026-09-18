@@ -25,7 +25,7 @@ __Tactical Tarps__ is a spin-off from the internal mod of the [Tactical Training
 
 The project is entirely __open-source__ and any contributions are welcome.
 
-Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3773744323>
+Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3773744323>  
 Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
