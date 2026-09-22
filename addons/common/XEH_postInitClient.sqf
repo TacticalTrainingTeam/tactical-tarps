@@ -7,8 +7,7 @@ if (GVAR(addArsenalCategory)) then {
     private _items = [];
 
     {
-        private _weapons = getArray(configFile >> "CfgPatches" >> _x >> "weapons");;
-        _items append _weapons;
+        _items append getArray (configFile >> "CfgPatches" >> _x >> "weapons");
     } forEach ["tt_medic", "tt_drone", "tt_signal", "tt_hazmat", "tt_repair"];
 
     GVAR(arsenalButton) = [

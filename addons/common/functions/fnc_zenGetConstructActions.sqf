@@ -47,43 +47,33 @@ private _groups = createHashMap;
     _groups set [_constructId, _group];
 } forEach _itemRows;
 
+// Builds a single leaf action [_itemText, _itemClassname] -> ZEN action entry
+private _makeLeaf = {
+    params ["_itemText", "_itemClassname"];
+    private _config = GVAR(zenDeployableConfigs) get _itemClassname;
+
+    private _leafAction = [
+        _itemClassname,
+        _itemText,
+        "\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
+        {_args call FUNC(zenInstantConstruct)},
+        {true},
+        [_position, _itemClassname, _config]
+    ] call zen_context_menu_fnc_createAction;
+
+    [_leafAction, [], 0]
+};
+
 (keys _groups) apply {
     private _constructId = _x;
     (_groups get _constructId) params ["_typeText", "_items"];
 
-    // Note: deliberately if/then/else rather than exitWith - exitWith would
-    // terminate this whole script on the first single-item group, not just
-    // skip to the next iteration of this apply.
+    // A type with only a single registered item skips the submenu entirely and
+    // is offered as a direct leaf, since there is no colour to choose between.
     if (count _items == 1) then {
-        (_items select 0) params ["", "_itemClassname"];
-        private _config = GVAR(zenDeployableConfigs) get _itemClassname;
-
-        private _leafAction = [
-            _itemClassname,
-            _typeText,
-            "\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
-            {_args call FUNC(zenInstantConstruct)},
-            {true},
-            [_position, _itemClassname, _config]
-        ] call zen_context_menu_fnc_createAction;
-
-        [_leafAction, [], 0]
+        [_typeText, (_items select 0) select 1] call _makeLeaf
     } else {
-        private _children = _items apply {
-            _x params ["_itemText", "_itemClassname"];
-            private _config = GVAR(zenDeployableConfigs) get _itemClassname;
-
-            private _leafAction = [
-                _itemClassname,
-                _itemText,
-                "\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
-                {_args call FUNC(zenInstantConstruct)},
-                {true},
-                [_position, _itemClassname, _config]
-            ] call zen_context_menu_fnc_createAction;
-
-            [_leafAction, [], 0]
-        };
+        private _children = _items apply {_x call _makeLeaf};
 
         private _typeAction = [
             _constructId,
