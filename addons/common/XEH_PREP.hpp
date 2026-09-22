@@ -3,6 +3,7 @@ PREP(deployableCanConstruct);
 PREP(deployableCanDeconstruct);
 PREP(deployableCancel);
 PREP(deployableConstruct);
+PREP(deployableCreateGrassCutter);
 PREP(deployableDeconstruct);
 PREP(deployablePlace);
 PREP(deployableProgressConstruct);
