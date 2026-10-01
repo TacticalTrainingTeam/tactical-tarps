@@ -42,7 +42,7 @@ Fully open-source. Bug reports, feature requests, and contributions are all welc
 [Documentation](https://tacticaltrainingteam.github.io/tactical-tarps/)  
 [Discord](https://discord.gg/ag4v6kxYAa)
 
-Licensed under the [Arma Public License – Share Alike](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/LICENSE). Functions in `addons/common/functions` are licensed under [GPL](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/addons/common/functions/LICENSE).
+Licensed under the [Arma Public License – Share Alike](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/LICENSE). Functions in the addons/common/functions folder are licensed under [GPL](https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/addons/common/functions/LICENSE).
 
 ---
 
