@@ -12,5 +12,9 @@ PREP_RECOMPILE_END;
 // itemClassname -> config, for every tarp item registered by any module
 GVAR(zenDeployableConfigs) = createHashMap;
 
+// Deployed tarp classes that already got their raised ACE main interaction point
+// (see fnc_deployableAddActions.sqf)
+GVAR(raisedMainActionClasses) = [];
+
 ADDON = true;
 

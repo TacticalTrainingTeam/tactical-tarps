@@ -99,5 +99,25 @@ private _deconstructAction = [
 ] call ace_interact_menu_fnc_createAction;
 
 {
+    // ACE would otherwise create the main interaction point at the model centre, i.e. on the
+    // ground - raise it so it stays reachable when the tarp itself ends up below a floor.
+    // Several modules share the same tarp classes, so only ever add it once per class.
+    if !(_x in GVAR(raisedMainActionClasses)) then {
+        GVAR(raisedMainActionClasses) pushBack _x;
+
+        private _mainAction = [
+            "ACE_MainActions",
+            localize "STR_ace_interaction_MainAction",
+            "",
+            {},
+            {true},
+            {},
+            [],
+            [0, 0, 1]
+        ] call ace_interact_menu_fnc_createAction;
+
+        [_x, 0, [], _mainAction] call ace_interact_menu_fnc_AddActionToClass;
+    };
+
     [_x, 0, ["ACE_MainActions"], _deconstructAction] call ace_interact_menu_fnc_AddActionToClass;
 } forEach _deconstructClasses;
