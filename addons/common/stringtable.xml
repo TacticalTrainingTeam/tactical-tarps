@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="tt">
     <Package name="Common">
+        <Key ID="STR_tt_Common_SubCategory">
+            <English>Common</English>
+            <German>Allgemein</German>
+        </Key>
         <Key ID="STR_tt_Common_abort">
             <English>Aborted</English>
             <Czech>Přerušeno</Czech>
@@ -81,6 +85,12 @@
             <Ukrainian>Тент прибрано в рюкзак.</Ukrainian>
             <Bulgarian>Брезентът беше прибран в раницата.</Bulgarian>
             <Latin>Tegumentum in sarcina repositum est.</Latin>
+        </Key>
+        <Key ID="STR_tt_Common_settingAddArsenalCategory_description">
+            <English>Adds a Tactical Tarps button to the ACE Arsenal right panel that lists all Tactical Tarps items.</English>
+        </Key>
+        <Key ID="STR_tt_Common_settingAddArsenalCategory_name">
+            <English>Add Arsenal Category</English>
         </Key>
         <Key ID="STR_tt_Common_settingAdditionalItems_name">
             <English>Additional Objects</English>
