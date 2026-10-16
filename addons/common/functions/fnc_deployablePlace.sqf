@@ -32,12 +32,29 @@ _ghost disableCollisionWith _caller;
 private _distance = (((_bbMax select 0) - (_bbMin select 0)) max ((_bbMax select 1) - (_bbMin select 1))) / 2 + 1.5;
 
 private _updateGhostTransform = {
-    private _basePos = (eyePos _caller) vectorAdd ((getCameraViewDirection _caller) vectorMultiply _distance);
-    _basePos set [2, getTerrainHeightASL _basePos];
+    private _eyePos = eyePos _caller;
+    private _aimPos = _eyePos vectorAdd ((getCameraViewDirection _caller) vectorMultiply _distance);
+
+    // Drop straight down onto the first surface below the aim point, so the tarp lands on
+    // building floors, bridges etc. instead of the terrain underneath them. The ray starts at
+    // eye height rather than at the aim point, which already sits below the caller's own floor
+    // when looking down steeply.
+    private _rayStart = [_aimPos select 0, _aimPos select 1, _eyePos select 2];
+    private _rayEnd = [_aimPos select 0, _aimPos select 1, getTerrainHeightASL _aimPos];
+
+    private _basePos = _rayEnd;
+    private _baseNormal = surfaceNormal _rayEnd;
+
+    private _hits = lineIntersectsSurfaces [_rayStart, _rayEnd, _ghost, _caller, true, 1, "GEOM", "NONE"];
+    if (_hits isNotEqualTo []) then {
+        (_hits select 0) params ["_hitPos", "_hitNormal"];
+        _basePos = _hitPos;
+        _baseNormal = _hitNormal;
+    };
 
     _ghost setPosASL _basePos;
     _ghost setDir (GVAR(placeRotation) + getDir _caller);
-    _ghost setVectorUp (surfaceNormal _basePos);
+    _ghost setVectorUp _baseNormal;
 };
 
 GVAR(placeState) = PLACE_WAITING;
