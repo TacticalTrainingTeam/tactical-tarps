@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.1] - 2026-10-18
+
+### Fixed
+
+- ACE interaction point of deployed tarps sits slightly above the tarp, so it stays reachable when the tarp is placed below a floor
+- Arsenal button is now localized and missing stringtable entries were added
+
 ## [1.6.0] - 2026-09-18
 
 ## [1.5.0] - 2026-08-24
@@ -62,7 +69,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release: Signal, Medic, Drone, Hazmat, and Repair tarps
 
-[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.1...HEAD
+[1.6.1]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.3.1...v1.4.0
