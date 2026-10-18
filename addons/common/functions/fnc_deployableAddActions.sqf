@@ -113,7 +113,7 @@ private _deconstructAction = [
             {true},
             {},
             [],
-            [0, 0, 1]
+            [0, 0, 0.33]
         ] call ace_interact_menu_fnc_createAction;
 
         [_x, 0, [], _mainAction] call ace_interact_menu_fnc_AddActionToClass;
