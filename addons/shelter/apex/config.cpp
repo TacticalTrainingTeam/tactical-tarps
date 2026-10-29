@@ -1,18 +1,15 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
-        // Meta information for editor
-        name = COMPONENT_NAME;
-        author = ECSTRING(main,author);
-        url = ECSTRING(main,URL);
-        authors[] = {"Andx"};
+    class SUBADDON {
+        // Use meta information from specified addon. Used to avoid repeated declarations.
+        addonRootClass = QUOTE(ADDON);
 
         // Minimum compatible version. When the game's version is lower, pop-up warning will appear when launching the game. Note: was disabled on purpose some time late into Arma 2: OA.
         requiredVersion = REQUIRED_VERSION;
         // Required addons, used for setting load order. (CfgPatches classname NOT PBO filename!)
         // When any of the addons are missing, a pop-up warning will appear when launching the game.
-        requiredAddons[] = {"tt_shelter", "A3_Structures_F_Exp_Commercial_Market", "A3_Props_F_Exp_Naval_Boats", "A3_Props_F_Exp_Military_Camps"};
+        requiredAddons[] = {"tt_common", "A3_Structures_F_Exp_Commercial_Market", "A3_Props_F_Exp_Naval_Boats", "A3_Props_F_Exp_Military_Camps"};
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.

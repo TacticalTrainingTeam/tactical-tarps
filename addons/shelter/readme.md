@@ -4,7 +4,7 @@ Adds the ability for a player carrying a shelter tarp item in their inventory to
 
 - Green: A-frame tent (`Land_TentA_F`)
 
-The tarps relying on Apex objects live in the optional [shelter_apex](../shelter_apex/readme.md) sub-addon, which is picked up automatically when Apex is loaded:
+The tarps relying on Apex objects live in the optional [shelter_apex](apex/readme.md) sub-addon, which is picked up automatically when Apex is loaded:
 
 - Green (IR Cover): infrared-masking cover (`Land_IRMaskingCover_02_F`)
 - Yellow: open cloth canopy (`Land_ClothShelter_01_F`)

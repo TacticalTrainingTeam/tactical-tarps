@@ -1,6 +1,6 @@
 # Shelter Tarp - Apex
 
-Optional sub-addon of [shelter](../shelter/readme.md) that adds the shelter tarps relying on Arma 3 Apex objects. The `shelter` addon registers them automatically when this addon is loaded.
+Optional sub-addon of [shelter](../readme.md) that adds the shelter tarps relying on Arma 3 Apex objects. The `shelter` addon registers them automatically when this addon is loaded.
 
 - Green (IR Cover): infrared-masking cover (`Land_IRMaskingCover_02_F`)
 - Yellow: open cloth canopy (`Land_ClothShelter_01_F`)
