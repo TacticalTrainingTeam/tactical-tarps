@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="tt">
+    <Package name="Shelter">
+        <Key ID="STR_tt_Shelter_SubCategory">
+            <English>Shelter Tarp</English>
+            <German>Unterstandtarp</German>
+        </Key>
+        <Key ID="STR_tt_Shelter_actionConstruct">
+            <English>Set up shelter</English>
+            <German>Unterstand aufbauen</German>
+        </Key>
+        <Key ID="STR_tt_Shelter_actionDeconstruct">
+            <English>Stow shelter into backpack</English>
+            <German>Packe Unterstand in Rucksack</German>
+        </Key>
+        <Key ID="STR_tt_Shelter_tarp_description">
+            <English>A tarp that can be rigged into an A-frame shelter when deployed.</English>
+            <German>Ein Tarp, das sich beim Auslegen zu einem Unterstand in A-Form aufbauen lässt.</German>
+        </Key>
+        <Key ID="STR_tt_Shelter_tarp_green_displayName">
+            <English>Shelter Tarp (Green)</English>
+            <German>Unterstandtarp (Grün)</German>
+        </Key>
+    </Package>
+</Project>

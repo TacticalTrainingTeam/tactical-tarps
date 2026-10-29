@@ -14,6 +14,7 @@ The project is entirely open-source and any contributions are welcome — see [C
 - [Hazmat](hazmat/index.md) provides a contaminated-item drop-off flow with full/empty bag behavior
 - [Medic](medic/index.md) creates a mobile treatment point and optional extra spawned assets
 - [Repair](repair/index.md) marks a vehicle repair point with decorative tool props (black only)
+- [Shelter](shelter/index.md) deploys an A-frame tent as a field shelter (A-frame tent, cloth canopy or boat cover)
 - [Signal](signal/index.md) provides visual landing zone and range marking tarps
 
 ## Optional compatibility

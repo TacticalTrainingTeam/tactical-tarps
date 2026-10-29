@@ -48,7 +48,7 @@ Required config keys:
 | - | - | - |
 | `constructId` | `STRING` | Unique ACE action id for construct menu |
 | `deconstructId` | `STRING` | Unique ACE action id for deconstruct action |
-| `tarpItems` | `ARRAY` | `[[itemClass, objectClass], ...]` mapping |
+| `tarpItems` | `ARRAY` | `[[itemClass, objectClass, buildTimeOffset], ...]` mapping. `buildTimeOffset` (`NUMBER`, seconds, default `0`) is optional and is added to `buildTime` for that item, for both deploying and stowing |
 | `inUseVar` | `STRING` | Object variable used as action lock |
 | `buildTime` | `NUMBER` | Construct duration in seconds |
 | `constructText` | `STRING` | Progress label for construct |

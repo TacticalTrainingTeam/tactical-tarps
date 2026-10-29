@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Optional per-item build time offset in the `tarpItems` entries of the deployable tarp framework
+- Shelter Tarp — deploys an A-frame tent (Land_TentA_F, green), an infrared-masking cover (Land_IRMaskingCover_02_F, green, requires Apex), an open cloth canopy (Land_ClothShelter_01_F, yellow, requires Apex) or a boat cover (Land_Boat_03_abandoned_cover_F, blue, requires Apex). The Apex variants are provided by the optional shelter_apex sub-addon and are skipped when Apex is not loaded
+
 ## [1.6.1] - 2026-10-18
 
 ### Fixed
