@@ -24,6 +24,10 @@ private _tarpItems = [
     [QGVAR(tarp_Blue), "Land_Boat_03_abandoned_cover_F"]
 ];
 
+// Only the A-frame tent is part of this addon, the rest is provided by tt_shelter_apex and only
+// exists when Apex is loaded
+_tarpItems = _tarpItems select {isClass (configFile >> "CfgWeapons" >> (_x select 0))};
+
 private _config = createHashMapFromArray [
     ["constructId", QGVAR(construct)],
     ["deconstructId", QGVAR(deconstruct)],

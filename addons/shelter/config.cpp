@@ -12,15 +12,12 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         // Required addons, used for setting load order. (CfgPatches classname NOT PBO filename!)
         // When any of the addons are missing, a pop-up warning will appear when launching the game.
-        requiredAddons[] = {"tt_common", "ace_interaction", "A3_Structures_F_Civ_Camping", "A3_Structures_F_Exp_Commercial_Market", "A3_Props_F_Exp_Naval_Boats", "A3_Props_F_Exp_Military_Camps"};
+        requiredAddons[] = {"tt_common", "ace_interaction", "A3_Structures_F_Civ_Camping"};
         // List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
         units[] = {};
         // List of weapons (CfgWeapons classes) contained in the addon.
         weapons[] = {
-            QGVAR(tarp_Green),
-            QGVAR(tarp_GreenCover),
-            QGVAR(tarp_Yellow),
-            QGVAR(tarp_Blue)
+            QGVAR(tarp_Green)
         };
 
         // Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)

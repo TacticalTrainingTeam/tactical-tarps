@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="tt">
+    <Package name="Shelter_Apex">
+        <Key ID="STR_tt_shelter_apex_tarp_blue_description">
+            <English>A tarp that can be rigged into a boat cover lean-to when deployed.</English>
+            <German>Ein Tarp, das sich beim Auslegen zu einem Bootsplanen-Unterstand aufbauen lässt.</German>
+        </Key>
+        <Key ID="STR_tt_shelter_apex_tarp_blue_displayName">
+            <English>Shelter Tarp (Blue)</English>
+            <German>Unterstandtarp (Blau)</German>
+        </Key>
+        <Key ID="STR_tt_shelter_apex_tarp_greenCover_description">
+            <English>A tarp that can be rigged into an infrared-masking cover when deployed.</English>
+            <German>Ein Tarp, das sich beim Auslegen zu einer Infrarot-Tarnabdeckung aufbauen lässt.</German>
+        </Key>
+        <Key ID="STR_tt_shelter_apex_tarp_greenCover_displayName">
+            <English>Shelter Tarp (Green, IR Cover)</English>
+            <German>Unterstandtarp (Grün, IR-Abdeckung)</German>
+        </Key>
+        <Key ID="STR_tt_shelter_apex_tarp_yellow_description">
+            <English>A tarp that can be rigged into an open cloth canopy when deployed.</English>
+            <German>Ein Tarp, das sich beim Auslegen zu einem offenen Stoffunterstand aufbauen lässt.</German>
+        </Key>
+        <Key ID="STR_tt_shelter_apex_tarp_yellow_displayName">
+            <English>Shelter Tarp (Yellow)</English>
+            <German>Unterstandtarp (Gelb)</German>
+        </Key>
+    </Package>
+</Project>

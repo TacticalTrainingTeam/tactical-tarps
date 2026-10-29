@@ -17,6 +17,7 @@ When enabled during preInit, `common` collects weapon classes from:
 - `tt_hazmat`
 - `tt_repair`
 - `tt_shelter`
+- `tt_shelter_apex`
 
 It then registers an ACE Arsenal right panel button named `Tarps`.
 
