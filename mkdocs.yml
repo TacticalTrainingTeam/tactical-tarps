@@ -8,6 +8,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  variant: classic
   language: en
   logo: tt_icon.png
   favicon: tt_favicon.ico
