@@ -22,3 +22,7 @@ player addItemToBackpack "tt_medic_tarp_Red";
 player addItemToBackpack "tt_medic_tarp_Yellow";
 player addItemToBackpack "tt_medic_tarp_Green";
 ```
+
+## Preview
+
+![Deployed medical tarp in Arma 3.](../assets/medic-tarp.jpg)

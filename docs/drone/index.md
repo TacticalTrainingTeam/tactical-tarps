@@ -20,3 +20,7 @@ The `drone` addon registers deployable drone landing tarps by configuring the sh
 ``` cpp
 player addItemToBackpack "tt_drone_tarp_Green";
 ```
+
+## Preview
+
+![Deployed drone landing tarp in Arma 3.](../assets/drone-tarp.jpg)
