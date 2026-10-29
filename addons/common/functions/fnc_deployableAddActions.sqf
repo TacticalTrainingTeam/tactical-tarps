@@ -67,13 +67,14 @@ private _parentConstructAction = [
 
 // One child action per tarp colour — shown only when that specific item is in inventory
 {
-    _x params ["_itemClassname", "_objectClassname"];
+    _x params ["_itemClassname", "_objectClassname", ["_buildTimeOffset", 0]];
     private _displayName = getText (configFile >> "CfgWeapons" >> _itemClassname >> "displayName");
 
      private _itemConfig = createHashMap;
      _itemConfig merge _config;
 
     _itemConfig set ["tarpItems", [[_itemClassname, _objectClassname]]];
+    _itemConfig set ["buildTime", (_config get "buildTime") + _buildTimeOffset];
 
     private _childAction = [
         _constructId + "_" + _itemClassname,
@@ -88,22 +89,29 @@ private _parentConstructAction = [
     [ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId], _childAction] call ace_interact_menu_fnc_AddActionToObject;
 } forEach _tarpItems;
 
-private _deconstructAction = [
-    _deconstructId,
-    _config get "deconstructText",
-    "\a3\Ui_f\data\IGUI\Cfg\Actions\take_ca.paa",
-    {[_this] call FUNC(deployableProgressDeconstruct)},
-    {[_this] call FUNC(deployableCanDeconstruct)},
-    {},
-    _config
-] call ace_interact_menu_fnc_createAction;
-
 {
+    _x params ["", "_deconstructClass", ["_buildTimeOffset", 0]];
+
+    // Each deployed class gets its own config so a per-item build time offset also applies to stowing
+    private _deconstructConfig = createHashMap;
+    _deconstructConfig merge _config;
+    _deconstructConfig set ["buildTime", (_config get "buildTime") + _buildTimeOffset];
+
+    private _deconstructAction = [
+        _deconstructId,
+        _config get "deconstructText",
+        "\a3\Ui_f\data\IGUI\Cfg\Actions\take_ca.paa",
+        {[_this] call FUNC(deployableProgressDeconstruct)},
+        {[_this] call FUNC(deployableCanDeconstruct)},
+        {},
+        _deconstructConfig
+    ] call ace_interact_menu_fnc_createAction;
+
     // ACE would otherwise create the main interaction point at the model centre, i.e. on the
     // ground - raise it so it stays reachable when the tarp itself ends up below a floor.
     // Several modules share the same tarp classes, so only ever add it once per class.
-    if !(_x in GVAR(raisedMainActionClasses)) then {
-        GVAR(raisedMainActionClasses) pushBack _x;
+    if !(_deconstructClass in GVAR(raisedMainActionClasses)) then {
+        GVAR(raisedMainActionClasses) pushBack _deconstructClass;
 
         private _mainAction = [
             "ACE_MainActions",
@@ -116,8 +124,8 @@ private _deconstructAction = [
             [0, 0, 0.33]
         ] call ace_interact_menu_fnc_createAction;
 
-        [_x, 0, [], _mainAction] call ace_interact_menu_fnc_AddActionToClass;
+        [_deconstructClass, 0, [], _mainAction] call ace_interact_menu_fnc_AddActionToClass;
     };
 
-    [_x, 0, ["ACE_MainActions"], _deconstructAction] call ace_interact_menu_fnc_AddActionToClass;
-} forEach _deconstructClasses;
+    [_deconstructClass, 0, ["ACE_MainActions"], _deconstructAction] call ace_interact_menu_fnc_AddActionToClass;
+} forEach _tarpItems;

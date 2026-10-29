@@ -30,13 +30,14 @@ Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
 
-Comes with 5 ready-to-use tarps:
+Comes with 6 ready-to-use tarps:
 
 - **Signal Tarp** — Large, colored tarp for marking your position and signalling helicopters from a distance
 - **Medic Tarp** — Turns into an ACE Medical Facility on the fly, ideal for casualty collection points
 - **Drone Tarp** — Spawns an invisible helipad so drones can land exactly where you want them to
 - **Hazmat Tarp** — A drop-off point for contaminated items — place your gear on it and it's gone
 - **Repair Tarp** — Black tarp that keeps your clothes clean while working on vehicles, and provides an ACE Repair Facility while deployed
+- **Shelter Tarp** — Rigs into an A-frame tent (green), an IR-masking cover (green, needs Apex), an open cloth canopy (yellow, needs Apex) or a boat cover (blue, needs Apex) for a quick field shelter
 
 Most tarps come in multiple colors, and the framework is built to be extended with new tarp types.
 

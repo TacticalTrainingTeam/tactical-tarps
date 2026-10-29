@@ -90,6 +90,9 @@ nav:
   - Repair:
       - Overview: repair/index.md
       - Settings: repair/settings.md
+  - Shelter:
+      - Overview: shelter/index.md
+      - Settings: shelter/settings.md
   - Signal:
       - Overview: signal/index.md
       - Settings: signal/settings.md

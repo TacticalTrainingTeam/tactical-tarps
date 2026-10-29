@@ -11,8 +11,9 @@
  * 0: Player <OBJECT>
  * 1: Player <OBJECT>
  * 2: Config <HASHMAP> - supported keys:
- *    "tarpItems"      <ARRAY of [itemClassname, objectClassname]> - maps each
- *                     carryable tarp item to the object it deploys
+ *    "tarpItems"      <ARRAY of [itemClassname, objectClassname, buildTimeOffset]> - maps each
+ *                     carryable tarp item to the object it deploys. The optional build time
+ *                     offset (seconds, default 0) is added to "buildTime" for that item
  *    "inUseVar"       <STRING> - object variable used to lock the item while (de)constructing
  *    "onConstruct"    <CODE> (optional) - called as [_object, _caller, _config], for addon specific side effects
  * 3: Confirmed placement position (ASL) <ARRAY>

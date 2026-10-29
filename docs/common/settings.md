@@ -16,6 +16,7 @@ When enabled during preInit, `common` collects weapon classes from:
 - `tt_signal`
 - `tt_hazmat`
 - `tt_repair`
+- `tt_shelter`
 
 It then registers an ACE Arsenal right panel button named `Tarps`.
 
@@ -29,7 +30,7 @@ It then registers an ACE Arsenal right panel button named `Tarps`.
 - Default: `false`
 - Scope: client setting
 - Purpose: Adds "TT - Construct"/"TT - Remove" actions to the [Zeus Enhanced](https://github.com/zen-mod/ZEN)
-  context menu for objects belonging to the deployable tarp framework (medic, hazmat, repair,
+  context menu for objects belonging to the deployable tarp framework (medic, hazmat, repair, shelter,
   signal, drone). Lets a curator build or remove a station instantly, without needing a player to
   carry the item. Requires ZEN to be loaded - if it isn't, this setting has no effect. See
   [Common Addon](index.md#zeus-enhanced-zen-integration-optional) for details.
