@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.1] - 2026-11-01
+
+### Changed
+
+- New logo, icon set and Steam Workshop image
+- Bumped GitHub Actions dependencies (checkout, github-releases-to-discord)
+
 ## [1.7.0] - 2026-10-29
 
 ### Added
@@ -76,7 +83,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release: Signal, Medic, Drone, Hazmat, and Repair tarps
 
-[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.0...HEAD
+[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.1...HEAD
+[1.7.1]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.0...v1.7.1
 [1.7.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.1...v1.7.0
 [1.6.1]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.5.0...v1.6.0
