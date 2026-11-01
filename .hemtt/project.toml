@@ -9,7 +9,8 @@ include = [
     "mod.cpp",
     "authors.txt",
     "LICENSE",
-    "/img/*.paa",
+    "/img/icon_ca.paa",
+    "/img/logo_ca.paa",
     "*.bikey"
 ]
 
