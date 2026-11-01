@@ -1,7 +1,7 @@
 # Tactical Tarps
 
 <p align="center">
-    <img src="https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/tt_logo.png" alt="Tactical Tarps Logo">
+    <img src="https://github.com/TacticalTrainingTeam/tactical-tarps/blob/main/img/logo.png" alt="Tactical Tarps Logo">
 </p>
 
 <p align="center">
