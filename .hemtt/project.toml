@@ -3,24 +3,22 @@ author = "Tactical Tarps Team"
 prefix = "tt"
 mainprefix = "z"
 
-[files]
-include = [
-    "meta.cpp",
-    "mod.cpp",
-    "authors.txt",
-    "LICENSE",
-    "/img/icon_ca.paa",
-    "/img/logo_ca.paa",
-    "*.bikey"
-]
-
 [version]
-# path = "addons/main/script_version.hpp" # Default
-# major = 0 # Overrides path when set
-# minor = 1
-# patch = 1
-git_hash = 0 # Default: 8
+path = "addons/main/script_version.hpp"
+git_hash = 0
 
 [hemtt.publish]
 description = "workshop/steam_description.md"
 changelog = "CHANGELOG.md"
+
+[files]
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "img/icon_ca.paa",
+    "img/logo_ca.paa",
+    "LICENSE",
+    "README.md",
+    "authors.txt",
+    "*.bikey",
+]
