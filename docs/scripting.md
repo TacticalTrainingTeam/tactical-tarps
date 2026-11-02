@@ -1,8 +1,12 @@
-# API Functions
+# Scripting & API
 
-## Public entry point
+The `common` framework is what mission makers and addon authors build on: register a deployable tarp with one function call, and react to its lifecycle through CBA events. See [Common](common.md) for how the framework works and for its settings.
 
-### `tt_common_fnc_deployableAddActions`
+## API Functions
+
+### Public entry point
+
+#### `tt_common_fnc_deployableAddActions`
 
 Registers ACE interactions for a deployable tarp implementation - best in `XEH_postInit.sqf`.
 
@@ -65,3 +69,40 @@ Optional config keys:
 | `animation` | `STRING` | Animation class name |
 | `onConstruct` | `CODE` | Callback `[_object, _caller, _config]` after spawn |
 | `onDeconstruct` | `CODE` | Callback `[_target, _caller, _config]` before deletion |
+
+## Events
+
+The `common` addon emits local CBA events on the triggering player's machine.
+
+### `tt_common_tarpConstructed`
+
+Fired after a tarp has been successfully constructed.
+
+``` cpp
+["tt_common_tarpConstructed", {
+    params ["_target", "_caller", "_itemClassname", "_config"];
+    // _target: object that triggered the action (usually player)
+    // _caller: player that constructed
+    // _itemClassname: consumed inventory item class
+    // _config: framework config hashmap
+}] call CBA_fnc_addEventHandler;
+```
+
+### `tt_common_tarpDeconstructed`
+
+Fired after deconstruction is confirmed and before the tarp object is deleted.
+
+``` cpp
+["tt_common_tarpDeconstructed", {
+    params ["_target", "_caller", "_itemClassname", "_config"];
+    // _target: deployed tarp object being packed up
+    // _caller: player packing up
+    // _itemClassname: item class returned to inventory
+    // _config: framework config hashmap
+}] call CBA_fnc_addEventHandler;
+```
+
+### Notes
+
+- These are local events (`CBA_fnc_localEvent`), not global broadcasts.
+- Functional addons can also use `onConstruct` and `onDeconstruct` callbacks in their config.
