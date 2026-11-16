@@ -15,10 +15,19 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [player, player, _config, getPosASL player, [vectorDir player, vectorUp player]] call tt_common_fnc_deployableStartBuild
+ *
  * Public: No
  */
 
-params ["_target", "_caller", "_config", "_posASL", "_vectorDirAndUp"];
+params [
+    ["_target", objNull, [objNull]],
+    ["_caller", objNull, [objNull]],
+    ["_config", createHashMap, [createHashMap]],
+    ["_posASL", [0, 0, 0], [[]], 3],
+    ["_vectorDirAndUp", [[0, 1, 0], [0, 0, 1]], [[]], 2]
+];
 
 if (_config getOrDefault ["useAnimation", true]) then {
     _caller playMove (_config getOrDefault ["animation", "Acts_carFixingWheel"]);
