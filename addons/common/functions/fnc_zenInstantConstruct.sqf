@@ -41,8 +41,6 @@ _object setVariable [QGVAR(grassCutter), _grassCutter, true];
 private _onConstruct = _config getOrDefault ["onConstruct", {}];
 [_object, objNull, _config] call _onConstruct;
 
-{
-    _x addCuratorEditableObjects [[_object, _grassCutter], false];
-} forEach allCurators;
+[QGVAR(addCuratorEditableObjects), [[_object, _grassCutter]]] call CBA_fnc_serverEvent;
 
 [QGVAR(tarpConstructed), [_object, objNull, _itemClassname, _config], ACE_player] call CBA_fnc_localEvent;
