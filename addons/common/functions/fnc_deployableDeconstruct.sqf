@@ -17,10 +17,13 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [_tarp, player, _config] call tt_common_fnc_deployableDeconstruct
+ *
  * Public: No
  */
 
-params ["_target", "_caller", "_config"];
+params [["_target", objNull, [objNull]], ["_caller", objNull, [objNull]], ["_config", createHashMap, [createHashMap]]];
 
 private _onDeconstruct = _config getOrDefault ["onDeconstruct", {}];
 private _itemOverride = [_target, _caller, _config] call _onDeconstruct;
