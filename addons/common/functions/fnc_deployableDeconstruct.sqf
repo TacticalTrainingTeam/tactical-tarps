@@ -30,7 +30,8 @@ private _itemOverride = [_target, _caller, _config] call _onDeconstruct;
 
 private _itemClassname = _target getVariable [QGVAR(sourceItem), ""];
 
-if (_itemOverride != "") then {
+// Most callbacks return nothing (e.g. they end with deleteVehicle), only a non-empty STRING overrides the item
+if (!isNil "_itemOverride" && {_itemOverride isEqualType ""} && {_itemOverride != ""}) then {
     _itemClassname = _itemOverride;
 };
 

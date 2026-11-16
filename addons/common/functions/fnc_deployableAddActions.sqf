@@ -50,8 +50,14 @@ private _deconstructClasses = _tarpItems apply {_x select 1};
 } forEach _tarpItems;
 
 [ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId]] call ace_interact_menu_fnc_removeActionFromObject;
+// Only remove deconstruct actions this function added earlier - ACE logs a warning for
+// every class it is asked to remove a non-existent action from (i.e. on first registration)
 {
-    [_x, 0, ["ACE_MainActions", _deconstructId]] call ace_interact_menu_fnc_removeActionFromClass;
+    private _key = _x + ":" + _deconstructId;
+    if (_key in GVAR(registeredDeconstructActions)) then {
+        [_x, 0, ["ACE_MainActions", _deconstructId]] call ace_interact_menu_fnc_removeActionFromClass;
+        GVAR(registeredDeconstructActions) deleteAt (GVAR(registeredDeconstructActions) find _key);
+    };
 } forEach _deconstructClasses;
 
 // Parent container — visible when the player carries any matching tarp, opens a colour sub-menu
@@ -130,4 +136,5 @@ private _parentConstructAction = [
     };
 
     [_deconstructClass, 0, ["ACE_MainActions"], _deconstructAction] call ace_interact_menu_fnc_AddActionToClass;
+    GVAR(registeredDeconstructActions) pushBackUnique (_deconstructClass + ":" + _deconstructId);
 } forEach _tarpItems;

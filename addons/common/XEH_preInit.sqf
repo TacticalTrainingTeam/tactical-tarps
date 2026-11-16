@@ -26,6 +26,9 @@ if (isServer) then {
         } forEach allCurators;
     }] call CBA_fnc_addEventHandler;
 };
+// "deployedClass:deconstructId" pairs whose deconstruct action has been added to the class,
+// so re-registration only removes actions that actually exist (see fnc_deployableAddActions.sqf)
+GVAR(registeredDeconstructActions) = [];
 
 ADDON = true;
 
