@@ -25,6 +25,7 @@ private _onConstruct = {
     params ["_object", "_caller"];
 
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
+    _object setVariable ["ACE_isRepairFacility", true, true];
 
     private _position = getPos _object;
 
