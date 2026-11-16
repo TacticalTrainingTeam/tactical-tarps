@@ -10,6 +10,8 @@ The `common` framework is what mission makers and addon authors build on: regist
 
 Registers ACE interactions for a deployable tarp implementation - best in `XEH_postInit.sqf`.
 
+Locality: call it on every client with an interface (`hasInterface`), since it adds ACE self-interactions to the local player. It has no effect on a dedicated server. Return value: none.
+
 ``` cpp
 [_config] call tt_common_fnc_deployableAddActions;
 ```
@@ -97,7 +99,7 @@ Fired after deconstruction is confirmed and before the tarp object is deleted.
     params ["_target", "_caller", "_itemClassname", "_config"];
     // _target: deployed tarp object being packed up
     // _caller: player packing up
-    // _itemClassname: item class returned to inventory
+    // _itemClassname: item class returned to inventory (nothing is returned for a ZEN "Remove")
     // _config: framework config hashmap
 }] call CBA_fnc_addEventHandler;
 ```
@@ -105,4 +107,5 @@ Fired after deconstruction is confirmed and before the tarp object is deleted.
 ### Notes
 
 - These are local events (`CBA_fnc_localEvent`), not global broadcasts.
+- When a curator builds or removes a tarp through the ZEN context menu, the events fire on the curator's machine, `_target` is the tarp object and `_caller` is `objNull`.
 - Functional addons can also use `onConstruct` and `onDeconstruct` callbacks in their config.
