@@ -1,21 +1,21 @@
 #include "..\script_component.hpp"
 /*
-* Author: Andx
-*
-* Builds the config for, and registers with, the shared TT "deployable
-* tarp" framework (see tt_common's deployable* functions).
-*
-* Arguments:
-* None
-*
-* Return Value:
-* None
-*
-* Example:
-* [] call tt_repair_tarp_fnc_addActions;
-*
-* Public: No
-*/
+ * Author: Andx
+ *
+ * Builds the config for, and registers with, the shared TT "deployable
+ * tarp" framework (see tt_common's deployable* functions).
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call tt_repair_fnc_addActions;
+ *
+ * Public: No
+ */
 
 private _tarpItems = [
     [QGVAR(tarp_Black), "Tarp_01_Large_Black_F"]
@@ -25,6 +25,7 @@ private _onConstruct = {
     params ["_object", "_caller"];
 
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
+    _object setVariable ["ACE_isRepairFacility", true, true];
 
     private _position = getPos _object;
 

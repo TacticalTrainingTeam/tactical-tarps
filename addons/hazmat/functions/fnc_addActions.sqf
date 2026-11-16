@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [] call tt_hazmat_tarp_fnc_addActions;
+ * [] call tt_hazmat_fnc_addActions;
  *
  * Public: No
  */

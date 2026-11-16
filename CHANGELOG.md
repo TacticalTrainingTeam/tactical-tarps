@@ -9,8 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Repo - Fix Steam Workshop description listing the Shelter Tarp and the correct number of tarps (#33) by Andx667
 - Steam Workshop description lists the Shelter Tarp and the correct number of tarps
 - Medic, Repair - Fix stowing a tarp deleting matching objects nearby that it did not spawn (#36) by Andx667
+- Repair - Fix deployed repair tarp not acting as an ACE Repair Facility (#35) by Andx667
 
 ## [1.7.1] - 2026-11-01
 
