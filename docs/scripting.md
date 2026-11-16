@@ -68,7 +68,7 @@ Optional config keys:
 | `useAnimation` | `BOOLEAN` | Play animation during progress (`true` default) |
 | `animation` | `STRING` | Animation class name |
 | `onConstruct` | `CODE` | Callback `[_object, _caller, _config]` after spawn |
-| `onDeconstruct` | `CODE` | Callback `[_target, _caller, _config]` before deletion |
+| `onDeconstruct` | `CODE` | Callback `[_target, _caller, _config]` before deletion. Return a non-empty `STRING` classname to give the caller that item instead of the consumed one; any other return value is ignored |
 
 ## Events
 
