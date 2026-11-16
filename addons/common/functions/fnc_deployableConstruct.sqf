@@ -22,10 +22,19 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [player, player, _config, getPosASL player, [vectorDir player, vectorUp player]] call tt_common_fnc_deployableConstruct
+ *
  * Public: No
  */
 
-params ["_target", "_caller", "_config", "_posASL", "_vectorDirAndUp"];
+params [
+    ["_target", objNull, [objNull]],
+    ["_caller", objNull, [objNull]],
+    ["_config", createHashMap, [createHashMap]],
+    ["_posASL", [0, 0, 0], [[]], 3],
+    ["_vectorDirAndUp", [[0, 1, 0], [0, 0, 1]], [[]], 2]
+];
 
 private _carriedItems = items _target;
 private _tarpItems = _config get "tarpItems";

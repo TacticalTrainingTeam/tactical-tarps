@@ -1,21 +1,21 @@
 #include "..\script_component.hpp"
 /*
-* Author: Andx
-*
-* Builds the config for, and registers with, the shared TT "deployable
-* tarp" framework (see tt_common's deployable* functions).
-*
-* Arguments:
-* None
-*
-* Return Value:
-* None
-*
-* Example:
-* [] call tt_shelter_fnc_addActions;
-*
-* Public: No
-*/
+ * Author: Andx
+ *
+ * Builds the config for, and registers with, the shared TT "deployable
+ * tarp" framework (see tt_common's deployable* functions).
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call tt_shelter_fnc_addActions;
+ *
+ * Public: No
+ */
 
 private _tarpItems = [
     [QGVAR(tarp_Green), "Land_TentA_F"],

@@ -28,11 +28,13 @@
 
 params [
     ["_config", createHashMap, [createHashMap]]
-    ];
+];
 
 TRACE_1("deployableAddAction",_config);
 
-if (count _config < 10) exitWith {format ["Malformed config %1", _config]};
+if (count _config < 10) exitWith {
+    ERROR_1("Malformed config %1",_config);
+};
 
 private _constructId = _config get "constructId";
 private _deconstructId = _config get "deconstructId";
@@ -70,8 +72,8 @@ private _parentConstructAction = [
     _x params ["_itemClassname", "_objectClassname", ["_buildTimeOffset", 0]];
     private _displayName = getText (configFile >> "CfgWeapons" >> _itemClassname >> "displayName");
 
-     private _itemConfig = createHashMap;
-     _itemConfig merge _config;
+    private _itemConfig = createHashMap;
+    _itemConfig merge _config;
 
     _itemConfig set ["tarpItems", [[_itemClassname, _objectClassname]]];
     _itemConfig set ["buildTime", (_config get "buildTime") + _buildTimeOffset];

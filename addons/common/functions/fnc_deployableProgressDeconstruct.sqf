@@ -11,10 +11,13 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [[_tarp, player, _config]] call tt_common_fnc_deployableProgressDeconstruct
+ *
  * Public: No
  */
 
-(_this select 0) params ["_target", "_caller", "_config"];
+(_this select 0) params [["_target", objNull, [objNull]], ["_caller", objNull, [objNull]], ["_config", createHashMap, [createHashMap]]];
 
 _target setVariable [(_config get "inUseVar"), true, true];
 
