@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Steam Workshop description lists the Shelter Tarp and the correct number of tarps
-- Common - Fix script error when stowing a tarp whose addon gives back no replacement item (#PR) by Andx667
+- Common - Fix script error when stowing a tarp whose addon gives back no replacement item (#40) by Andx667
 
 ## [1.7.1] - 2026-11-01
 
