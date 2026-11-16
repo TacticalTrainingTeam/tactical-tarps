@@ -16,5 +16,9 @@ GVAR(zenDeployableConfigs) = createHashMap;
 // (see fnc_deployableAddActions.sqf)
 GVAR(raisedMainActionClasses) = [];
 
+// "deployedClass:deconstructId" pairs whose deconstruct action has been added to the class,
+// so re-registration only removes actions that actually exist (see fnc_deployableAddActions.sqf)
+GVAR(registeredDeconstructActions) = [];
+
 ADDON = true;
 
