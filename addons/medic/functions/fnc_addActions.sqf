@@ -38,9 +38,7 @@ private _onConstruct = {
     };
     _object setVariable [QGVAR(props), _props, true];
 
-    {
-        _x addCuratorEditableObjects [_props, false];
-    } forEach allCurators;
+    [QEGVAR(common,addCuratorEditableObjects), [_props]] call CBA_fnc_serverEvent;
 };
 
 private _onDeconstruct = {

@@ -16,5 +16,16 @@ GVAR(zenDeployableConfigs) = createHashMap;
 // (see fnc_deployableAddActions.sqf)
 GVAR(raisedMainActionClasses) = [];
 
+// addCuratorEditableObjects only works on the server, but tarps are built on the deploying player's machine
+if (isServer) then {
+    [QGVAR(addCuratorEditableObjects), {
+        params [["_objects", [], [[]]]];
+
+        {
+            _x addCuratorEditableObjects [_objects, false];
+        } forEach allCurators;
+    }] call CBA_fnc_addEventHandler;
+};
+
 ADDON = true;
 

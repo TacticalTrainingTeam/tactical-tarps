@@ -32,9 +32,7 @@ private _onConstruct = {
     _object addEventHandler ["HandleDamage", {0}]; //makes it functionally invulnerable
     _object setVariable [QGVAR(helipad), _pad, true];
 
-    {
-        _x addCuratorEditableObjects [[_pad], false];
-    } forEach allCurators;
+    [QEGVAR(common,addCuratorEditableObjects), [[_pad]]] call CBA_fnc_serverEvent;
 };
 
 private _onDeconstruct = {
