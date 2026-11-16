@@ -10,7 +10,8 @@ Unlike the other functional addons, the repair tarp is only available in a singl
 - `ACE_isRepairFacility` enabled on the deployed tarp object, so it counts as an ACE repair facility.
 - Default spawn of decorative tool props (wrench, pliers, screwdriver, gloves) around the tarp on deploy.
 - Spawned tool props have simulation disabled, so they behave as cheap, non-interactive clutter.
-- Cleanup of the spawned props on deconstruct.
+- Spawned tool props are editable in Zeus, like the tarp itself.
+- Cleanup of the spawned props on deconstruct. Only the props this tarp spawned are removed, not matching objects placed nearby.
 
 ### Classnames
 

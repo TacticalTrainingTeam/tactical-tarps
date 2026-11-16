@@ -55,9 +55,7 @@ _object setVariable [QGVAR(grassCutter), _grassCutter, true];
 private _onConstruct = _config getOrDefault ["onConstruct", {}];
 [_object, _target, _config] call _onConstruct;
 
-{
-    _x addCuratorEditableObjects [[_object, _grassCutter], false];
-} forEach allCurators;
+[QGVAR(addCuratorEditableObjects), [[_object, _grassCutter]]] call CBA_fnc_serverEvent;
 
 _target switchMove "";
 

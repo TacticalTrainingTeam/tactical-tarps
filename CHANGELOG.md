@@ -7,10 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Repair - Add the repair tarp's tool props to Zeus (#41) by Andx667
+
 ### Fixed
 
 - Repo - Fix Steam Workshop description listing the Shelter Tarp and the correct number of tarps (#33) by Andx667
 - Steam Workshop description lists the Shelter Tarp and the correct number of tarps
+- Medic, Repair - Fix stowing a tarp deleting matching objects nearby that it did not spawn (#36) by Andx667
+- Common - Fix deployed tarps and their props not being editable in Zeus on dedicated servers (#41) by Andx667
 - Common - Fix script error when stowing a tarp whose addon gives back no replacement item (#40) by Andx667
 - Repair - Fix deployed repair tarp not acting as an ACE Repair Facility (#35) by Andx667
 - Common - Fix ACE "Failed to find action to delete" warnings in the RPT on mission start (#42) by Andx667

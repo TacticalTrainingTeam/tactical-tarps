@@ -29,23 +29,22 @@ private _onConstruct = {
 
     private _position = getPos _object;
 
-    {
+    // Remember the spawned props so stowing removes exactly these and nothing a mission placed nearby
+    private _props = (parseSimpleArray GVAR(additionalItems)) apply {
+        private _prop = createVehicle [_x, _position, [], 3, "CAN_COLLIDE"];
         // decorative only - disable simulation so they behave like cheap simple objects
-        (createVehicle [_x, _position, [], 3, "CAN_COLLIDE"]) enableSimulationGlobal false;
-    } forEach (parseSimpleArray GVAR(additionalItems));
+        _prop enableSimulationGlobal false;
+        _prop
+    };
+    _object setVariable [QGVAR(props), _props, true];
 
-    {
-        _x addCuratorEditableObjects [([_object]), false];
-    } forEach allCurators;
+    [QEGVAR(common,addCuratorEditableObjects), [_props]] call CBA_fnc_serverEvent;
 };
 
 private _onDeconstruct = {
     params ["_object"];
 
-    private _position = getPos _object;
-    private _arrayItems = [_position, 8, 8, 0, true, 0] nearEntities [parseSimpleArray GVAR(additionalItems), false, true, false];
-
-    deleteVehicle _arrayItems;
+    deleteVehicle (_object getVariable [QGVAR(props), []]);
 };
 
 private _config = createHashMapFromArray [
