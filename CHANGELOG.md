@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Steam Workshop description lists the Shelter Tarp and the correct number of tarps
+- Repo - Fix Steam Workshop description listing the Shelter Tarp and the correct number of tarps (#33) by Andx667
 
 ## [1.7.1] - 2026-11-01
 
