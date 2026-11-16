@@ -15,10 +15,13 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [_tarp] call tt_common_fnc_zenInstantRemove
+ *
  * Public: No
  */
 
-params ["_object"];
+params [["_object", objNull, [objNull]]];
 
 private _itemClassname = _object getVariable [QGVAR(sourceItem), ""];
 

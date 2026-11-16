@@ -14,10 +14,13 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [_tarp, player, _config] call tt_common_fnc_deployableCancel
+ *
  * Public: No
  */
 
-params ["_target", "_caller", "_config"];
+params [["_target", objNull, [objNull]], ["_caller", objNull, [objNull]], ["_config", createHashMap, [createHashMap]]];
 
 [(_config get "abortText"), true] call ace_common_fnc_displayText;
 _caller switchMove "";

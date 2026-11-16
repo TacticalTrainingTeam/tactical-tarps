@@ -13,10 +13,13 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [[player, player, _config]] call tt_common_fnc_deployableProgressConstruct
+ *
  * Public: No
  */
 
-(_this select 0) params ["_target", "_caller", "_config"];
+(_this select 0) params [["_target", objNull, [objNull]], ["_caller", objNull, [objNull]], ["_config", createHashMap, [createHashMap]]];
 
 private _classname = ((_config get "tarpItems") select 0) select 1;
 

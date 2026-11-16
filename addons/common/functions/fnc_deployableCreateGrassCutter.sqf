@@ -12,10 +12,13 @@
  * Return Value:
  * Clutter cutter <OBJECT>
  *
+ * Example:
+ * [_tarp] call tt_common_fnc_deployableCreateGrassCutter
+ *
  * Public: No
  */
 
-params ["_object"];
+params [["_object", objNull, [objNull]]];
 
 private _boundingSphere = boundingBoxReal _object select 2;
 
