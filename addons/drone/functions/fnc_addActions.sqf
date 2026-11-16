@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [] call tt_drone_tarp_fnc_addActions;
+ * [] call tt_drone_fnc_addActions;
  *
  * Public: No
  */

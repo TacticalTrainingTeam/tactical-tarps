@@ -19,6 +19,9 @@
  * Return Value:
  * Actions <ARRAY> - ZEN context menu action entries, see zen_context_menu_fnc_createAction
  *
+ * Example:
+ * [_position] call tt_common_fnc_zenGetConstructActions
+ *
  * Public: No
  */
 

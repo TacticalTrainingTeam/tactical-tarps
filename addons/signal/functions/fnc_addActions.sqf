@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [] call tt_signal_tarp_fnc_addActions;
+ * [] call tt_signal_fnc_addActions;
  *
  * Public: No
  */

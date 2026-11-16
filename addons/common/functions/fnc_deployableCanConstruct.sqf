@@ -11,10 +11,13 @@
  * Return Value:
  * Can construct <BOOLEAN>
  *
+ * Example:
+ * [[player, player, _config]] call tt_common_fnc_deployableCanConstruct
+ *
  * Public: No
  */
 
-(_this select 0) params ["_target", "", "_config"];
+(_this select 0) params [["_target", objNull, [objNull]], "", ["_config", createHashMap, [createHashMap]]];
 
 private _carriedItems = items _target;
 

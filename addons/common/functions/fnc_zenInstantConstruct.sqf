@@ -17,10 +17,17 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [_position, "tt_medic_tarp_Black", _config] call tt_common_fnc_zenInstantConstruct
+ *
  * Public: No
  */
 
-params ["_position", "_itemClassname", "_config"];
+params [
+    ["_position", [0, 0, 0], [[]], 3],
+    ["_itemClassname", "", [""]],
+    ["_config", createHashMap, [createHashMap]]
+];
 
 private _tarpItems = _config get "tarpItems";
 private _index = _tarpItems findIf {_x select 0 == _itemClassname};
