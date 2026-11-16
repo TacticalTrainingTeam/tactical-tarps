@@ -9,13 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Repair - Add the repair tarp's tool props to Zeus (#PR) by Andx667
+- Repair - Add the repair tarp's tool props to Zeus (#41) by Andx667
 
 ### Fixed
 
 - Steam Workshop description lists the Shelter Tarp and the correct number of tarps
 - Medic, Repair - Fix stowing a tarp deleting matching objects nearby that it did not spawn (#36) by Andx667
-- Common - Fix deployed tarps and their props not being editable in Zeus on dedicated servers (#PR) by Andx667
+- Common - Fix deployed tarps and their props not being editable in Zeus on dedicated servers (#41) by Andx667
 
 ## [1.7.1] - 2026-11-01
 
