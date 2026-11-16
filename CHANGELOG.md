@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-11-16
+
 ### Added
 
 - Repair - Add the repair tarp's tool props to Zeus (#41) by Andx667
@@ -14,7 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Repo - Fix Steam Workshop description listing the Shelter Tarp and the correct number of tarps (#33) by Andx667
-- Steam Workshop description lists the Shelter Tarp and the correct number of tarps
 - Medic, Repair - Fix stowing a tarp deleting matching objects nearby that it did not spawn (#36) by Andx667
 - Common - Fix deployed tarps and their props not being editable in Zeus on dedicated servers (#41) by Andx667
 - Common - Fix script error when stowing a tarp whose addon gives back no replacement item (#40) by Andx667
@@ -97,7 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release: Signal, Medic, Drone, Hazmat, and Repair tarps
 
-[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.1...HEAD
+[Unreleased]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.8.0...HEAD
+[1.8.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.1...v1.8.0
 [1.7.1]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.7.0...v1.7.1
 [1.7.0]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.1...v1.7.0
 [1.6.1]: https://github.com/TacticalTrainingTeam/tactical-tarps/compare/v1.6.0...v1.6.1
