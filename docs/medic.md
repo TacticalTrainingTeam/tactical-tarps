@@ -6,7 +6,7 @@ The `medic` addon registers deployable medical tarps with optional spawned suppo
 
 - Four deployable medical tarp variants.
 - `ace_medical_isMedicalFacility` enabled on deployed tarp object.
-- Optional spawn and cleanup of additional configured medical objects.
+- Optional spawn and cleanup of additional configured medical objects. Only the objects this tarp spawned are removed on deconstruct, not matching objects placed nearby.
 
 ### Classnames
 
