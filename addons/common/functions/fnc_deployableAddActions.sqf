@@ -28,11 +28,13 @@
 
 params [
     ["_config", createHashMap, [createHashMap]]
-    ];
+];
 
 TRACE_1("deployableAddAction",_config);
 
-if (count _config < 10) exitWith {format ["Malformed config %1", _config]};
+if (count _config < 10) exitWith {
+    ERROR_1("Malformed config %1",_config);
+};
 
 private _constructId = _config get "constructId";
 private _deconstructId = _config get "deconstructId";
@@ -48,8 +50,14 @@ private _deconstructClasses = _tarpItems apply {_x select 1};
 } forEach _tarpItems;
 
 [ACE_player, 1, ["ACE_SelfActions", "ACE_Equipment", _constructId]] call ace_interact_menu_fnc_removeActionFromObject;
+// Only remove deconstruct actions this function added earlier - ACE logs a warning for
+// every class it is asked to remove a non-existent action from (i.e. on first registration)
 {
-    [_x, 0, ["ACE_MainActions", _deconstructId]] call ace_interact_menu_fnc_removeActionFromClass;
+    private _key = _x + ":" + _deconstructId;
+    if (_key in GVAR(registeredDeconstructActions)) then {
+        [_x, 0, ["ACE_MainActions", _deconstructId]] call ace_interact_menu_fnc_removeActionFromClass;
+        GVAR(registeredDeconstructActions) deleteAt (GVAR(registeredDeconstructActions) find _key);
+    };
 } forEach _deconstructClasses;
 
 // Parent container — visible when the player carries any matching tarp, opens a colour sub-menu
@@ -70,8 +78,8 @@ private _parentConstructAction = [
     _x params ["_itemClassname", "_objectClassname", ["_buildTimeOffset", 0]];
     private _displayName = getText (configFile >> "CfgWeapons" >> _itemClassname >> "displayName");
 
-     private _itemConfig = createHashMap;
-     _itemConfig merge _config;
+    private _itemConfig = createHashMap;
+    _itemConfig merge _config;
 
     _itemConfig set ["tarpItems", [[_itemClassname, _objectClassname]]];
     _itemConfig set ["buildTime", (_config get "buildTime") + _buildTimeOffset];
@@ -128,4 +136,5 @@ private _parentConstructAction = [
     };
 
     [_deconstructClass, 0, ["ACE_MainActions"], _deconstructAction] call ace_interact_menu_fnc_AddActionToClass;
+    GVAR(registeredDeconstructActions) pushBackUnique (_deconstructClass + ":" + _deconstructId);
 } forEach _tarpItems;

@@ -18,10 +18,18 @@
  * Return Value:
  * None
  *
+ * Example:
+ * [player, player, _config, "Tarp_01_Large_Black_F"] call tt_common_fnc_deployablePlace
+ *
  * Public: No
  */
 
-params ["_target", "_caller", "_config", "_classname"];
+params [
+    ["_target", objNull, [objNull]],
+    ["_caller", objNull, [objNull]],
+    ["_config", createHashMap, [createHashMap]],
+    ["_classname", "", [""]]
+];
 
 private _ghost = _classname createVehicleLocal [0, 0, 0];
 _ghost enableSimulationGlobal false;
